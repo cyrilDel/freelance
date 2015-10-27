@@ -1,0 +1,206 @@
+{# src/RS/CoreBundle/Resources/views/Core/index.html.twig #}
+{% extends "RSCoreBundle::layout.html.twig" %}
+{%  block body  %}
+<div class="container-fluid">
+    <aside class="banniere" style="margin-top: 4%;">
+        <marquee onMouseOver="this.stop();" onMouseOut="this.start();">
+         Site web en construction... Développeur web php, symfony2 ...
+        </marquee>
+    </aside>
+ </div>
+ <div class="container">
+    <hr />
+ </div>
+ <div class=""container-fluid">
+    <section class="row" style="margin-top: 3%;">
+        <div class="col-lg-3 col-md-3 col-lg-offset-2 col-md-offset-2">
+            <img src="img/arobas.jpg" style=" width: 300px;padding-left: 5%;" />
+        </div>
+        <div class="col-lg-5 col-md-5 ">
+            <h1>Vous cherchez un développeur web en freelance?</h1>
+            ça tombe bien ! Je suis passionné par le web, freelance depuis peu.
+            Si mon profil vous intéresse, n'hésitez pas à me <a href="">contacter</a> ou regardez mes <a href="">réalisations -></a>
+        </div>
+    </section>
+</div>
+    <hr />
+    <div class="row" id="presentation">
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <article style="padding-left: 5%; padding-right: 5%;margin-right: 35%;">
+                <h2> Faites appel à mes services de développeur web </h2>
+                    <p>
+                    Vous êtes un particulier, une entreprise, un artisan, un auto-entrepreneur, une association, un commerçant...
+                    <br/>
+                    Vous désirez créer un site web, (indispensable de nos jours en termes de communication) .
+                    <br/>
+                    <strong> creer-monsite.fr</strong>
+                    , développeur web, assure la création de votre site,
+                    (site marchand, boutique e-commerce, site vitrine , forum , blog perso, ou campagne de pub),
+                    d'après un cahier des charges établi selon vos critères et vos besoins .
+                    <br/>
+                    Mes connaissances en référencement et développement web vous permettront de faire aboutir vos projets en termes de communication web.
+                    <br/> Demandez votre devis <strong> GRATUIT </strong> !
+                    <br/>
+                    en remplissant ce
+                    <a href="#contact">formulaire</a>
+                    , j'assure également  la maintenance les mises a jour, et les refontes de votre site.
+                    <br/>
+                    Je vous invite également à me suivre  sur les
+                    <a href="#reseaux">réseaux sociaux.</a>
+                    <br/>
+                    <br/>
+                    </p> <!--end p-->
+            </article> <!--end article-->
+        </div>
+        <div class="col-lg-2 col-md-2 hidden-xs  hidden-sm " id="profil" >
+        <div class="imgProfil">
+                <abbr title=" Cliquez sur l'image pour agrandir" style="cursor:help;">
+                    <img src="img/ma_photo_de_profil2.jpg" alt="ma photo de profil"  class="imgProfil thumbnail photo" style="cursor:pointer; font-size" />
+                </abbr>
+            </div>
+
+        <div>
+            <address>
+                <i class="glyphicon glyphicon-user"></i>
+                Cyril Delage,
+                <br/>
+                professionnel indépendant
+                <br/>
+                N° SIRET : 814 224 358 00014
+                <br/>
+                <i class="glyphicon glyphicon-phone"></i>
+                06 38 33 11 15
+                <br/>
+                <i class="glyphicon glyphicon-envelope"></i>
+                cdelage.dev@gmail.com
+            </address>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <hr/>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-center" id="services">Mes services</h2>
+            <h3 class="text-center">
+                intégration HTML5 et CSS3, audits et maintenance, spécialisé dans le développement objet Symfony2.
+            </h3>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <hr/>
+</div>
+<div class="container-fluid">
+    <section class="row">
+        <div class="col-lg-12">
+            <h2 class="text-center" id="realisations">Mes réalisations</h2>
+            <div id="carousel" class="carousel slide" data-ride="carousel" >
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active" ></li>
+                    <li data-target="#carousel" data-slide-to="1" ></li>
+                    <li data-target="#carousel" data-slide-to="2" ></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <h2 class="text-center" style="margin-bottom: 2%;">Projets Web</h2>
+
+                            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                <a href="http://creer-monsite.fr/" class="thumbnail">
+                                    <img src="img/creer-monsite.png" alt="creer-monsite" class="img-polaroid" style="width: 100%;"/>
+                                </a>
+                                <h3  style="color: #333 ; position: relative; bottom: 15px;"> creer-monsite.fr</h3>
+                            </div>
+
+                            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                <a href="img/rs.png" class="thumbnail">
+                                    <img src="img/rs.png" alt="smarthome" class="img-polaroid" style="width: 100%;"/>
+                                </a>
+                                <h3 style="color: #333; position: relative; bottom: 15px;">Réseau social(en construction)</h3>
+                            </div>
+
+                            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                <a href="http://speed-destock-41.com/" class="thumbnail">
+                                    <img src="img/SPEED DESTOCK 41.PNG" alt="speed-destock 41" class="img-polaroid" style="width: 100%;"/>
+                                </a>
+                                <h3  style="color: #333;position: relative; bottom: 15px;">speed-destock41</h3>
+                            </div>
+                            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                <a href="img/depan.PNG" class="thumbnail">
+                                    <img src="img/depan.PNG" alt="dépannage informatique et cours a domicile" class="img-polaroid" style="width: 100%;"/>
+                                </a>
+                                <h3  style="color: #333;position: relative;bottom: 15px; "> Projet perso dépannage informatique</h3>
+                            </div> <!-- end lg-3-->
+                        </div> <!-- end col-lg-12 -->
+                    </div> <!-- end carousel activ -->
+
+                    <div class="item">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <h2 class="text-center" style="margin-bottom: 2%;">Autres</h2>
+
+                            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                <a href="img/advert.PNG" class="thumbnail">
+                                    <img src="img/advert.PNG" alt="platforme d'annonce" class="img-polaroid" style="width: 100%;" />
+                                </a>
+                                <h3  style="color: #333;position: relative;bottom: 15px; ">Projet  Symfony</h3>
+                            </div> <!-- end lg-3-->
+                            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                <a href="img/builderweb2.PNG" class="thumbnail">
+                                    <img src="img/builderweb2.PNG" alt="builderweb editeur de code source VBNet" class="img-polaroid" style="width: 100%;" />
+                                </a>
+                                <h3  style="color: #333;position: relative;bottom: 15px; "> BuilderWeb éditeur de texte VBNet</h3>
+                            </div> <!-- end lg-3-->
+                            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                <a href="img/architecte.png" class="thumbnail">
+                                    <img src="img/architecte.png" alt="projet openclassrooms" class="img-polaroid" style="width: 100%;" />
+                                </a>
+                                <h3 style="color: #333; position: relative; bottom: 15px;">Projet Bootstrap </h3>
+                            </div>
+
+                            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                <a href="img/architecte2.png" class="thumbnail">
+                                    <img src="img/architecte2.png" alt="projet openclassrooms" class="img-polaroid" style="width: 100%;" />
+                                </a>
+                                <h3 style="color: #333; position: relative; bottom: 15px;">Projet Bootstrap  </h3>
+                            </div>
+                        </div> <!-- end div lg-12 -->
+                    </div> <!-- end div item -->
+                     <a class="left carousel-control" href="#carousel" data-slide="prev"><span class="icon-prev" style="color:#2C3E50;font-size: 50px;position: absolute;top: 0px;"></span></a>
+
+                    <a class="right carousel-control" href="#carousel" data-slide="next"><span class="icon-next" style="color: #2C3E50;font-size: 50px;position: absolute;top: 0px;"></span></a>
+                     </div> <!-- end carousel inner -->
+    </section> <!-- end section row -->
+</div>
+<div class="container">
+    <hr/>
+</div>
+<div class="container-fluid">
+    <div class="row" style="margin-top: 3%;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-center" id="retour">Les retours clients</h2>
+            <div class="col-lg-4">
+                <article class="well retours">
+                    <h3 class="text-center">Speed Destock 41</h3>
+                    Mr Delage à su repondre à nos attentes, en mettant à profil ses compétences.
+                    <br/>
+                    Speed Destock 41 ne devait être à la base qu'un simple site vitrine, et Mr Delage a su nous convaincre à travers son potentiel et nous proposer un site e-commerce, 100% Symfony2, facil d'utilisation, gràce à un panel administrateur optimal, un suivi et des mises a jour régulières, un accompagnement et une formation claire. Notre gestion des stock est entièrement gérée grace a notre base de donnée, et aussi une sécurité optimale gràce à Symfony2.
+                    <br/>
+                    Speed Destock 41 recommande vivement les services et le potentiel de Mr Delage, Développeur web (<a href="http://creer-monsite.fr">creer-monsite.fr</a>)
+                    <br/>
+                    L'équipe Speed Destock <a href="http://speed-destock-41.com">Speed Destock 41</a>
+                </article>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <hr/>
+    </div>
+     {{ include("RSCoreBundle:Core:formulaire.html.twig") }}
+</div>
+{% endblock %}

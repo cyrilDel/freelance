@@ -1,0 +1,163 @@
+{# src/RS/CoreBundle/Resources/views/layout.html.twig #}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Développeur web , je créer votre site web, demandez votre devis gratuitement !  ">
+        <meta name="keywords" content="développeur web, freelance, développeur php, développeur symfony2, développeur web freelance">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow, all">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        {% block stylesheets %}
+            <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+           <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+           <link rel="stylesheet" href="{{ asset('rs.css') }}"  />
+        {% endblock %}
+    </head>
+    <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <div id="fb-root"></div>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4&appId=954214054600726";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+        (document, 'script', 'facebook-jssdk'));
+    </script>
+    <nav class="navbar navbar-default  navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Développeur web</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="ordi.ico">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#presentation">Présentation <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="#realisations">Mes réalisations</a></li>
+                    <li class="dropdown">
+                        <a href="#services">Mes services
+                            <span class="caret"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Cyril Delage</a></li>
+                    <li><a href="#">06.38.33.11.15</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contactez moi !
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Demandez votre devis gratuit</a></li>
+                            <li><a href="#">Offres d'emplois</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    {% block body %}
+    {% endblock %}
+    </div>
+    </div>
+    <hr>
+    <footer class="container-fluid" style="background-color: #3D3D3D;">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <a class="btn btn-primary" href="https://github.com/cyrilDel" style="background-color:#3D3D3D; border-color:#3D3D3D; ">
+                    <img class="transparent" src="img/github.png" style="width: 19px; height: 19px"/ >
+                </a>
+                <a class="btn btn-primary" href="https://twitter.com/THE_BUILDERWEB" style="background-color:#3D3D3D; border-color:#3D3D3D; ">
+                    <img class="transparent" src="img/twitter.png" style="width: 19px; height: 19px"/ >
+                </a>
+                <a class="btn btn-primary" href="https://www.facebook.com/thebuilderweb" style="background-color:#3D3D3D; border-color:#3D3D3D;">
+                    <img class="transparent" src="img/facebook.png" style="width: 19px; height: 19px"/ >
+                </a>
+                <a class="btn btn-primary" href="https://www.linkedin.com/in/cyrildelage" style="background-color:#3D3D3D; border-color:#3D3D3D;">
+                    <img class="transparent" src="img/linkedin.png" style="width: 19px; height: 19px"/ >
+                </a>
+                <a class="btn btn-primary" href="http://www.viadeo.com/fr/profile/cyril.delage4" style="background-color:#3D3D3D; border-color:#3D3D3D;">
+                    <img class="transparent" src="img/viadeo.png" style="width: 19px; height: 19px"/ >
+                </a>
+                <a data-toggle="modal" href="#infos" class="btn btn-primary" style="background-color:#3D3D3D; border-color:#3D3D3D;">
+                    <i class="glyphicon glyphicon-phone " style="font-size: 1.7em; color:greenyellow;" ></i>
+                </a>
+                <div class="modal" id="infos">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" style="color:black; font-size: 16px; font-weight: bold;">Me joindre par téléphone :</h4>
+                            </div>
+                            <div class="modal-body" style="color:black; font-size: 16px; font-weight: bold;">
+                                06.38.33.11.15
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-dismiss="modal" style="padding-left: 0px; width: 25%;">
+                                    Fermer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end col-md-11-->
+        </div>  <!-- end row-->
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 ">
+                <span style="color: white;">Localisation actuelle: </span>
+                <a href="localisation.php" style="color: yellow;">
+                    <abbr title="cliquer pour voir ma position">Orléans</abbr>
+                    <abbr title="cliquer pour voir ma position"></abbr>
+                </a>
+            </div>  <!-- end col-lg-4-->
+
+            <div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 col-xs-4 col-xs-offset-2">
+                <a href="mentions_légales.html" style="color:white;">Mentions légales</a>
+            </div>
+        </div>  <!-- end div row-->
+    </footer>
+    </div> <!-- end container fluid -->
+    </div>
+        {% block javascripts %}
+            <script>
+                var oBlink = null;
+                function cligno(){
+                    // recup des éléments si pas encore fait
+                    oBlink = oBlink || document.getElementsByClassName("cligno");
+                    var i, nbr= oBlink.length;
+                    for( i=0; i < nbr; i++){
+                        // change visibility suivant le cas
+                        oBlink[i].style.visibility = oBlink[i].style.visibility == 'hidden' ? 'visible' : 'hidden';
+                    }
+                }
+                var timer=setInterval( cligno, 800);
+            </script>
+            <script type="text/javascript" src="scripts/photo.js"></script>
+        {# Ajoutez ces lignes JavaScript si vous comptez vous servir des fonctionnalités du bootstrap Twitter #}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,12 @@
+
+rs_core_homepage:
+    path:     /
+    defaults: { _controller: RSCoreBundle:Core:index }
+
+
+        
+    
+
+
+        
+        

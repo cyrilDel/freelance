@@ -1,0 +1,4 @@
+services:
+#    rs_facture.example:
+#        class: RS\FactureBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

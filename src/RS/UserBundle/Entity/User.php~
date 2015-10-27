@@ -1,0 +1,84 @@
+<?php
+
+namespace RS\UserBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+use FOS\UserBundle\Model\User as BaseUser;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * User
+ *
+ * @ORM\Table()
+ * @ORM\Entity(repositoryClass="RS\UserBundle\Entity\UserRepository")
+ */
+class User extends BaseUser
+{
+
+// entité $infos relation unidirectionnelle  
+
+    /**
+     * @ORM\OneToOne(targetEntity="RS\BookBundle\Entity\Infos", cascade="persist")
+     */
+    private $infos;
+
+    
+    
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+    
+    public function __construct()
+    {
+       
+    }
+   
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set infos
+     *
+     * @param \RS\BookBundle\Entity\Infos $infos
+     * @return User
+     */
+    public function setInfos(\RS\BookBundle\Entity\Infos $infos = null)
+    {
+        $this->infos = $infos;
+
+        return $this;
+    }
+
+    /**
+     * Get infos
+     *
+     * @return \RS\BookBundle\Entity\Infos
+     */
+    public function getInfos()
+    {
+        return $this->infos;
+    }
+    
+    public function removeInfos(Infos $infos)
+    {
+        $this->infos->removeElement($infos);
+        // unset($this->infos[$pos]);
+     // $infos->setInfos(null);
+    }
+
+
+
+}
