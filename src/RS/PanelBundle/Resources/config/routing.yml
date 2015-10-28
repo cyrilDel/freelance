@@ -1,0 +1,5 @@
+rs_panel_homepage:
+    path:     /panel
+    defaults: { _controller: RSPanelBundle:Panel:index }
+
+

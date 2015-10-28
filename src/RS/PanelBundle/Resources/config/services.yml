@@ -1,0 +1,4 @@
+services:
+#    rs_panel.example:
+#        class: RS\PanelBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

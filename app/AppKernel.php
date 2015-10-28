@@ -23,6 +23,7 @@ class AppKernel extends Kernel
 
             new RS\CoreBundle\RSCoreBundle(),
             new RS\FactureBundle\RSFactureBundle(),
+            new RS\PanelBundle\RSPanelBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

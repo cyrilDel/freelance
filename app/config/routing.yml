@@ -1,3 +1,7 @@
+rs_panel:
+    resource: "@RSPanelBundle/Resources/config/routing.yml"
+    prefix:   /
+
 rs_facture:
     resource: "@RSFactureBundle/Resources/config/routing.yml"
     prefix:   /
