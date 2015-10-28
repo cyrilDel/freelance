@@ -62,3 +62,11 @@ address {
     top: 10px;
     right: 140px;
 }
+
+.presentation{
+    margin-top: 3%;
+    padding-top: 4%;
+    border-radius: 30px;
+    margin-bottom: 4%;
+    padding-bottom: 4%;
+}

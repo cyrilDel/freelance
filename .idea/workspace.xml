@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CoreController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CoreController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Controller/CoreController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51619434">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#44#101#0#PHP" expanded="true" />
               </folding>
@@ -39,7 +39,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1445983452762" expanded="true" signature="1:125" placeholder="rs_core_homepage:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,12 +59,37 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-130.76923">
-              <caret line="200" column="27" selection-start-line="200" selection-start-column="27" selection-end-line="200" selection-end-column="27" />
+            <state vertical-scroll-proportion="-3.709091">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               <folding>
-                <element signature="e#494#517#0#HTML" expanded="true" />
-                <element signature="e#629#668#0#HTML" expanded="true" />
+                <element signature="e#472#512#0#HTML" expanded="true" />
+                <element signature="e#660#713#0#HTML" expanded="true" />
+                <element signature="e#3025#3045#0#HTML" expanded="true" />
+                <element signature="e#3181#3214#0#HTML" expanded="true" />
+                <element signature="e#5202#5228#0#HTML" expanded="true" />
+                <element signature="e#5533#5553#0#HTML" expanded="true" />
+                <element signature="e#5630#5685#0#HTML" expanded="true" />
+                <element signature="e#6017#6037#0#HTML" expanded="true" />
+                <element signature="e#6113#6167#0#HTML" expanded="true" />
+                <element signature="e#6554#6574#0#HTML" expanded="true" />
+                <element signature="e#6651#6704#0#HTML" expanded="true" />
+                <element signature="e#7075#7095#0#HTML" expanded="true" />
+                <element signature="e#7172#7225#0#HTML" expanded="true" />
+                <element signature="e#7600#7626#0#HTML" expanded="true" />
+                <element signature="e#7933#7953#0#HTML" expanded="true" />
+                <element signature="e#9125#9179#0#HTML" expanded="true" />
+                <element signature="e#10434#10457#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rs.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/rs.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9346154">
+              <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,17 +109,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
-              <folding />
+              <folding>
+                <marker date="1437191751547" expanded="true" signature="0:62" placeholder="&lt;IfModule mod_authz_core.c&gt;" />
+                <marker date="1437191751547" expanded="true" signature="63:142" placeholder="&lt;IfModule !mod_authz_core.c&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,8 +140,8 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="36.576923">
-              <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="89" column="135" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="135" />
               <folding />
             </state>
           </provider>
@@ -136,13 +156,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/formulaire.php" />
-        <option value="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/formulaire.html.twig" />
-        <option value="$PROJECT_DIR$/web/rs.css" />
-        <option value="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/index.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/RS/CoreBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/RS/CoreBundle/Controller/CoreController.php" />
+        <option value="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/index.html.twig" />
+        <option value="$PROJECT_DIR$/web/rs.css" />
       </list>
     </option>
   </component>
@@ -155,8 +175,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="181" />
+    <option name="y" value="-834" />
     <option name="width" value="1382" />
     <option name="height" value="784" />
   </component>
@@ -564,7 +584,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="181" y="-834" width="1382" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12783661" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -611,8 +631,23 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
           <folding>
-            <element signature="e#494#517#0#HTML" expanded="true" />
-            <element signature="e#629#668#0#HTML" expanded="true" />
+            <element signature="e#472#512#0#HTML" expanded="true" />
+            <element signature="e#660#713#0#HTML" expanded="true" />
+            <element signature="e#3025#3045#0#HTML" expanded="true" />
+            <element signature="e#3181#3214#0#HTML" expanded="true" />
+            <element signature="e#5202#5228#0#HTML" expanded="true" />
+            <element signature="e#5533#5553#0#HTML" expanded="true" />
+            <element signature="e#5630#5685#0#HTML" expanded="true" />
+            <element signature="e#6017#6037#0#HTML" expanded="true" />
+            <element signature="e#6113#6167#0#HTML" expanded="true" />
+            <element signature="e#6554#6574#0#HTML" expanded="true" />
+            <element signature="e#6651#6704#0#HTML" expanded="true" />
+            <element signature="e#7075#7095#0#HTML" expanded="true" />
+            <element signature="e#7172#7225#0#HTML" expanded="true" />
+            <element signature="e#7600#7626#0#HTML" expanded="true" />
+            <element signature="e#7933#7953#0#HTML" expanded="true" />
+            <element signature="e#9125#9179#0#HTML" expanded="true" />
+            <element signature="e#10434#10457#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -637,14 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/rs.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -677,7 +704,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1445983452762" expanded="true" signature="1:125" placeholder="rs_core_homepage:" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -685,14 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="36.576923">
-          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -705,22 +726,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-130.76923">
-          <caret line="200" column="27" selection-start-line="200" selection-start-column="27" selection-end-line="200" selection-end-column="27" />
-          <folding>
-            <element signature="e#494#517#0#HTML" expanded="true" />
-            <element signature="e#629#668#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding />
+          <folding>
+            <marker date="1437191751547" expanded="true" signature="0:62" placeholder="&lt;IfModule mod_authz_core.c&gt;" />
+            <marker date="1437191751547" expanded="true" signature="63:142" placeholder="&lt;IfModule !mod_authz_core.c&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -734,11 +747,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Controller/CoreController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51619434">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#44#101#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="89" column="135" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="135" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.709091">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="e#472#512#0#HTML" expanded="true" />
+            <element signature="e#660#713#0#HTML" expanded="true" />
+            <element signature="e#3025#3045#0#HTML" expanded="true" />
+            <element signature="e#3181#3214#0#HTML" expanded="true" />
+            <element signature="e#5202#5228#0#HTML" expanded="true" />
+            <element signature="e#5533#5553#0#HTML" expanded="true" />
+            <element signature="e#5630#5685#0#HTML" expanded="true" />
+            <element signature="e#6017#6037#0#HTML" expanded="true" />
+            <element signature="e#6113#6167#0#HTML" expanded="true" />
+            <element signature="e#6554#6574#0#HTML" expanded="true" />
+            <element signature="e#6651#6704#0#HTML" expanded="true" />
+            <element signature="e#7075#7095#0#HTML" expanded="true" />
+            <element signature="e#7172#7225#0#HTML" expanded="true" />
+            <element signature="e#7600#7626#0#HTML" expanded="true" />
+            <element signature="e#7933#7953#0#HTML" expanded="true" />
+            <element signature="e#9125#9179#0#HTML" expanded="true" />
+            <element signature="e#10434#10457#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/rs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9346154">
+          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

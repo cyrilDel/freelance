@@ -10,20 +10,21 @@
  </div>
  <div class="container">
     <hr />
- </div>
- <div class=""container-fluid">
-    <section class="row" style="margin-top: 3%;">
-        <div class="col-lg-3 col-md-3 col-lg-offset-2 col-md-offset-2">
-            <img src="img/arobas.jpg" style=" width: 300px;padding-left: 5%;" />
+    <section class="row well presentation" style="margin-top: 3%; padding-top: 4%;">
+        <div class="col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1">
+            <img src="{{ asset("img/logodev.png") }}" class="transparent" style=" width: 300px; height: 80%; padding-left: 5%;" />
         </div>
-        <div class="col-lg-5 col-md-5 ">
+        <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1">
             <h1>Vous cherchez un développeur web en freelance?</h1>
             ça tombe bien ! Je suis passionné par le web, freelance depuis peu.
             Si mon profil vous intéresse, n'hésitez pas à me <a href="">contacter</a> ou regardez mes <a href="">réalisations -></a>
         </div>
     </section>
-</div>
-    <hr />
+ </div>
+ <div class="container">
+ <hr />
+ </div>
+ <div class="container-fluid">
     <div class="row" id="presentation">
         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
             <article style="padding-left: 5%; padding-right: 5%;margin-right: 35%;">
@@ -49,36 +50,34 @@
                     <a href="#reseaux">réseaux sociaux.</a>
                     <br/>
                     <br/>
-                    </p> <!--end p-->
-            </article> <!--end article-->
+                    </p>
+            </article>
         </div>
         <div class="col-lg-2 col-md-2 hidden-xs  hidden-sm " id="profil" >
         <div class="imgProfil">
                 <abbr title=" Cliquez sur l'image pour agrandir" style="cursor:help;">
-                    <img src="img/ma_photo_de_profil2.jpg" alt="ma photo de profil"  class="imgProfil thumbnail photo" style="cursor:pointer; font-size" />
+                    <img src="{{ asset('img/ma_photo_de_profil2.jpg') }}" alt="ma photo de profil"  class="imgProfil thumbnail photo" style="cursor:pointer; font-size" />
                 </abbr>
             </div>
-
-        <div>
-            <address>
-                <i class="glyphicon glyphicon-user"></i>
-                Cyril Delage,
-                <br/>
-                professionnel indépendant
-                <br/>
-                N° SIRET : 814 224 358 00014
-                <br/>
-                <i class="glyphicon glyphicon-phone"></i>
-                06 38 33 11 15
-                <br/>
-                <i class="glyphicon glyphicon-envelope"></i>
-                cdelage.dev@gmail.com
-            </address>
-        </div>
-    </div>
-    </div>
-</div>
-
+            <div>
+                <address>
+                    <i class="glyphicon glyphicon-user"></i>
+                    Cyril Delage,
+                    <br/>
+                    professionnel indépendant
+                    <br/>
+                    N° SIRET : 814 224 358 00014
+                    <br/>
+                    <i class="glyphicon glyphicon-phone"></i>
+                    06 38 33 11 15
+                    <br/>
+                    <i class="glyphicon glyphicon-envelope"></i>
+                    cdelage.dev@gmail.com
+                </address>
+            </div>
+        </div> {# fin div imgProfil #}
+    </div> {# fin div row presentation #}
+</div> {# fin div container fluid #}
 <div class="container">
     <hr/>
 </div>
@@ -111,28 +110,28 @@
                             <h2 class="text-center" style="margin-bottom: 2%;">Projets Web</h2>
 
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                <a href="http://creer-monsite.fr/" class="thumbnail">
-                                    <img src="img/creer-monsite.png" alt="creer-monsite" class="img-polaroid" style="width: 100%;"/>
+                                <a href="http://builderweb.fr/" class="thumbnail">
+                                    <img src="{{ asset('img/creer-monsite.png') }}" alt="creer-monsite" class="img-polaroid" style="width: 100%;"/>
                                 </a>
-                                <h3  style="color: #333 ; position: relative; bottom: 15px;"> creer-monsite.fr</h3>
+                                <h3  style="color: #333 ; position: relative; bottom: 15px;"> builderweb.fr</h3>
                             </div>
 
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                <a href="img/rs.png" class="thumbnail">
-                                    <img src="img/rs.png" alt="smarthome" class="img-polaroid" style="width: 100%;"/>
+                                <a href="{{ asset('img/rs.png') }}" class="thumbnail">
+                                    <img src="{{ asset('img/rs.png') }}" alt="smarthome" class="img-polaroid" style="width: 100%;"/>
                                 </a>
                                 <h3 style="color: #333; position: relative; bottom: 15px;">Réseau social(en construction)</h3>
                             </div>
 
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                <a href="http://speed-destock-41.com/" class="thumbnail">
-                                    <img src="img/SPEED DESTOCK 41.PNG" alt="speed-destock 41" class="img-polaroid" style="width: 100%;"/>
+                                <a href="{{ asset('http://speed-destock-41.com/') }}" class="thumbnail">
+                                    <img src="{{ asset('img/SPEED DESTOCK 41.PNG') }}" alt="speed-destock 41" class="img-polaroid" style="width: 100%;"/>
                                 </a>
                                 <h3  style="color: #333;position: relative; bottom: 15px;">speed-destock41</h3>
                             </div>
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                <a href="img/depan.PNG" class="thumbnail">
-                                    <img src="img/depan.PNG" alt="dépannage informatique et cours a domicile" class="img-polaroid" style="width: 100%;"/>
+                                <a href="{{ asset('img/depan.PNG') }}" class="thumbnail">
+                                    <img src="{{ asset('img/depan.PNG') }}" alt="dépannage informatique et cours a domicile" class="img-polaroid" style="width: 100%;"/>
                                 </a>
                                 <h3  style="color: #333;position: relative;bottom: 15px; "> Projet perso dépannage informatique</h3>
                             </div> <!-- end lg-3-->
@@ -144,27 +143,27 @@
                             <h2 class="text-center" style="margin-bottom: 2%;">Autres</h2>
 
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                <a href="img/advert.PNG" class="thumbnail">
-                                    <img src="img/advert.PNG" alt="platforme d'annonce" class="img-polaroid" style="width: 100%;" />
+                                <a href="{{ asset('img/advert.PNG') }}" class="thumbnail">
+                                    <img src="{{ asset('img/advert.PNG') }}" alt="platforme d'annonce" class="img-polaroid" style="width: 100%;" />
                                 </a>
                                 <h3  style="color: #333;position: relative;bottom: 15px; ">Projet  Symfony</h3>
                             </div> <!-- end lg-3-->
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                <a href="img/builderweb2.PNG" class="thumbnail">
-                                    <img src="img/builderweb2.PNG" alt="builderweb editeur de code source VBNet" class="img-polaroid" style="width: 100%;" />
+                                <a href="{{ asset('img/builderweb2.PNG') }}" class="thumbnail">
+                                    <img src="{{ asset('img/builderweb2.PNG') }}" alt="builderweb editeur de code source VBNet" class="img-polaroid" style="width: 100%;" />
                                 </a>
                                 <h3  style="color: #333;position: relative;bottom: 15px; "> BuilderWeb éditeur de texte VBNet</h3>
                             </div> <!-- end lg-3-->
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                <a href="img/architecte.png" class="thumbnail">
-                                    <img src="img/architecte.png" alt="projet openclassrooms" class="img-polaroid" style="width: 100%;" />
+                                <a href="{{ asset('img/architecte.png') }}" class="thumbnail">
+                                    <img src="{{ asset('img/architecte.png') }}" alt="projet openclassrooms" class="img-polaroid" style="width: 100%;" />
                                 </a>
                                 <h3 style="color: #333; position: relative; bottom: 15px;">Projet Bootstrap </h3>
                             </div>
 
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                <a href="img/architecte2.png" class="thumbnail">
-                                    <img src="img/architecte2.png" alt="projet openclassrooms" class="img-polaroid" style="width: 100%;" />
+                                <a href="{{ asset('img/architecte2.png') }}" class="thumbnail">
+                                    <img src="{{ ('img/architecte2.png') }}" alt="projet openclassrooms" class="img-polaroid" style="width: 100%;" />
                                 </a>
                                 <h3 style="color: #333; position: relative; bottom: 15px;">Projet Bootstrap  </h3>
                             </div>
