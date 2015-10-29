@@ -17,7 +17,7 @@
         <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1">
             <h1>Vous cherchez un développeur web en freelance?</h1>
             ça tombe bien ! Je suis passionné par le web, freelance depuis peu.
-            Si mon profil vous intéresse, n'hésitez pas à me <a href="">contacter</a> ou regardez mes <a href="">réalisations -></a>
+            Si mon profil vous intéresse, n'hésitez pas à me <a href="">contacter</a> ou regardez mes <a href="#realisations">réalisations -></a>
         </div>
     </section>
  </div>
@@ -107,7 +107,7 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                            <h2 class="text-center" style="margin-bottom: 2%;">Projets Web</h2>
+                            <h2 class="text-center" id="realisations" style="margin-bottom: 2%;">Mes réalisations</h2>
 
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
                                 <a href="http://builderweb.fr/" class="thumbnail">
@@ -203,6 +203,23 @@
         <hr/>
     </div>
 
-     {{ include("RSCoreBundle:Core:formulaire.html.twig") }}
+
+    <div class="container-fluid">
+        <div class="row" style="">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 well">
+                <article>
+                    <h2 class="text-center">Contactez moi!</h2>
+                    <h3 class="text-center"><i>Je suis a votre ecoute pour:</i></h3>
+                    <ul>
+                        <li><i>Un devis gratuit</i></li>
+                        <li><i>Vos offres d'emplois de developpeur web</i></li>
+                        <li><i>Une collaboration, un partenariat</i></li>
+                    </ul>
+                    <hr />
+                 {{ include('RSPanelBundle:Panel:formulaire.html.twig') }}
+            </div>
+        </div>
+    </div>
+
 
 {% endblock %}

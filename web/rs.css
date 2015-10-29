@@ -76,6 +76,19 @@ address {
     border: 0.1px solid grey;
 }
 
+/*--- Formulaire --*/
+#rs_panelbundle_mailer_save{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0px;
+    text-align: left;
+    width: 100%;
+}
+
 /*--media support--*/
 @media (max-width: 768px) {
 

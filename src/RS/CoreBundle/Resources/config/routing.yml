@@ -3,6 +3,13 @@ rs_core_homepage:
     path:     /
     defaults: { _controller: RSCoreBundle:Core:index }
 
+rs_core_test:
+    path:     /test
+    defaults: { _controller: RSCoreBundle:Core:test }
+
+
+
+
 
         
     

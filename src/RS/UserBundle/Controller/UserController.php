@@ -19,7 +19,7 @@ class fosuserController extends Controller
 {
       public function profileAction(Request $request)
     {  
-                    return $this->redirect($this->generateUrl('rs_book_home'));
+                    return $this->redirect($this->generateUrl('rs_core_home'));
      
       }
     
