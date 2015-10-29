@@ -1,85 +1,44 @@
 <div class="col-lg-6 col-lg-offset-3 well">
-
     {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
-
-
     {# Les erreurs générales du formulaire. #}
-
     {{ form_errors(form) }}
 
-
     <div class="form-group">
-
         {# Génération du label. #}
-
         {{ form_label(form.courriel, "Courriel pour la réponse", {'label_attr': {'class': 'col-sm-3  col-sm-offset-3 control-label'}}) }}
-
-
         {# Affichage des erreurs pour ce champ précis. #}
-
         {{ form_errors(form.courriel) }}
 
-
         <div class="col-sm-6  col-sm-offset-3">
-
             {# Génération de l'input. #}
-
             {{ form_widget(form.courriel, {'attr': {'class': 'form-control'}}) }}
-
         </div>
 
     </div>
-
-
     {# Idem pour un autre champ. #}
-
     <div class="form-group">
-
         {{ form_label(form.objet, "Objet", {'label_attr': {'class': 'col-sm-3   col-sm-offset-3 control-label'}}) }}
-
         {{ form_errors(form.objet) }}
-
         <div class="col-sm-6  col-sm-offset-3">
-
             {{ form_widget(form.objet, {'attr': {'class': 'form-control'}}) }}
-
         </div>
-
     </div>
 
-
     {# Idem pour un autre champ. #}
-
     <div class="form-group">
-
         {{ form_label(form.message, "Message", {'label_attr': {'class': 'col-sm-3   col-sm-offset-3 control-label'}}) }}
-
         {{ form_errors(form.message) }}
-
         <div class="col-sm-6  col-sm-offset-3">
-
             {{ form_widget(form.message, {'attr': {'class': 'form-control'}}) }}
-
         </div>
-
     </div>
 
     {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
-
     {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
-
-
     {# Génération automatique des champs pas encore écrits.
-
        Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)
-
        et tous les champs cachés (type « hidden »). #}
-
     {{ form_rest(form) }}
-
-
-
     {# Fermeture de la balise <form> du formulaire HTML #}
-
     {{ form_end(form) }}
 </div>

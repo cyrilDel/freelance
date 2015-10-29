@@ -3,14 +3,14 @@
 function bigger()
 {		
 	$(".imgProfil img").animate( {
-			"width":"135%",
+			"width":"100%",
 		 	"height":"135%"
 	}, 2500);
 }
 function smaller()
 {		
 	$(".imgProfil img").animate({
-		"width":"90%",
+		"width":"70%",
 	 	"height":"90%"
 	}, 2500);
 }
