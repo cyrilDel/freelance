@@ -1,0 +1,26 @@
+{# src/RS/CoreBundle/Resources/views/Core/index.html.twig #}
+{% extends "RSCoreBundle::layout.html.twig" %}
+{%  block body  %}
+<div class="container-fluid">
+    <aside class="banniere" style="margin-top: 4%;">
+        <marquee onMouseOver="this.stop();" onMouseOut="this.start();">
+         Site web en construction... Développeur web php, symfony2 ...
+        </marquee>
+    </aside>
+ </div>
+
+<h2>Factures</h2>
+<form>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Références</th>
+                <th>Date</th>
+                <th>Prix TTC</th>
+                <th>Facture PDF</th>
+            </tr>
+        </thead>
+       
+    </table>
+</form>
+ {% endblock %}

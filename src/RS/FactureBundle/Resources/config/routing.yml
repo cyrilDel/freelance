@@ -1,3 +1,9 @@
-rs_facture_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: RSFactureBundle:Default:index }
+# Page facture
+rs_destock_facturePDF:
+    path:      /panel/factures/pdf/{id}
+    defaults: { _controller: RSFactureBundle:Facture:factures }
+
+# Page facture
+rs_destock_facture:
+    path:      /panel/factures
+    defaults: { _controller: RSFactureBundle:Facture:factures }
