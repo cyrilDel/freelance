@@ -1,16 +1,16 @@
 <div class="col-lg-6 col-lg-offset-3 well">
     {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
-    {# Les erreurs générales du formulaire. #}
+    {# Les erreurs gÃ©nÃ©rales du formulaire. #}
     {{ form_errors(form) }}
 
     <div class="form-group">
-        {# Génération du label. #}
-        {{ form_label(form.courriel, "Courriel pour la réponse", {'label_attr': {'class': 'col-sm-3  col-sm-offset-3 control-label'}}) }}
-        {# Affichage des erreurs pour ce champ précis. #}
+        {# GÃ©nÃ©ration du label. #}
+        {{ form_label(form.courriel, "Courriel pour la rÃ©ponse", {'label_attr': {'class': 'col-sm-3  col-sm-offset-3 control-label'}}) }}
+        {# Affichage des erreurs pour ce champ prÃ©cis. #}
         {{ form_errors(form.courriel) }}
 
         <div class="col-sm-6  col-sm-offset-3">
-            {# Génération de l'input. #}
+            {# GÃ©nÃ©ration de l'input. #}
             {{ form_widget(form.courriel, {'attr': {'class': 'form-control'}}) }}
         </div>
 
@@ -35,9 +35,9 @@
 
     {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
     {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
-    {# Génération automatique des champs pas encore écrits.
-       Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)
-       et tous les champs cachés (type « hidden »). #}
+    {# GÃ©nÃ©ration automatique des champs pas encore Ã©crits.
+       Dans cet exemple, ce serait le champ CSRF (gÃ©rÃ© automatiquement par Symfony !)
+       et tous les champs cachÃ©s (type Â« hidden Â»). #}
     {{ form_rest(form) }}
     {# Fermeture de la balise <form> du formulaire HTML #}
     {{ form_end(form) }}

@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
-        <meta name="description" content="Développeur web , je créer votre site web, demandez votre devis gratuitement !  ">
+        <meta name="description" content="Vous cherchez un développeur web en freelance? , je créer votre site web, demandez votre devis gratuitement !  ">
         <meta name="keywords" content="développeur web, freelance, développeur php, développeur symfony2, développeur web freelance">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +24,7 @@
         <script src="{{ asset('js/jquery.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <title>Cyril Delage Développeur Web freelance</title>
+        <meta property="og:image"         content="{{ asset('img/arobas.jpg') }}" />
     </head>
     <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -72,11 +73,11 @@
                     <li><a href="#">Cyril Delage</a></li>
                     <li><a href="#">06.38.33.11.15</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contactez moi !
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contactez moi !
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Demandez votre devis gratuit</a></li>
+                            <li><a href="#contact">Demandez votre devis gratuit</a></li>
                             <li><a href="#">Offres d'emplois</a></li>
                             {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                                 <li style="text-align: left;padding-left: 20px;;padding-bottom: 4%;">
