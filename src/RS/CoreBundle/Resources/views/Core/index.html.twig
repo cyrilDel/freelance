@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <aside class="banniere" style="margin-top: 4%;">
         <marquee onMouseOver="this.stop();" onMouseOut="this.start();">
-         Site web en construction... Développeur web php, symfony2 ...
+         Site web en construction... Développeur web freelance: php, symfony2. Demandez dés à présent un devis gratuit! 
         </marquee>
     </aside>
  </div>
@@ -14,10 +14,17 @@
         <div class="col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1">
             <img src="{{ asset('img/logodev.png') }}" class="transparent" style=" width: 300px; height: 80%; padding-left: 5%;" />
         </div>
-        <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1">
-            <h1>Vous cherchez un développeur web en freelance?</h1>
+        <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1" style=" font-family: Consolas, monospace;">
+            <h2>Vous cherchez un développeur web en freelance?</h2>
             ça tombe bien ! Je suis passionné par le web, freelance depuis peu.
-            Si mon <a href="http://cyril-delage.fr">profil</a> vous intéresse, n'hésitez pas à me <a href="#contact">contacter</a> ou regardez mes <a href="#realisations">réalisations -></a>
+            Si mon <a href="http://cyril-delage.fr">profil</a> vous intéresse, n'hésitez pas à me <a href="#contact">contacter</a> ou regarder mes <a href="#realisations">réalisations -></a>
+            <br/>
+              <div class="container">
+    <h1> Cyril Delage: Développeur Web
+      <span>&nbsp;</span>
+    </h1>
+   
+  </div> <!-- end container -->
         </div>
     </section>
  </div>
@@ -92,48 +99,48 @@
                 <div class="col-md-2 front">
                     <h4 class="text-center titreSection">Front-end</h4>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/html.png') }}" />
+                        <img src="{{ asset('img/html.png') }}" class="imgComp" />
                     </div>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/css.png') }}" />
+                        <img src="{{ asset('img/css.png') }}"  class="imgComp"/>
                     </div>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/boot.png') }}" />
+                        <img src="{{ asset('img/boot.png') }}" class="imgComp" />
                     </div>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/jquery64.png') }}" />
+                        <img src="{{ asset('img/jquery64.png') }}" class="imgComp" />
                     </div>
                 </div>
 
                 <div class="col-md-2 col-md-offset-2 back">
                     <h4 class="text-center titreSection">Back-end</h4>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/php5.png') }}" />
+                        <img src="{{ asset('img/php5.png') }}" class="imgComp" />
                     </div>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/sf2-64.png') }}" />
+                        <img src="{{ asset('img/sf2-64.png') }}" class="imgComp" />
                     </div>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/mysql.jpg') }}" />
+                        <img src="{{ asset('img/mysql.jpg') }}" class="imgComp" />
                     </div>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/doctrineorm.jpg') }}" />
+                        <img src="{{ asset('img/doctrineorm.jpg') }}" class="imgComp" />
                     </div>
                 </div>
 
                 <div class="col-md-2 col-md-offset-2 extra">
                     <h4 class="text-center titreSection">Extra</h4>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/seo.jpg') }}" />
+                        <img src="{{ asset('img/seo.jpg') }}" class="imgComp" />
                     </div>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/git.jpg') }}" />
+                        <img src="{{ asset('img/git.jpg') }}" class="imgComp" />
                     </div>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/phpstorm1.png') }}" />
+                        <img src="{{ asset('img/phpstorm1.png') }}" class="imgComp" />
                     </div>
                     <div class="col-md-3">
-                        <img src="{{ asset('img/vbnet.jpg') }}" />
+                        <img src="{{ asset('img/vbnet.jpg') }}" class="imgComp" />
                     </div>
                 </div>
             </section>
@@ -196,6 +203,14 @@
                                 </a>
                                 <h3  style="color: #333;position: relative;bottom: 15px; ">Projet  Symfony</h3>
                             </div> <!-- end lg-3-->
+                            
+                              <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                <a href="http://cyril-delage.fr" class="thumbnail">
+                                    <img src="{{ asset('img/cv.png') }}" alt="Mon blog-cv en ligne" class="img-polaroid" style="width: 100%;"/>
+                                </a>
+                                <h3  style="color: #333;position: relative;bottom: 15px; ">Mon blog-cv en ligne</h3>
+                            </div> <!-- end lg-3-->
+                            
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
                                 <a href="{{ asset('img/builderweb2.PNG') }}" class="thumbnail">
                                     <img src="{{ asset('img/builderweb2.PNG') }}" alt="builderweb editeur de code source VBNet" class="img-polaroid" style="width: 100%;" />
@@ -203,24 +218,42 @@
                                 <h3  style="color: #333;position: relative;bottom: 15px; "> BuilderWeb éditeur de texte VBNet</h3>
                             </div> <!-- end lg-3-->
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                <a href="{{ asset('img/architecte.png') }}" class="thumbnail">
+                                <a href="http://www.cyril-delage.fr/projets/OP/index.html" class="thumbnail">
                                     <img src="{{ asset('img/architecte.png') }}" alt="projet openclassrooms" class="img-polaroid" style="width: 100%;" />
                                 </a>
                                 <h3 style="color: #333; position: relative; bottom: 15px;">Projet Bootstrap </h3>
                             </div>
-
+                        </div> <!-- end div lg-12 -->
+                    </div> <!-- end div item -->       
+                    <div class="item">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <h2 class="text-center" style="margin-bottom: 2%;">Autres</h2>
+                            
                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                <a href="{{ asset('img/architecte2.png') }}" class="thumbnail">
+                                <a href="http://www.cyril-delage.fr/projets/index2.html" class="thumbnail">
                                     <img src="{{ asset('img/architecte2.png') }}" alt="projet openclassrooms" class="img-polaroid" style="width: 100%;" />
                                 </a>
                                 <h3 style="color: #333; position: relative; bottom: 15px;">Projet Bootstrap  </h3>
                             </div>
+                            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                <a href="http://www.cyril-delage.fr/interface/smarthome.html" class="thumbnail">
+                                      <img src="{{ asset('img/smarthome.png') }}" alt="smarthome" class="img-polaroid" style="width: 100%;" />
+                                  </a>   
+                                  <h3 class="desriptions"  style="color: #333; position: relative; bottom: 15px;">Smarthome</h3>
+                            
+                            </div>               
+                            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                                 
+                                    <a href="http://www.cyril-delage.fr/projets/casse_brique.php" class="thumbnail"> 
+                                        <img src="{{ asset('img/casse brique.png') }}" alt="casse brique" class="img-polaroid" style="width: 100%;" /> 
+                                    </a>
+                                <h3 class="desriptions" style="color: #333;position: relative;bottom: 15px; "> casse brique</h3>
+                            </div> <!-- end lg-3-->
                         </div> <!-- end div lg-12 -->
                     </div> <!-- end div item -->
                 </div> <!-- end carousel inner -->
-                     <a class="left carousel-control" href="#carousel" data-slide="prev"><span class="icon-prev" style="color:#2C3E50;font-size: 50px;position: absolute;top: 0px;"></span></a>
-
-                    <a class="right carousel-control" href="#carousel" data-slide="next"><span class="icon-next" style="color: #2C3E50;font-size: 50px;position: absolute;top: 0px;"></span></a>
+                <a class="left carousel-control" href="#carousel" data-slide="prev"><span class="icon-prev" style="color:#2C3E50;font-size: 50px;position: absolute;top: 0px;"></span></a>
+                <a class="right carousel-control" href="#carousel" data-slide="next"><span class="icon-next" style="color: #2C3E50;font-size: 50px;position: absolute;top: 0px;"></span></a>
             </div>
         </div>
     </section> <!-- end section row -->
@@ -255,10 +288,10 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 well">
                 <article id="contact">
                     <h2 class="text-center">Contactez moi!</h2>
-                    <h3 class="text-center"><i>Je suis a votre ecoute pour:</i></h3>
+                    <h3 class="text-center"><i>Je suis a votre écoute pour:</i></h3>
                     <ul>
                         <li><i>Un devis gratuit</i></li>
-                        <li><i>Vos offres d'emplois de developpeur web</i></li>
+                        <li><i>Vos offres d'emplois de développeur web (missions freelance, télé-travail, CDI</i></li>
                         <li><i>Une collaboration, un partenariat</i></li>
                     </ul>
                     <hr />

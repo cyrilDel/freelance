@@ -27,7 +27,7 @@ class CoreController extends Controller
             $em->persist($mailer);
             $em->flush();
             
-            // Ici le mail de validation
+            // mail de validation
             $message = \Swift_Message::newInstance()
                 ->setSubject('Nouveau message sur creer-monsite.fr')
                 ->setFrom('cdelage.dev@gmail.com')
@@ -37,7 +37,7 @@ class CoreController extends Controller
                 ->setBody( $this->renderView(
                     'RSCoreBundle:Core:mail.html.twig',
                     array(
-                        'ip' => $request->getClientIp(),
+                        'objet' =>  $form->get('objet')->getData(),
                         'courriel' => $form->get('courriel')->getData(),
                         'message' => $form->get('message')->getData()
                     )
@@ -45,15 +45,12 @@ class CoreController extends Controller
             );
 
             $this->get('mailer')->send($message);
-            
-            
 
             $request->getSession()->getFlashBag()->add('notice', 'Message envoyé avec succés!');
 
             return $this->redirect($this->generateUrl('rs_core_homepage' ));
         }
 
-        //On passe la méthode createView() du formulaire a la vue pour l'afficher
         return $this->render('RSCoreBundle:Core:index.html.twig', array(
             'form'  => $form->createView(),
 

@@ -86,7 +86,7 @@ img{
     color: #FFF;
 }
 
-/*--- éléments --*/
+/*--- Ã©lÃ©ments --*/
 address {
     position: relative;
     top: 10px;
@@ -125,7 +125,61 @@ address {
     width: 100%;
 }
 
+.imgComp{
+    width: 30px;
+}
+
 /*--media support--*/
 @media (max-width: 768px) {
 
 }
+
+/*-- steps --*/
+.cover {
+    position: absolute;
+    top: -0px;
+    left: 0px;
+    background: #FFF none repeat scroll 0% 0%;
+    height: 150px;
+    width: 675px;
+    animation: 14s steps(13, end) 0s normal none infinite running walk;
+}
+100% {
+    transform: translateX(275px);
+}
+
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+
+h1 { 
+    font-family: Consolas, monospace;
+    font-size:150%;
+    width:16.3em;
+    white-space:nowrap;
+    overflow:hidden;
+    border-right: .1em solid black;
+    
+    -webkit-animation: typing 16s steps(20, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 16s steps(20, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
+

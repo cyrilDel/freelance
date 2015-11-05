@@ -2,4 +2,10 @@ rs_panel_homepage:
     path:     /panel
     defaults: { _controller: RSPanelBundle:Panel:index }
 
+rs_panel_factureform:
+    path:     /panel/formulaire-facture
+    defaults: { _controller: RSPanelBundle:Panel:factureform }
 
+rs_panel_devisform:
+    path:     /panel/formulaire-devis
+    defaults: { _controller: RSPanelBundle:Panel:devisform }
