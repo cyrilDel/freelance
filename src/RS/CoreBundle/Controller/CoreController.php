@@ -63,19 +63,19 @@ class CoreController extends Controller
     }
     
     // liste toutes les factures des clients
-    public function facturesClientsAction()
+    public function facturesclientsAction()
     {
-        return $this->render('RSCoreBundle:Core:facturesClients.html.twig');
+        return $this->render('RSCoreBundle:Core:facturesclients.html.twig');
     }
     
     // liste tout les devis des clients
-    public function devisClientsAction()
+    public function devisclientsAction()
     {
-        return $this->render('RSCoreBundle:Core:devisClients.html.twig');
+        return $this->render('RSCoreBundle:Core:devisclients.html.twig');
     }
     
     // liste des clients
-    public function listeClientsAction()
+    public function listeclientsAction()
     {
         // AFFICHAGE DES PROFILS
         $listUsers = $this->getDoctrine()
@@ -84,7 +84,7 @@ class CoreController extends Controller
             -> getUserProfil()
              ;  
         
-        return $this->render('RSCoreBundle:Core:listeClients.html.twig', array(
+        return $this->render('RSCoreBundle:Core:listeclients.html.twig', array(
             'listUsers'  => $listUsers
         ));
     }

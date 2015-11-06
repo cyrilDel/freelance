@@ -116,6 +116,16 @@ address {
     background-color: blue;
 }
 
+.menuPanel{
+    border: 1px solid;
+    width: 100%;
+    padding: 5%;
+}
+
+.lienMenu{
+    color: #FFF;
+}
+
 a:hover{
     text-decoration:none;
 }
