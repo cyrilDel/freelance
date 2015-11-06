@@ -1,0 +1,48 @@
+{% extends "RSCoreBundle::layout.html.twig" %}
+{% block body %}
+<div class="row">
+    {% for message in app.session.flashbag.get('info') %}
+     <div class="col-lg-6 col-lg-offset-3 alert alert-success">
+         <p>Message flash : {{ message }}</p>
+    </div>
+    {% endfor %}
+</div>
+<section class="container-fluid" style="">  
+    <div class="row">
+        <div class="col-sm-2 alert" style="background-color:#20202A;height: 100%;padding: 0%;">
+            {{ render(controller("RSCoreBundle:Core:menu")) }} 
+        </div>
+        <div class="col-sm-10">
+        <p style="background-color: #BCE8F1; padding-top: 1%; padding-bottom: 1%;;margin-bottom:2%; margin-top: 8%;text-align: center;">   
+         Liste des utilisateurs 
+           </p>
+            <p style="margin-bottom: 4%;">
+                Ce panel vous permet ds vérifier la liste des personnes inscrites sur votre site.
+                <i>Biensur il faudra remplacer la liste user (fos_user) par l'entité userClient quand celle ci sera crée</i>
+                <br/>
+            </p>
+            <div class="row">
+            {% for user in listUsers %}
+      <a href="" class="btn btn-danger">
+                <i class="glyphicon glyphicon-trash"></i>
+            </a> 
+          pseudo:  <span style="font-weight: bold;">{{ user.username }} </span>, 
+          email:  <span style="font-weight: bold;">{{ user.email }} </span>
+
+              <br/>
+           <hr/>
+            {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                <a href="{{ path('rs_core_homepage') }}" class="btn btn-default">
+                    <i class="glyphicon glyphicon-chevron-left"></i>
+                    Retour 
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

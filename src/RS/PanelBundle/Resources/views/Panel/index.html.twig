@@ -1,1 +1,27 @@
-Panel d administration
+{# src/RS/PanelBundle/Resources/views/Panel/Panel.html.twig #}
+
+{% extends "RSCoreBundle::layout.html.twig" %}
+
+{% block body %}
+
+   <div class="row">
+    {% for message in app.session.flashbag.get('info') %}
+     <div class="col-lg-6 col-lg-offset-3 alert alert-success">
+    <p>Message flash : {{ message }}</p>
+    </div>
+    {% endfor %}
+    </div>
+
+
+<section class="container-fluid" style="">
+    
+    <div class="row">
+        <div class="col-sm-2 alert" style="background-color:#20202A;padding: 0%;">
+            {{ render(controller("RSCoreBundle:Core:menu")) }} 
+        </div>
+        <div class="col-sm-10">
+            
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -9,3 +9,9 @@ rs_panel_factureform:
 rs_panel_devisform:
     path:     /panel/formulaire-devis
     defaults: { _controller: RSPanelBundle:Panel:devisform }
+            
+# Page facture
+rs_panel_adminCommande:
+     path:      /panel/commandesClients
+     defaults: { _controller: RSDestockBundle:Panel:commandes }
+

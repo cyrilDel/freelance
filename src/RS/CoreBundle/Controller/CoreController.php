@@ -53,9 +53,39 @@ class CoreController extends Controller
 
         return $this->render('RSCoreBundle:Core:index.html.twig', array(
             'form'  => $form->createView(),
-
         ));
     }
-
-
+    
+    // Menu dashboard
+    public function menuAction()
+    {
+        return $this->render('RSCoreBundle:Core:menu.html.twig');      
+    }
+    
+    // liste toutes les factures des clients
+    public function facturesClientsAction()
+    {
+        return $this->render('RSCoreBundle:Core:facturesClients.html.twig');
+    }
+    
+    // liste tout les devis des clients
+    public function devisClientsAction()
+    {
+        return $this->render('RSCoreBundle:Core:devisClients.html.twig');
+    }
+    
+    // liste des clients
+    public function listeClientsAction()
+    {
+        // AFFICHAGE DES PROFILS
+        $listUsers = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('RSUserBundle:User')
+            -> getUserProfil()
+             ;  
+        
+        return $this->render('RSCoreBundle:Core:listeClients.html.twig', array(
+            'listUsers'  => $listUsers
+        ));
+    }
 }

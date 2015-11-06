@@ -112,6 +112,14 @@ address {
     border: 0.1px solid grey;
 }
 
+.menuPanel:hover{
+    background-color: blue;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
 /*--- Formulaire --*/
 #rs_panelbundle_mailer_save{
     width: 50%;

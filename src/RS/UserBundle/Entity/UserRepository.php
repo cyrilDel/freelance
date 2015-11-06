@@ -21,12 +21,20 @@ class UserRepository extends EntityRepository
     {
         // Jointure pour récupérer également les informations de chaques membres
         $query = $this->createQueryBuilder('u')
-            ->leftJoin('u.infos', 'i')
-            ->addSelect('i')
+           
             ->getQuery()
             ;
         return $query->getResult();
     }
+    
+    public function myFindAll()
+    {
+        return $this
+            ->createQueryBuilder('u')
+            ->getQuery()
+            ->getResult()
+            ;
+    }   
     
     
 }
