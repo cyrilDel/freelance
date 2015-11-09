@@ -1,7 +1,13 @@
 
 /*-- Titres  --*/
 .h2, h2 {
-    font-size: 20px;
+    color: #7E7E7E;
+font-size: 36px;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 6px;
+letter-spacing: 0.1em;
+font-weight: 300;
 }
 
 .h3, h3 {
@@ -23,6 +29,10 @@ img{
     width: 25px;
 }
 
+.well{
+    border-bottom: 40px solid #962C3D;
+}
+
 /*--- sections, articles --*/
 .retours{
     padding: 2%;
@@ -35,6 +45,7 @@ img{
     background-color: #F4F4F4;
 }
 
+/*--- div compétences services --*/
 .front{
     background-color: rgb(255, 255, 255);
     margin-left: 7%;
@@ -61,10 +72,88 @@ img{
     border-bottom: 5px solid #2E8ECE;
 }
 
+
+.front:hover{
+    background-color: #962C3D;
+    color: #FFF;
+    border: 2px solid #20202A;
+    border-bottom: 6px solid #E67E22;
+    border-radius: 10%;
+}
+
+.back:hover{
+    background-color: #962C3D;
+    color: #FFF;
+    border: 2px solid #20202A;
+    border-bottom: 6px solid #A66BBE;
+    border-radius: 10%;
+}
+
+.extra:hover{
+    background-color: #962C3D;
+    color: #FFF;
+    border: 2px solid #20202A;
+    border-bottom: 6px solid #2E8ECE;
+    border-radius: 10%;
+}
+/*--- Icones animés --*/
+.hi-icon {
+    margin-bottom: 30px;
+    color: #DBDBDB;
+    font-size: 72px;
+    box-shadow: 0px 0px 0px 4px #FFF;
+    transition: all 0.3s ease 0s;
+}
+.hi-icon:hover{
+    background-color:#A66BBE;
+}
+
 .titreSection{
     padding-bottom: 3%;
     font-weight: bold;
     color: grey;
+}
+
+/*--- Portfolio --*/
+
+em{
+	opacity: 0.7;
+
+}
+
+.work{
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.work_detail{
+	display: none;
+}
+
+.work_slideShow{
+	height: 346px;
+	overflow-y: hidden;
+}
+
+.portfolioImg{
+    border: 1px solid rgb(197, 211, 230);
+    border-radius: 7px;
+}
+
+
+.portfolioImg:hover{
+    border: 1px solid #20202A;
+    border-radius: 10px;
+}
+
+.nivoSlider{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #C5D3E6;
+    border-radius: 7px;
 }
 
 /*--- barre de navigation --*/
@@ -84,6 +173,11 @@ img{
 
 .navbar-default .navbar-nav > li > a {
     color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+   color:green;
+    
 }
 
 /*--- éléments --*/
@@ -128,6 +222,17 @@ address {
 
 a:hover{
     text-decoration:none;
+}
+.glyphicon:hover{
+    color: #962C3D;
+}
+
+strong{
+    color: #962C3D;
+}
+
+h4, .h4{
+    color: #962C3D;
 }
 
 /*--- Formulaire --*/
