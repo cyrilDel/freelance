@@ -78,14 +78,30 @@ class CoreController extends Controller
     public function listeclientsAction()
     {
         // AFFICHAGE DES PROFILS
+        $listClients = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('RSPanelBundle:Client')
+            -> getClientProfil()
+             ;  
+        
+        
+        return $this->render('RSCoreBundle:Core:listeclients.html.twig', array(
+            'listeClients' => $listClients
+        ));
+    }
+    
+     // liste des utilisateurs
+    public function listusersAction()
+    {
+        // AFFICHAGE DES PROFILS
         $listUsers = $this->getDoctrine()
             ->getManager()
             ->getRepository('RSUserBundle:User')
             -> getUserProfil()
              ;  
         
-        return $this->render('RSCoreBundle:Core:listeclients.html.twig', array(
-            'listUsers'  => $listUsers
+        return $this->render('RSCoreBundle:Core:listusers.html.twig', array(
+            'listUsers'  => $listUsers   
         ));
     }
     

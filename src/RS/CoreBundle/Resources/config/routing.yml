@@ -30,6 +30,11 @@ rs_core_listeclients:
      path:      /panel/liste-clients
      defaults: { _controller: RSCoreBundle:Core:listeclients }    
       
+# Page liste des utilisateurs du site
+rs_core_listusers:
+     path:      /panel/liste-users
+     defaults: { _controller: RSCoreBundle:Core:listusers }    
+     
 # Page mentions legales
 rs_core_mentionslegales:
      path:      /mentions-legales

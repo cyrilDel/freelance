@@ -22,18 +22,12 @@
                 <br/>
             </p>
             <div class="row">
-            {% for client in listeClients %}
-      <a href="" class="btn btn-danger" style="float: right;">
-                <i class="glyphicon glyphicon-trash"></i>
-            </a> 
-                Client:  <span style="font-weight: bold;">{{ client.name }} </span>, 
-                Status:  <span style="font-weight: bold;">{{ client.status }} </span>
-                Adresse:  <span style="font-weight: bold;">{{ client.adresse }} </span>
-                ville:  <span style="font-weight: bold;">{{ client.ville }} </span>
-                 <a href="">
-                    <i class="glyphicon glyphicon-book"></i>
-                    Facture
-                </a>
+            {% for user in listUsers %}
+                <a href="" class="btn btn-danger" style="float: right;">
+                    <i class="glyphicon glyphicon-trash"></i>
+                </a> 
+                pseudo:  <span style="font-weight: bold;">{{ user.username }} </span>, 
+                Mail:  <span style="font-weight: bold;">{{ user.email }} </span>
               <br/>
            <hr/>
             {% endfor %}

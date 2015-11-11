@@ -3,16 +3,6 @@
 {% extends "RSCoreBundle::layout.html.twig" %}
 
 {% block body %}
-
-   <div class="row">
-    {% for message in app.session.flashbag.get('info') %}
-     <div class="col-lg-6 col-lg-offset-3 alert alert-success">
-    <p>Message flash : {{ message }}</p>
-    </div>
-    {% endfor %}
-    </div>
-
-
 <section class="container-fluid" style="">
     
     <div class="row">
@@ -20,8 +10,65 @@
             {{ render(controller("RSCoreBundle:Core:menu")) }} 
         </div>
         <div class="col-sm-10">
+             {% for message in app.session.flashbag.get('info') %}
+            <div class="alert alert-success" style="margin-top:8%;">
+                <p>Message flash : {{ message }}</p>
+            </div>
+            {% endfor %}
+            <h3 class="text-center" style="margin-top:8%;">Ajouter un client</h3>
+          
+            <div class="well">
+                {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+                {# Les erreurs générales du formulaire. #}
+                {{ form_errors(form) }}
+                <div class="form-group">
+
+                    {# Génération du label. #}
+                    {{ form_label(form.name, "Nom", {'label_attr': {'class': 'class="col-sm-3  col-sm-offset-4 control-label required"'}}) }}
+                    {# Affichage des erreurs pour ce champ précis. #}
+                    {{ form_errors(form.name) }}
+                    <div class="col-sm-4 col-sm-offset-4">
+                        {# Génération de l'input. #}
+                        {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+                {# Idem pour un autre champ. #}
+                <div class="form-group">
+                    {{ form_label(form.status, "Statut juridique", {'label_attr': {'class': 'class="col-sm-3  col-sm-offset-4 control-label required"'}}) }}
+                    {{ form_errors(form.status) }}
+                    <div class="col-sm-4 col-sm-offset-4">
+                        {{ form_widget(form.status, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+                {# Idem pour un autre champ. #}
+                <div class="form-group">
+                    {{ form_label(form.adresse, "adresse", {'label_attr': {'class': 'class="col-sm-3  col-sm-offset-4 control-label required"'}}) }}
+                    {{ form_errors(form.adresse) }}
+                    <div class="col-sm-4 col-sm-offset-4">
+                        {{ form_widget(form.adresse, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+                {# Idem pour un autre champ. #}
+                <div class="form-group">
+                    {{ form_label(form.ville, "ville", {'label_attr': {'class': 'class="col-sm-3  col-sm-offset-4 control-label required"'}}) }}
+                    {{ form_errors(form.ville) }}
+                    <div class="col-sm-4 col-sm-offset-4">
+                        {{ form_widget(form.ville, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+                {# Génération du label + error + widget pour un champ #}
+                {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
+                {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+                {# Génération automatique des champs pas encore écrits.
+                Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)
+                et tous les champs cachés (type « hidden »). #}
+                {{ form_rest(form) }}
+                {# Fermeture de la balise <form> du formulaire HTML #}
+                {{ form_end(form) }}
+                </div>
             
         </div>
     </div>
 </section>
+
 {% endblock %}
