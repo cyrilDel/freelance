@@ -29,6 +29,12 @@ rs_core_devisClients:
 rs_core_listeclients:
      path:      /panel/liste-clients
      defaults: { _controller: RSCoreBundle:Core:listeclients }    
+      
+# Page mentions legales
+rs_core_mentionslegales:
+     path:      /mentions-legales
+     defaults: { _controller: RSCoreBundle:Core:mentionslegales }    
+
 
 
         

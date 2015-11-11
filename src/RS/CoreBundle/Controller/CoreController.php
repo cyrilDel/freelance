@@ -88,4 +88,9 @@ class CoreController extends Controller
             'listUsers'  => $listUsers
         ));
     }
+    
+    public function mentionslegalesAction()
+    {
+        return $this->render('RSCoreBundle:Core:mentionslegales.html.twig');
+    }
 }

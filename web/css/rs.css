@@ -176,8 +176,8 @@ em{
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-   color:green;
-    
+    color: #FFF;
+    background-color: #962C3D;
 }
 
 /*--- éléments --*/
@@ -224,7 +224,7 @@ a:hover{
     text-decoration:none;
 }
 .glyphicon:hover{
-    color: #962C3D;
+    color: #20202A;
 }
 
 strong{
