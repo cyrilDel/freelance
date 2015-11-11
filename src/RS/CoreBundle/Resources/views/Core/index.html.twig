@@ -8,6 +8,13 @@
         </marquee>
     </aside>
  </div>
+  <div class="col-sm-12">
+      {% for message in app.session.flashbag.get('notice') %}
+      <div class="alert alert-success" style="margin-top:2%;">
+          <p style="text-align:center;">{{ message }}</p>
+      </div>
+      {% endfor %}
+</div>
  <div class="container">
     <hr />
     <section class="row well presentation" style="margin-top: 3%; padding-top: 4%;">
@@ -567,6 +574,7 @@ position: relative;">
                         <li><i>Une collaboration, un partenariat</i></li>
                     </ul>
                     <hr />
+                   
                  {{ include('RSPanelBundle:Panel:formulaire.html.twig') }}
                 </article>
             </div>

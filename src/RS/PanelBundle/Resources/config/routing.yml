@@ -2,10 +2,12 @@ rs_panel_homepage:
     path:     /panel
     defaults: { _controller: RSPanelBundle:Panel:index }
 
+#page formulaire pour editer les factures
 rs_panel_factureform:
     path:     /panel/formulaire-facture
     defaults: { _controller: RSPanelBundle:Panel:factureform }
 
+#page formulaire pour editer les devis
 rs_panel_devisform:
     path:     /panel/formulaire-devis
     defaults: { _controller: RSPanelBundle:Panel:devisform }
@@ -13,5 +15,32 @@ rs_panel_devisform:
 # Page facture
 rs_panel_adminCommande:
      path:      /panel/commandesClients
-     defaults: { _controller: RSDestockBundle:Panel:commandes }
+     defaults: { _controller: RSPanelBundle:Panel:commandes }
+             
+# Page boite mail
+rs_panel_boitemail:
+     path:      /panel/boite-mail
+     defaults: { _controller: RSPanelBundle:Panel:boitemail }    
+
+#listes
+# Page factures clients
+rs_core_facturesClients:
+     path:      /panel/facturesClients
+     defaults: { _controller:  RSPanelBundle:Panel:facturesClients }
+       
+# Page devis clients
+rs_core_devisClients:
+     path:      /panel/devisClients
+     defaults: { _controller:  RSPanelBundle:Panel:devisClients }    
+      
+# Page liste des clients
+rs_core_listeclients:
+     path:      /panel/liste-clients
+     defaults: { _controller:  RSPanelBundle:Panel:listeclients }    
+      
+# Page liste des utilisateurs du site
+rs_core_listusers:
+     path:      /panel/liste-users
+     defaults: { _controller:  RSPanelBundle:Panel:listusers }    
+     
 

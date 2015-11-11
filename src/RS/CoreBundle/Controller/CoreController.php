@@ -62,49 +62,7 @@ class CoreController extends Controller
         return $this->render('RSCoreBundle:Core:menu.html.twig');      
     }
     
-    // liste toutes les factures des clients
-    public function facturesclientsAction()
-    {
-        return $this->render('RSCoreBundle:Core:facturesclients.html.twig');
-    }
-    
-    // liste tout les devis des clients
-    public function devisclientsAction()
-    {
-        return $this->render('RSCoreBundle:Core:devisclients.html.twig');
-    }
-    
-    // liste des clients
-    public function listeclientsAction()
-    {
-        // AFFICHAGE DES PROFILS
-        $listClients = $this->getDoctrine()
-            ->getManager()
-            ->getRepository('RSPanelBundle:Client')
-            -> getClientProfil()
-             ;  
-        
-        
-        return $this->render('RSCoreBundle:Core:listeclients.html.twig', array(
-            'listeClients' => $listClients
-        ));
-    }
-    
-     // liste des utilisateurs
-    public function listusersAction()
-    {
-        // AFFICHAGE DES PROFILS
-        $listUsers = $this->getDoctrine()
-            ->getManager()
-            ->getRepository('RSUserBundle:User')
-            -> getUserProfil()
-             ;  
-        
-        return $this->render('RSCoreBundle:Core:listusers.html.twig', array(
-            'listUsers'  => $listUsers   
-        ));
-    }
-    
+
     public function mentionslegalesAction()
     {
         return $this->render('RSCoreBundle:Core:mentionslegales.html.twig');

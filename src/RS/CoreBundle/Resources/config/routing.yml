@@ -15,26 +15,6 @@ rs_core_menu:
     path:      /menu
     defaults:  { _controller: RSCoreBundle:Core:menu }
        
-# Page factures clients
-rs_core_facturesClients:
-     path:      /panel/facturesClients
-     defaults: { _controller: RSCoreBundle:Core:facturesClients }
-       
-# Page devis clients
-rs_core_devisClients:
-     path:      /panel/devisClients
-     defaults: { _controller: RSCoreBundle:Core:devisClients }    
-      
-# Page liste des clients
-rs_core_listeclients:
-     path:      /panel/liste-clients
-     defaults: { _controller: RSCoreBundle:Core:listeclients }    
-      
-# Page liste des utilisateurs du site
-rs_core_listusers:
-     path:      /panel/liste-users
-     defaults: { _controller: RSCoreBundle:Core:listusers }    
-     
 # Page mentions legales
 rs_core_mentionslegales:
      path:      /mentions-legales

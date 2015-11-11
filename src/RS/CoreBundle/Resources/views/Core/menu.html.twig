@@ -2,6 +2,19 @@
     <h6 class="text-center" style="color: #FFF;padding-top: 5%;margin-top:30%;">
         PANEL D'ADMINISTRATION
     </h6>
+    
+    <div class="menuPanel">
+         <a href="{{ path('rs_core_listeclients') }}" class="lienMenu">          
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Liste clients
+        </a>
+    </div>
+    <div class="menuPanel">
+         <a href="{{ path('rs_panel_boitemail') }}" class="lienMenu">          
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Boite mail
+        </a>
+    </div>
     <div class="menuPanel">
         <a href="{{ path('rs_core_facturesClients') }}" class="lienMenu" >          
             <i class="glyphicon glyphicon-chevron-left"></i>
@@ -15,24 +28,18 @@
         </a>
     </div>
     <div class="menuPanel">
-        <a href="" class="lienMenu">          
+        <a href="{{ path('rs_panel_devisform') }}" class="lienMenu">          
             <i class="glyphicon glyphicon-chevron-left"></i>
             Formulaire devis
         </a>
     </div>
     <div class="menuPanel">
-         <a href="" class="lienMenu">          
+         <a href="{{ path('rs_panel_factureform') }}" class="lienMenu">          
             <i class="glyphicon glyphicon-chevron-left"></i>
              Formulaire factures
         </a>
     </div>
     <div class="menuPanel">
-         <a href="{{ path('rs_core_listeclients') }}" class="lienMenu">          
-            <i class="glyphicon glyphicon-chevron-left"></i>
-            Liste clients
-        </a>
-    </div>
-        <div class="menuPanel">
          <a href="{{ path('rs_core_listusers') }}" class="lienMenu">          
             <i class="glyphicon glyphicon-chevron-left"></i>
             Liste des utilisateurs du site
