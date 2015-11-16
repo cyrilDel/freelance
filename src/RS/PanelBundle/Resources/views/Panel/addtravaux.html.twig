@@ -1,4 +1,4 @@
-{# src/RS/PanelBundle/Resources/views/Panel/Panel.html.twig #}
+  {# src/RS/PanelBundle/Resources/views/Panel/Panel.html.twig #}
 
 {% extends "RSCoreBundle::layout.html.twig" %}
 
@@ -15,10 +15,13 @@
                 <p>Message flash : {{ message }}</p>
             </div>
             {% endfor %}
-            <div class="alert alert-info" style="margin-top:8%;text-align: center;">
-                <h2>ormulaire Devis </h2>
-            </div>
+             <div class="alert alert-info" style="margin-top:6%;text-align: center;">
+                <h2>Formulaire Travaux</h2> 
+             </div>
            
+
+{{ include('RSPanelBundle:formulaire:formulaireaction.html.twig') }}
+            
         </div>
     </div>
 </section>

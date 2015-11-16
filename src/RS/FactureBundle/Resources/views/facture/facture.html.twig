@@ -20,7 +20,17 @@
                 <th>Facture PDF</th>
             </tr>
         </thead>
-       
+        <tbody>
+         
+          {% for commande in commandes %}
+            <tr>
+                <td>ref : {{ commande.reference }}</td>
+                <td>{{ commande.date|date('d/m/Y') }}</td>
+                <td>{{ commande.commande.prixTTC }} €</td>
+                <td><a href="{{ path('rs_facture_facturePDF', { 'id' : commande.id }) }}" target="_blank"><i class="glyphicon glyphicon-refresh"></i></a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
     </table>
 </form>
  {% endblock %}

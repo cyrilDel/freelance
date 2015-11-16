@@ -1,0 +1,160 @@
+<?php
+
+namespace RS\PanelBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Travaux
+ *
+ * @ORM\Table()
+ * @ORM\Entity(repositoryClass="RS\PanelBundle\Entity\TravauxRepository")
+ */
+class Travaux
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="nombresheures", type="smallint")
+     */
+    private $nombresheures;
+    
+
+    /**
+     * @ORM\ManyToOne(targetEntity="RS\PanelBundle\Entity\Client")
+     */
+    private $client;
+    
+        /**
+     * @var integer
+     *
+     * @ORM\Column(name="tarifjournee", type="integer")
+     */
+    private $tarifjournee;
+    
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="tarifheure", type="integer")
+     */
+    private $tarifheure;
+    
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="action", type="string", length=255)
+     */
+    private $action;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set action
+     *
+     * @param string $action
+     * @return Travaux
+     */
+    public function setAction($action)
+    {
+        $this->action = $action;
+
+        return $this;
+    }
+
+    /**
+     * Get action
+     *
+     * @return string 
+     */
+    public function getAction()
+    {
+        return $this->action;
+    }
+
+    /**
+     * Set client
+     *
+     * @param \RS\PanelBundle\Entity\Client $client
+     * @return Travaux
+     */
+    public function setClient(\RS\PanelBundle\Entity\Client $client = null)
+    {
+        $this->client = $client;
+
+        return $this;
+    }
+
+    /**
+     * Get client
+     *
+     * @return \RS\PanelBundle\Entity\Client 
+     */
+    public function getClient()
+    {
+        return $this->client;
+    }
+
+    /**
+     * Set tarifjournee
+     *
+     * @param integer $tarifjournee
+     * @return Travaux
+     */
+    public function setTarifjournee($tarifjournee)
+    {
+        $this->tarifjournee = $tarifjournee;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifjournee
+     *
+     * @return integer 
+     */
+    public function getTarifjournee()
+    {
+        return $this->tarifjournee;
+    }
+
+    /**
+     * Set tarifheure
+     *
+     * @param integer $tarifheure
+     * @return Travaux
+     */
+    public function setTarifheure($tarifheure)
+    {
+        $this->tarifheure = $tarifheure;
+
+        return $this;
+    }
+
+    /**
+     * Get tarifheure
+     *
+     * @return integer 
+     */
+    public function getTarifheure()
+    {
+        return $this->tarifheure;
+    }
+}

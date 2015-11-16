@@ -1,0 +1,131 @@
+{# src/RS/PanelBundle/Resources/views/Panel/Panel.html.twig #}
+
+{% extends "RSCoreBundle::layout.html.twig" %}
+
+{% block body %}
+{% set totalTTC = 0 %} 
+<section class="container-fluid" style="">
+    <div class="row">
+        <div class="col-sm-2 alert" style="background-color:#20202A;padding: 0%;">
+            {{ render(controller("RSCoreBundle:Core:menu")) }} 
+        </div>
+        <div class="col-sm-10">
+             {% for message in app.session.flashbag.get('info') %}
+            <div class="alert alert-success" style="margin-top:8%;">
+                <p>Message flash : {{ message }}</p>
+            </div>
+            {% endfor %}
+             <div class="alert alert-info" style="margin-top:8%;text-align: center;padding: 1px;">
+                <h2 style="font-weight: bold;">Panier Client</h2>
+             </div>
+           
+            <div style="">
+        {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="alert alert-success">
+            {{ flashMessage }}
+        </div>
+        {% endfor %}
+               <div class="col-xs-12"> 
+                <ul>
+                    {% for travaux in toutlestravaux %}   
+                    <a href="{{ path('rs_panel_ajouter', { 'id' : travaux.id }) }}">
+                        <li style="float: left;list-style-type:none;margin: 0.5%;">
+                            <div class="label label-warning" style="padding-bottom: 3%;
+padding-top: 3%;">
+                                {{ travaux.action }}
+                               
+                            </div>
+                           
+                        </li> 
+                    </a>
+                    {% endfor %}
+                </ul>
+                </div>
+                  <div class="col-xs-12"> 
+                      <table class="table table-striped table-hover">
+                          <thead>
+                              <tr>
+                                  <th>Description</th>
+                                  <th>Nombres d'heures</th>
+                                  <th>Tarif à l'heure</th>
+                                  <th> Total TTC </th>
+                              </tr>
+                          </thead>
+
+                          <tbody  style="margin-top: 10%;">
+                              {% if listeTravaux|length == 0 %} 
+                              <tr>
+                                  <td colspan="6"><center>Aucun travaux dans votre panier</center></td>
+                              </tr>
+                              {% endif %}
+                              {% for travaux in listeTravaux %}
+                              <tr> 
+                              <form action="{{ path('rs_panel_ajouter', {'id' : travaux.id}) }}" method="get"> 
+                                  <td>{{ travaux.action }}</td> 
+                                  <td>
+                                      <select name="qte" class="span1" onChange="this.form.submit()" style="border: 1px solid grey;border-radius: 0px;padding: 1%;width: 80px;">
+                                          {% for i in 1..100 %}
+                                          <option 
+                                                  value="{{ i }}"
+                                                  {% if i == panier[travaux.id] %} 
+                                                  selected="selected"
+                                                  {% endif %}
+                                                  >
+                                              {{ i }}
+                                          </option>
+                                          {% endfor %}
+                                      </select>&nbsp;
+                                  </td>
+                                  <td> {{ travaux.tarifheure }} € </td>
+                                  <td> {{ travaux.tarifheure * panier[travaux.id] }} € </td> 
+                                  <td> 
+                              {#      <a href="{{ path('rs_destock_supprimer', {'id' : travaux.id}) }}" > #}
+                                      <i class="glyphicon glyphicon-trash" style="color: darkred;padding: 8%;"></i>
+                                      </a>
+                                  </td>
+                                  </form>
+                              </tr>
+              
+                              {% set totalTTC = totalTTC + (travaux.tarifheure * panier[travaux.id]) %} 
+                              
+                              {% endfor %} 
+                            </tbody>   
+                      </table>
+                </div>   
+                      
+                   {% if listeTravaux|length != 0 %} 
+                <div class="row" style="margin-bottom: 1%; margin-top: 5%;">
+                    <div class="col-lg-5" style="float:right;">
+                        <dl class="dl-horizontal">
+                            <dt>Total TTC :</dt>
+                            <dd> {{ totalTTC }} €</dd> 
+                        </dl>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 5%;">
+                    <div class="col-lg-8">
+                        <a  class="btn btn-info" href="{{ path('rs_panel_homepage') }}"> 
+                        Ajouter d'autres actions
+                        </a>
+                    </div>   
+                    <div class="col-lg-4">
+                    <a class="btn btn-success" href="{{ path('rs_panel_reservation') }}">
+                        Valider le panier
+                        </a>
+                    </div>
+                </div>
+                {% else %} 
+                <div class="row">
+                    <div class="col-lg-8">
+                        <a  class="btn btn-info" href="{{ path('rs_panel_homepage') }}">
+                        Ajouter d'autres actions
+                        </a>
+                    </div>
+                </div>
+             {% endif %} 
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

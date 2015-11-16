@@ -1,3 +1,6 @@
+body{
+    font-family: "Sansation","Trebuchet MS",Helvetica,Verdana,sans-serif,serif;
+}
 
 /*-- Titres  --*/
 .h2, h2 {
@@ -29,6 +32,22 @@ img{
     width: 25px;
 }
 
+.avatar{
+    margin-top: -14px;
+    width: 50px;
+}
+
+.imgWeb{
+    width: 300px;
+    height: 80%; 
+    padding-left: 5%;
+    margin-top: 15%;
+}
+
+.imGarobas{
+    height: 280px;
+}
+
 .well{
     border-bottom: 40px solid #962C3D;
 }
@@ -37,12 +56,16 @@ img{
 .retours{
     padding: 2%;
     border: 2px solid grey;
-    border-radius: 5%;
+    border-radius: 15px;
     margin-left: 2%;
 }
 
 #services{
     background-color: #F4F4F4;
+}
+
+footer{
+    background: #192730 none repeat scroll 0% 0%;
 }
 
 /*--- div compétences services --*/
@@ -62,6 +85,7 @@ img{
     padding: 1%;
     padding-top: 0px;
     border-bottom: 5px solid #A66BBE;
+    margin-bottom: 4%;
 }
 
 .extra{
@@ -70,6 +94,7 @@ img{
     padding: 1%;
     padding-top: 0px;
     border-bottom: 5px solid #2E8ECE;
+    margin-bottom: 4%;
 }
 
 
@@ -78,7 +103,7 @@ img{
     color: #FFF;
     border: 2px solid #20202A;
     border-bottom: 6px solid #E67E22;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .back:hover{
@@ -86,7 +111,7 @@ img{
     color: #FFF;
     border: 2px solid #20202A;
     border-bottom: 6px solid #A66BBE;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .extra:hover{
@@ -94,7 +119,7 @@ img{
     color: #FFF;
     border: 2px solid #20202A;
     border-bottom: 6px solid #2E8ECE;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 /*--- Icones animés --*/
 .hi-icon {
@@ -160,14 +185,14 @@ em{
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
     border-color: #E7E7E7;
-    background-color: #3D3D3D;
+    background: #192730 none repeat scroll 0% 0%;
 }
 
 .navbar-default {
-    background-color: #F8F8F8;
     border-color: #E7E7E7;
     background-color: #3D3D3D;
     box-shadow: 2px 6px 82px 1px #3D3D3D;
+    background: #192730 none repeat scroll 0% 0%;
 
 }
 
@@ -223,6 +248,7 @@ address {
 a:hover{
     text-decoration:none;
 }
+
 .glyphicon:hover{
     color: #20202A;
 }
@@ -253,8 +279,113 @@ h4, .h4{
 }
 
 /*--media support--*/
-@media (max-width: 768px) {
+/* ECRAN LARGE */
+@media (max-width: 1200px) {
+    .imGarobas{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .navbar-default .navbar-nav > li > a {
+        font-size: 10px;
+    }
+    
+}
 
+@media (max-width: 1000px) {
+    .front{
+        margin-left: 0%;
+    }
+    
+    .imgWeb{
+        width: 400px;
+        padding-left: 40%;
+        margin-top: 0%;
+    }
+}
+      
+
+/* TABLETTES */
+@media (max-width: 964px) {
+    .retours{
+       font-size: 9px;
+    }
+    
+    #presentation{
+        font-size: 10px;
+    }
+    
+    #realisations{
+        font-size: 10px;
+    }
+    
+    h2{
+        font-size: 22px;
+    }
+    
+    address {
+    position: relative;
+    top: 20px;
+    right: 40px;
+    }
+    
+    .navbar-default .navbar-nav > li > a {
+        font-size: 8px;
+    }
+    
+    .work_detail {
+    font-size: 9px;
+    }
+    
+    .front{
+        margin-left: 0%;
+    }
+
+               
+}
+
+/* SMARTPHONES */
+@media (max-width: 768px) {
+    address {
+        position: relative;
+        top: 50px;
+        right: 40px;
+        font-size: 5px;
+    }
+    
+    #presentation{
+        font-size: 5px;
+    }
+    
+    .imgProfil img {
+        border: 1px solid #5B0200;
+        border-radius: 8px;
+        box-shadow: 1px 1px 2px #3D3D3D;
+        height: 60%;
+        width: 100%;
+        margin-left: -50%;
+        position: relative;
+        top: 50px;
+    }
+    
+    .imgWeb{
+        width: 250px;
+        height: 80%;
+        padding-left: 30%;
+        margin-top: 0%;
+    }
+    
+    .front{
+        margin-left: 0%;
+    }
+
+    .work_detail {
+    font-size: 6px;
+    }
+    
+    .stagger1{
+        font-size: 15px;
+    }
 }
 
 /*-- steps --*/

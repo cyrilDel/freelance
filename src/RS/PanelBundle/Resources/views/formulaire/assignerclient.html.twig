@@ -15,10 +15,17 @@
                 <p>Message flash : {{ message }}</p>
             </div>
             {% endfor %}
-            <div class="alert alert-info" style="margin-top:8%;text-align: center;">
-                <h2>ormulaire Devis </h2>
+              <div class="alert alert-info" style="margin-top:8%;text-align: center;">
+                  <h2>Assigner un client</h2>
             </div>
-           
+            <br/>
+               <i>Ce panel vouspermet d'assigner un client a un mail reçu</i>
+            <br/>
+            <br/>
+            <div class="well">
+                {{ form(form) }}
+            </div>
+
         </div>
     </div>
 </section>

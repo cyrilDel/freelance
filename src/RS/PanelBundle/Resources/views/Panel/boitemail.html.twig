@@ -15,12 +15,35 @@
                 <p>Message flash : {{ message }}</p>
             </div>
             {% endfor %}
-            <h3 class="text-center" style="margin-top:8%;">Boite Mail</h3>
-            
+            <div class="alert alert-info" style="margin-top:8%;text-align: center;">
+                <h2>Boite Mail</h2>
+            </div>
             <br/>
            <i>Ce panel liste tout les mail reçu via le formulaire de contact</i>
-            
-            
+            <br/>
+            <br/>
+            <div>
+                <ul style="padding-left:2%;">
+                    {% for mailer in listmailer %}
+                    <li>
+                        <a href="{{ path('rs_panel_assignerclient', {'id': mailer.id}) }}">
+                            {{ mailer.courriel }} , {{ mailer.objet }} , {{ mailer.message }}
+                        </a>
+                        <a href="" class="btn btn-danger" style="float: right;">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </a> 
+                        <div style="border: 1px solid grey;float: right;height: 30px;padding: 0.5%;text-align: center;color: #20202A;width: 200px;margin-right: 5%;">
+                            {% if mailer.client is not null %}
+                            {{ mailer.client.name }}
+                            {% endif %}
+                            </div>
+                         
+                      
+                    </li>
+                    <hr/>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
     </div>
 </section>

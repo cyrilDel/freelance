@@ -1,0 +1,59 @@
+{# src/RS/PanelBundle/Resources/views/Panel/Panel.html.twig #}
+
+{% extends "RSCoreBundle::layout.html.twig" %}
+
+{% block body %}
+<section class="container-fluid" style="">
+    
+    <div class="row">
+        <div class="col-sm-2 alert" style="background-color:#20202A;padding: 0%;">
+            {{ render(controller("RSCoreBundle:Core:menu")) }} 
+        </div>
+        <div class="col-sm-10">
+             {% for message in app.session.flashbag.get('info') %}
+            <div class="alert alert-success" style="margin-top:8%;">
+                <p>Message flash : {{ message }}</p>
+            </div>
+            {% endfor %}
+             <div class="alert alert-info" style="margin-top:6%;text-align: center;">
+                <h2>Fiche Client</h2> 
+             </div>
+           
+            <div style="text-align: center">
+                 <address>
+                     <h2 style="font-size: 26px;"> {{  client.name }} </h2>
+                     {{ client.status }} :
+                     {{ client.adresse }}
+                     {{ client.ville }}
+                </address>
+            </div>
+           <hr/>
+            <div class="row">
+              <a href="{{ path('rs_panel_add', { 'id' : client.id }) }}">Formulaire action travaux</a>
+                <div class="col-lg-12">
+                 <div class="well">
+                     <br/>
+                     Infos concernant le client
+                     
+              travaux effectués
+              <br/>
+             
+            <br/>
+            a jour ? oui ou nn
+            <br/>
+            detail factures non payées , sommes dues :
+            <br/>
+            numero de tel client:
+            <br/>
+           
+            <br/>
+            mail client:
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

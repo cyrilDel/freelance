@@ -1,9 +1,9 @@
 # Page facture
-rs_destock_facturePDF:
+rs_facture_facturePDF:
     path:      /panel/factures/pdf/{id}
-    defaults: { _controller: RSFactureBundle:Facture:factures }
+    defaults: { _controller: RSFactureBundle:Facture:showFacture }
 
 # Page facture
-rs_destock_facture:
+rs_facture_facture:
     path:      /panel/factures
     defaults: { _controller: RSFactureBundle:Facture:factures }

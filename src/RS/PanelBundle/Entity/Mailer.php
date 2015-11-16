@@ -12,6 +12,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Mailer
 {
+   
+   /**
+    * @ORM\OneToOne(targetEntity="RS\PanelBundle\Entity\Client", cascade={"persist", "remove"})
+    */
+    private $client;
+    
     /**
      * @var datetime $date
      * @ORM\Column(name="date", type="datetime")
@@ -154,5 +160,28 @@ class Mailer
     public function getDate()
     {
         return $this->date;
+    }
+
+    /**
+     * Set client
+     *
+     * @param \RS\PanelBundle\Entity\Client $client
+     * @return Mailer
+     */
+    public function setClient(\RS\PanelBundle\Entity\Client $client = null)
+    {
+        $this->client = $client;
+
+        return $this;
+    }
+
+    /**
+     * Get client
+     *
+     * @return \RS\PanelBundle\Entity\Client 
+     */
+    public function getClient()
+    {
+        return $this->client;
     }
 }

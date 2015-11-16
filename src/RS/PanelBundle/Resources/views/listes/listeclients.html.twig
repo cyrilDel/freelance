@@ -13,9 +13,9 @@
             {{ render(controller("RSCoreBundle:Core:menu")) }} 
         </div>
         <div class="col-sm-10">
-        <p style="background-color: #BCE8F1; padding-top: 1%; padding-bottom: 1%;;margin-bottom:2%; margin-top: 8%;text-align: center;">   
-         Liste des clients
-           </p>
+            <div class="alert alert-info" style="margin-top:8%;text-align: center;">
+                <h2>Liste des clients</h2>
+            </div>
             <p style="margin-bottom: 4%;">
                 Ce panel vous permet ds vérifier la liste de vos clients.
                 
@@ -26,7 +26,13 @@
       <a href="" class="btn btn-danger" style="float: right;">
                 <i class="glyphicon glyphicon-trash"></i>
             </a> 
-                Client:  <span style="font-weight: bold;">{{ client.name }} </span>, 
+                <div style="padding-left:2%;">
+                Client:  
+                    <a href="{{ path('rs_panel_client', {'id' : client.id}) }}">
+                        <span style="font-weight: bold;">
+                            {{ client.name }} 
+                        </span>
+                    </a>, 
                 Status:  <span style="font-weight: bold;">{{ client.status }} </span>
                 Adresse:  <span style="font-weight: bold;">{{ client.adresse }} </span>
                 ville:  <span style="font-weight: bold;">{{ client.ville }} </span>
@@ -34,6 +40,7 @@
                     <i class="glyphicon glyphicon-book"></i>
                     Facture
                 </a>
+                </div>
               <br/>
            <hr/>
             {% endfor %}

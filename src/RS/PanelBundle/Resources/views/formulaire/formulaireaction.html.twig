@@ -1,0 +1,54 @@
+
+<div class="well" style="">
+    <div class="alert alert-success" style="text-align: center;">
+        <p>Ajouter une action à un client</p> 
+    </div>
+    
+    {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+    {# Les erreurs générales du formulaire. #}
+    {{ form_errors(form) }}
+    {# Idem pour un autre champ. #}
+    <div class="form-group">
+        {{ form_label(form.action, "action", {'label_attr': {'class': 'class="col-sm-3   control-label required"'}}) }}
+        {{ form_errors(form.action) }}
+        <div class="col-sm-12">
+            {{ form_widget(form.action, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    <hr/>
+      <i>Indiquer le taux horaire(pour le agences) ou tarif à la journée(particulier)</i>
+    {# Idem pour un autre champ. #}
+    <div class="form-group">
+        {{ form_label(form.tarifheure, "taux horaire", {'label_attr': {'class': 'class="col-sm-3   control-label required"'}}) }}
+        {{ form_errors(form.tarifheure) }}
+        <div class="col-sm-2">
+            {{ form_widget(form.tarifheure, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+    ou
+    {# Idem pour un autre champ. #}
+    <div class="form-group">
+        {{ form_label(form.tarifjournee, "tarif à la journée", {'label_attr': {'class': 'class="col-sm-3   control-label required"'}}) }}
+        {{ form_errors(form.tarifjournee) }}
+        <div class="col-sm-2">
+            {{ form_widget(form.tarifjournee, {'attr': {'class': 'form-control'}}) }}
+        </div>
+    </div>
+      {{ form_rest(form) }}
+    <form action="{{ path('rs_panel_panier', { 'id' : client.id }) }}" method="get">
+        <select name="qte">
+            {% for i in 1..100 %}
+                <option value="{{ i }}">{{ i }} </option>
+            {% endfor %}
+        </select>
+        <div> 
+            {% if panier[travaux.id] is not defined %}
+            <button  class="btn btn-primary" style="font-weight: bold;">Valider</button>
+            {% endif %}
+        </div>
+    </form>
+    {{ form_end(form) }}
+       
+  
+</div>
+        

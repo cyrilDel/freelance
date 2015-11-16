@@ -1,7 +1,7 @@
 h1 {
     position:absolute;
-    color:#0088cc;
-    font-size:50px;
+    color:#192730;
+    font-size:20px;
 }
 
 .center {
@@ -9,11 +9,12 @@ h1 {
 }
 
 .color {
-    color:#0088cc;
+    color:#192730;
 }
 
 .strong {
     font-weight:bold;
+    text-align: center;
 }
 .min {
     font-size:10px;
@@ -44,7 +45,7 @@ table#enTete {
 }
 
 table#enTete h1 {
-    color:#0088cc;
+    color:#192730;
     font-weight:bold;
     font-size:20px;
 }
@@ -57,24 +58,26 @@ table#entity {
 
 table#entity td {
     height:45px;
-    border-bottom:1px solid #0088cc;
+    border-bottom:1px solid #192730;
+    border-right:1px solid #192730;
 }
 
 table#total {
     float:right;
-    margin-left:495px;
-    border-bottom:1px solid #0088cc;
-    border-right:1px solid #0088cc;
-    border-left:1px solid #0088cc;
+    margin-left:515px;
+    border-bottom:1px solid #192730;
+    border-right:1px solid #192730;
+    border-left:1px solid #192730;
+    border-right:none;
 }
 
 table#total td {
-    height:20px;
+    height:40px;
+   
 }
 
 #footer { 
     position:absolute;
     bottom:0px;width:100%;
-    text-align:center;
-    line-height:25px;
+
 }

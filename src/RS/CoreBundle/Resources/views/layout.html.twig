@@ -68,7 +68,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="{{ asset('img/ordi.ico') }}">
+                    <img alt="Brand" src="{{ asset('img/avatar.svg') }}" class="avatar">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -85,6 +85,13 @@
                         <a href="#services">
                              <span class="glyphicon glyphicon-wrench"></span>
                                 Mes services
+                            <span class="caret"></span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#competences">
+                             <span class="glyphicon glyphicon-star-empty"></span>
+                                Mes compétences
                             <span class="caret"></span>
                         </a>
                     </li>
@@ -110,7 +117,7 @@
                             <li><a href="#contact">Demandez votre devis gratuit
                                 <i class="ion-loading-a" data-tags="mobile" data-pack="social"></i>
                                 </a></li>
-                            <li><a href="#">Offres d'emplois</a></li>
+                           
                             {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                                 <li style="text-align: left;padding-left: 20px;;padding-bottom: 4%;">
                                     Bienvenue     {{ app.user.username }}
@@ -121,6 +128,14 @@
                                     </li>
                                 </a>
                             {% else %}
+                            <li>
+                                <a href="{{ path ('fos_user_security_login') }}" style="display: inline;padding: O%;">Se connecter</a>
+                            </li>
+                            <li>
+                                <a href="{{ path ('fos_user_registration_register') }}" style="display: inline; padding: O%;">
+                                    S'inscrire
+                                </a>
+                            </li>
                             {% endif %}
                             {#seul le ROLE_SUPER_ADMIN peut voir ce lien #}
                             {% if is_granted('ROLE_ADMIN') %}
@@ -130,17 +145,6 @@
                                     </li>
                                 </a>
                             {% endif %}
-                            <li>
-                            
-                                <a href="{{ path ('fos_user_security_login') }}" style="display: inline;padding: O%;">Se connecter</a>
-                            </li>
-                         
-                            <li>
-                               
-                                <a href="{{ path ('fos_user_registration_register') }}" style="display: inline; padding: O%;">
-                                    S'inscrire
-                                </a>
-                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -151,7 +155,7 @@
     {% endblock %}
 
 
-    <footer class="container-fluid" style="background-color: #3D3D3D;">
+    <footer class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                 <a class="btn btn-primary" href="https://github.com/cyrilDel" style="background-color:#3D3D3D; border-color:#3D3D3D; ">
@@ -160,7 +164,7 @@
                 <a class="btn btn-primary" href="https://twitter.com/THE_BUILDERWEB" style="background-color:#3D3D3D; border-color:#3D3D3D; ">
                     <img class="transparent" src="{{ asset('img/twitter.png') }}" style="width: 19px; height: 19px"/ >
                 </a>
-                <a class="btn btn-primary" href="https://www.facebook.com/thebuilderweb" style="background-color:#3D3D3D; border-color:#3D3D3D;">
+                <a class="btn btn-primary" href="https://www.facebook.com/Developpeur.Web.FullStack.Freelance/" style="background-color:#3D3D3D; border-color:#3D3D3D;">
                     <img class="transparent" src="{{ asset('img/facebook.png') }}" style="width: 19px; height: 19px"/ >
                 </a>
                 <a class="btn btn-primary" href="https://www.linkedin.com/in/cyrildelage" style="background-color:#3D3D3D; border-color:#3D3D3D;">
@@ -194,13 +198,13 @@
         <div class="row">
             <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 ">
                 <span style="color: white;">Localisation actuelle: </span>
-                <a href="localisation.php" style="color: yellow;">
+                <a href="localisation.php" class="lienFooter" style="color: yellow;">
                     <abbr title="cliquer pour voir ma position">Paris</abbr>
                 </a>
             </div>  <!-- end col-lg-4-->
 
             <div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 col-xs-4 col-xs-offset-2">
-                <a href="{{ path('rs_core_mentionslegales') }}" style="color:white;">Mentions légales</a>
+                <a href="{{ path('rs_core_mentionslegales') }}" class="lienFooter" style="color:yellow;">Mentions légales</a>
             </div>
         </div>  <!-- end div row-->
     </footer>

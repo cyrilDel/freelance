@@ -24,23 +24,71 @@ rs_panel_boitemail:
 
 #listes
 # Page factures clients
-rs_core_facturesClients:
+rs_panel_facturesClients:
      path:      /panel/facturesClients
      defaults: { _controller:  RSPanelBundle:Panel:facturesClients }
        
 # Page devis clients
-rs_core_devisClients:
+rs_panel_devisClients:
      path:      /panel/devisClients
      defaults: { _controller:  RSPanelBundle:Panel:devisClients }    
       
 # Page liste des clients
-rs_core_listeclients:
+rs_panel_listeclients:
      path:      /panel/liste-clients
      defaults: { _controller:  RSPanelBundle:Panel:listeclients }    
       
 # Page liste des utilisateurs du site
-rs_core_listusers:
+rs_panel_listusers:
      path:      /panel/liste-users
      defaults: { _controller:  RSPanelBundle:Panel:listusers }    
+      
+# Page assigner un client a un mail reçu
+rs_panel_assignerclient:
+     path:      /panel/assigner-un-client/{id}
+     defaults: { _controller:  RSPanelBundle:Panel:assignerclient }     
+         
+# Page assigner un client a un mail reçu
+rs_panel_client:
+     path:      /panel/fiche-client/{id}
+     defaults: { _controller:  RSPanelBundle:Panel:client }      
+         
+# Page assigner un client a un mail reçu
+rs_panel_addaction:
+     path:      /panel/ajouter-une-action/{id}
+     defaults: { _controller:  RSPanelBundle:Panel:addaction }  
+         
+# Page Panier
+rs_panel_panier:
+     path:      /panel/panier
+     defaults: { _controller:  RSPanelBundle:Panier:panier }  
      
-
+ # Page ajouter = ajouter un article dans mon panier
+rs_panel_ajouter:
+     path:      /panel/ajouter/{id}
+     defaults: { _controller: RSPanelBundle:Panier:ajouter }
+     requirements:
+         id: \d+
+         
+ # Page formulaire action travaux
+rs_panel_add:
+     path:      /panel/add-travaux/{id}
+     defaults: { _controller: RSPanelBundle:Panel:add }
+     requirements:
+         id: \d+
+         
+# Page reservation
+rs_panel_reservation:
+     path:      /panel/reservation
+     defaults: { _controller:  RSPanelBundle:Panier:reservation }  
+         
+# Page validation
+rs_panel_validation:
+     path:      /panel/validation
+     defaults: { _controller:  RSPanelBundle:Panier:validation }  
+     
+# Page validation de commande
+rs_panel_validationCommande:
+     path:      /api/banque/{id}
+     defaults: { _controller: RSPanelBundle:Commandes:validationCommande }
+     

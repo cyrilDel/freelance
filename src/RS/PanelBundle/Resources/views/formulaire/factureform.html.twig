@@ -15,15 +15,24 @@
                 <p>Message flash : {{ message }}</p>
             </div>
             {% endfor %}
-    <h2>Formulaire factures</h2>
-            <div class="col-sm-10">
-             {% for message in app.session.flashbag.get('info') %}
-            <div class="alert alert-success" style="margin-top:8%;">
-                <p>Message flash : {{ message }}</p>
-            </div>
-            {% endfor %}
-    </div>
-    </div>
+           <div class="alert alert-info" style="margin-top:8%;text-align: center;">  
+               <h2>Formulaire factures</h2>
+          </div>  
+          <div>
+              nom du client
+              <br/>
+              formulaire:
+              <br/>
+              travaux effectués
+              <br/>
+              tarif a l heure ou tarif a la journée
+              <br/>
+              nombre d heures effectués:
+              <br/>
+              Total:
+              
+          </div>
+        </div>
     </div>
 </section>
 

@@ -1,0 +1,49 @@
+{# src/RS/PanelBundle/Resources/views/Panel/Panel.html.twig #}
+
+{% extends "RSCoreBundle::layout.html.twig" %}
+
+{% block body %}
+{% set totalTTC = 0 %} 
+<section class="container-fluid" style="">
+    <div class="row">
+        <div class="col-sm-2 alert" style="background-color:#20202A;padding: 0%;">
+            {{ render(controller("RSCoreBundle:Core:menu")) }} 
+        </div>
+        <div class="col-sm-10">
+             {% for message in app.session.flashbag.get('info') %}
+            <div class="alert alert-success" style="margin-top:8%;">
+                <p>Message flash : {{ message }}</p>
+            </div>
+            {% endfor %}
+             <div class="alert alert-info" style="margin-top:8%;text-align: center;padding: 1px;">
+                <h2 style="font-weight: bold;">valider le client</h2>
+              </div>    
+                
+            <div class="well">
+                <ul style="margin-bottom: 15%;">
+                    <form action="{{ path('rs_panel_validation') }}" method="POST">
+                     {% for client in listClients %}
+                       
+                    
+
+                            <li class="label label-success" style="float:left;margin-left: 10%;margin-bottom: 2%;"> 
+                                <label class="radio">
+                                        <input type="radio" name="livraison" value="{{ client.id }}" 
+                                               {% if loop.index0 == 0 %}checked="checked"{% endif %}>
+                                          {{ client.name }}
+                                </label> 
+                           </li>
+                          
+                         
+                       
+                  
+                        {% endfor %}
+                        <button class="btn btn-primary" style="float:right;margin-top: 5%;">choisir le client</button>
+                    </form>
+                </ul>
+            </div>
+         </div>
+    </div>
+</section>
+
+{% endblock %}
