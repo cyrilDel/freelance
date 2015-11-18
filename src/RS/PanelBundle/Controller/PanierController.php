@@ -117,8 +117,7 @@ class PanierController extends Controller{
         
         $session->set('adresse', $adresse);
         return $this->redirect($this->generateUrl ('rs_panel_validation'));
-         var_dump($adresse);
-        die();
+        
     }
 
     // Méthode pour valider le panier

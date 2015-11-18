@@ -148,9 +148,6 @@ class PanelController extends Controller
             ->getRepository('RSPanelBundle:Client')
             ->find($id)
             ;
-        
-         $travaux = new Travaux();
-        
         if (null === $client) {
         throw new NotFoundHttpException("Ce client n° ".$id." n'existe pas.");
         }
@@ -160,24 +157,21 @@ class PanelController extends Controller
         else
             $panier = false;
         
-         $travaux = new Travaux();
-        
-         // FORMULAIRE TRAVAUX
-        $form = $this->get('form.factory')->create(new TravauxType(), $travaux);
+        // FORMULAIRE CLIENT
+        // On créer le FormBuilder avec le service form factory
+        $form = $this->get('form.factory')->create(new ClientType(), $client);
 
         if ($form->handleRequest($request)->isValid()) {
-            $travaux->setClient($client);
             $em = $this->getDoctrine()->getManager();
             $em->persist($client);
-            $em->persist($travaux);
             $em->flush();
             
-            $request->getSession()->getFlashBag()->add('info', 'Travaux ajouté avec succés!');
+            $request->getSession()->getFlashBag()->add('info', 'Infos du client modifiés avec succés!');
             
             return $this->redirect($this->generateUrl('rs_panel_client',array(
                 'id'       => $id,
                 'client'   => $client,
-                'travaux'  => $travaux
+              
             ) ));
         }
            
@@ -186,7 +180,7 @@ class PanelController extends Controller
             'id'       => $id,
             'client'   => $client,
             'panier'   => $panier,
-            'travaux'  => $travaux   
+       
         ));
     }
     

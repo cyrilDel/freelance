@@ -37,9 +37,25 @@
                         {{ form_widget(form.ville, {'attr': {'class': 'form-control'}}) }}
                     </div>
                 </div>
+                {# Idem pour un autre champ. #}
+                <div class="form-group">
+                    {{ form_label(form.telephone, "telephone", {'label_attr': {'class': 'class="col-sm-3  col-sm-offset-4 control-label required"'}}) }}
+                    {{ form_errors(form.telephone) }}
+                    <div class="col-sm-4 col-sm-offset-4">
+                        {{ form_widget(form.telephone, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+                {# Idem pour un autre champ. #}
+                <div class="form-group">
+                    {{ form_label(form.mail, "mail", {'label_attr': {'class': 'class="col-sm-3  col-sm-offset-4 control-label required"'}}) }}
+                    {{ form_errors(form.mail) }}
+                    <div class="col-sm-4 col-sm-offset-4">
+                        {{ form_widget(form.mail, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
                 {# Génération du label + error + widget pour un champ #}
                 {# Pour le bouton, pas de label ni d'erreur, on affiche juste le widget #}
-                {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+                {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary' }}) }}
                 {# Génération automatique des champs pas encore écrits.
                 Dans cet exemple, ce serait le champ CSRF (géré automatiquement par Symfony !)
                 et tous les champs cachés (type « hidden »). #}

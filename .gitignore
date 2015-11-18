@@ -11,3 +11,12 @@
 /bin/
 /composer.phar
 /app/config/parameters.yml.dist
+composer.lock
+/web/images/
+/web/.htaccess
+app/check.php
+app/SymfonyRequirements.php
+bin/doctrine
+bin/doctrine.php
+.idea/
+node_modules/
