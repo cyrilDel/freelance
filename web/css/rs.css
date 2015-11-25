@@ -75,8 +75,9 @@ footer{
     padding-left: 33px;
     padding: 1%;
     padding-top: 0px;
-    border-bottom: 5px solid #E67E22;
+    border-bottom: 12px solid #E67E22;
     margin-bottom: 4%;
+    box-shadow: 1px 1px 1px grey;
 }
 
 .back{
@@ -84,8 +85,9 @@ footer{
     padding-left: 33px;
     padding: 1%;
     padding-top: 0px;
-    border-bottom: 5px solid #A66BBE;
+    border-bottom: 12px solid #A66BBE;
     margin-bottom: 4%;
+    box-shadow: 1px 1px 1px grey;
 }
 
 .extra{
@@ -93,8 +95,9 @@ footer{
     padding-left: 33px;
     padding: 1%;
     padding-top: 0px;
-    border-bottom: 5px solid #2E8ECE;
+    border-bottom: 12px solid #2E8ECE;
     margin-bottom: 4%;
+    box-shadow: 1px 1px 1px grey;
 }
 
 
@@ -102,24 +105,27 @@ footer{
     background-color: #962C3D;
     color: #FFF;
     border: 2px solid #20202A;
-    border-bottom: 6px solid #E67E22;
+    border-bottom: 12px solid #E67E22;
     border-radius: 10px;
+    box-shadow: 6px 6px 6px rgb(0, 0, 0);
 }
 
 .back:hover{
     background-color: #962C3D;
     color: #FFF;
     border: 2px solid #20202A;
-    border-bottom: 6px solid #A66BBE;
+    border-bottom: 12px solid #A66BBE;
     border-radius: 10px;
+    box-shadow: 6px 6px 6px rgb(0, 0, 0);
 }
 
 .extra:hover{
     background-color: #962C3D;
     color: #FFF;
     border: 2px solid #20202A;
-    border-bottom: 6px solid #2E8ECE;
+    border-bottom: 12px solid #2E8ECE;
     border-radius: 10px;
+    box-shadow: 6px 6px 6px rgb(0, 0, 0);
 }
 /*--- Icones animés --*/
 .hi-icon {
@@ -262,7 +268,7 @@ h4, .h4{
 }
 
 /*--- Formulaire --*/
-#rs_panelbundle_mailer_save{
+#rs_panelbundle_mailer_Envoyer{
     width: 50%;
     margin-left: 25%;
 }

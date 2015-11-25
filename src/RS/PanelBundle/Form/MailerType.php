@@ -18,7 +18,7 @@ class MailerType extends AbstractType
             ->add('courriel',    'text')
             ->add('objet',       'text')
             ->add('message', 'textarea')
-            ->add('save', 'submit')
+            ->add('Envoyer', 'submit')
         ;
     }
     

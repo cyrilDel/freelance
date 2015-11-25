@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <aside class="banniere" style="margin-top: 4%;">
         <marquee onMouseOver="this.stop();" onMouseOut="this.start();">
-         Site web en construction... Développeur web freelance: php, symfony2. Demandez dés à présent un devis gratuit! 
+          Développeur web freelance: Demandez dés à présent un devis gratuit!
         </marquee>
     </aside>
  </div>
@@ -16,7 +16,7 @@
       {% endfor %}
 </div>
  <div class="container">
-    <hr />
+    <hr style="box-shadow: 6px 6px 16px black;"/>
     <section class="row well presentation" style="margin-top: 3%; padding-top: 4%;">
         <div class="col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1">
             <img src="{{ asset('img/logodev.png') }}" class="imgWeb" />
@@ -35,7 +35,7 @@
     </section>
  </div>
  <div class="container">
- <hr />
+ <hr style="box-shadow: 6px 6px 16px black;" />
  </div>
  <div class="container-fluid">
     <div class="row" id="presentation">
@@ -78,6 +78,8 @@
                     <br/>
                     N° SIRET : 814 224 358 00014
                     <br/>
+                    SIREN : 814 224 358 
+                     <br/>
                     <i class="glyphicon glyphicon-phone"></i>
                     06 38 33 11 15
                     <br/>
@@ -91,7 +93,7 @@
     </div> {# fin div row presentation #}
 </div> {# fin div container fluid #}
 <div class="container">
-    <hr/>
+    <hr />
 </div>
 <div class="container-fluid">
      <div id="services" class="row services" style="background: #F0F0F0 none repeat scroll 0% 0%;border-bottom: 40px solid #962C3D;">
@@ -532,14 +534,29 @@
 position: relative;">
             
         </div>
-        <div style="position: absolute;font-size: 17px;letter-spacing: 1px;line-height: 25px;margin-bottom: 30px;padding: 30px 40px 0px;word-spacing: 4px;font-style: italic;color: #FFF;left: 40%;">
-            <h4 style="color: #FFF;">Le code... Une passion avant tout!</h4>
-            <hr style="margin-bottom: 2px;"/>
-            <hr style="margin-top: 2px;"/>
+        <div style="position: absolute;font-size: 17px;letter-spacing: 1px;line-height: 25px;margin-bottom: 30px;padding: 30px 40px 0px;word-spacing: 4px;font-style: italic;color: #FFF;width: 100%;">
+            <h4 style="color: #FFF;text-align:center;">Le code... Une passion avant tout!</h4>
+            <hr style="margin-bottom: 2px;padding: 0px 40px;position: relative;left: 25%;margin-right: 50%;"/>
+            <hr style="margin-top: 2px;padding: 0px 40px;position: relative;left: 25%;margin-right: 50%;"/>
+             <div class="col-xs-4">
+                 <span>
+                        pack LowCost
+                 </span>
+            </div>  
+            <div class="col-xs-4">
+                 <span>
+                        pack Classic
+                 </span>
+            </div>  
+             <div class="col-xs-4">
+                 <span>
+                        pack Optimal
+                 </span>
+            </div>  
         </div>
-       
     </div>
 </div>
+
 <div class="container-fluid">
     <div class="row" style="">
         <hr style="margin-left: 10%;margin-right: 10%;"/>
@@ -564,7 +581,7 @@ position: relative;">
     </div>
     <div class="container-fluid">
         <div class="row" >
-            <hr style="margin-left: 10%;margin-right: 10%;"/>
+            <hr style="margin-left: 10%;margin-right: 10%; box-shadow: 6px 6px 16px black;"/>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="margin-bottom: 0px;border-bottom: 20px solid #962C3D;">
                 <article id="contact">
                     <h2 class="text-center">Demandez votre devis gratuit !</h2>

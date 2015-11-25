@@ -19,7 +19,7 @@ class ClientType extends AbstractType
             ->add('status', 'text')
             ->add('adresse', 'text')
             ->add('ville', 'text', array('required' => false))
-            ->add('telephone', 'number', array('required' => false)) 
+            ->add('telephone', 'text', array('required' => false)) 
             ->add('mail', 'email')
             ->add('save', 'submit')
         ;

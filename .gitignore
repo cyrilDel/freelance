@@ -12,7 +12,7 @@
 /composer.phar
 /app/config/parameters.yml.dist
 composer.lock
-/web/images/
+/web/img/
 /web/.htaccess
 app/check.php
 app/SymfonyRequirements.php
