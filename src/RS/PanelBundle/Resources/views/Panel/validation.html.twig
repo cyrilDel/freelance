@@ -59,6 +59,14 @@
                         Valider cette facture
                     </a>
                 </div>
+                <br/>
+                {# modif POST pour if POST = devis #}
+                <form  action="{{ path('rs_panel_devisValidationCommande', { 'id' : commande.id }) }}" 
+method="POST" class="form-horizontal" role="form" style="margin-top: 2%; margin-right: 1.5%;">
+                    <button class="btn btn-warning" style="float:right;">
+                        Editer un devis
+                    </button>
+                </form>
             </div>
         </div>
         <div class="row" style="margin-bottom: 1%;">

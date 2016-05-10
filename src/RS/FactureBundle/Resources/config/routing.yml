@@ -7,3 +7,18 @@ rs_facture_facturePDF:
 rs_facture_facture:
     path:      /panel/factures
     defaults: { _controller: RSFactureBundle:Facture:factures }
+    
+# Page facture
+rs_facture_devisPDF:
+    path:      /panel/devis/pdf/{id}
+    defaults: { _controller: RSFactureBundle:Facture:showDevis }
+    
+    # Page devis
+rs_facture_devis:
+    path:      /panel/devis
+    defaults: { _controller: RSFactureBundle:Facture:devis }
+    
+# Page Pack premium
+rs_core_packPremium:
+     path:      /panel/packPremium
+     defaults: { _controller: RSFactureBundle:Facture:packPremium }    

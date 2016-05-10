@@ -75,6 +75,24 @@ class PanierController extends Controller{
         return $this->redirect($this->generateUrl('rs_panel_panier'));
     }
     
+    // methode pour ajouter un article au panier
+    public function supprimerAction($id)
+    {
+        //die('ici');
+        $session = $this->getRequest()->getSession();
+        $panier = $session->get('panier');
+        
+        if (array_key_exists($id, $panier))
+          {
+            unset($panier[$id]);
+            $session->set('panier', $panier);
+            $this->get('session')->getFlashBag()->add('success', 'Article supprimé avec succès');
+          }
+        return $this->redirect($this->generateUrl('rs_panel_panier'));
+    }
+    
+    
+    
     public function reservationAction(request $request)
     {
         $session = $this->getRequest()->getSession();

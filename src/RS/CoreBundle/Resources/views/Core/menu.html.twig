@@ -1,4 +1,4 @@
-<nav>
+<nav style="height: 800px;">
     <h6 class="text-center" style="color: #FFF;padding-top: 5%;margin-top:30%;">
         PANEL D'ADMINISTRATION
     </h6>
@@ -22,21 +22,15 @@
         </a>
     </div>
     <div class="menuPanel">
-        <a href=""  class="lienMenu" >          
+        <a href="{{ path('rs_facture_devis') }}"  class="lienMenu" >          
             <i class="glyphicon glyphicon-chevron-left"></i>
             Les devis clients
         </a>
     </div>
     <div class="menuPanel">
-        <a href="{{ path('rs_panel_devisform') }}" class="lienMenu">          
+        <a href="{{ path('rs_panel_panier') }}" class="lienMenu">          
             <i class="glyphicon glyphicon-chevron-left"></i>
-            Formulaire devis
-        </a>
-    </div>
-    <div class="menuPanel">
-         <a href="{{ path('rs_panel_factureform') }}" class="lienMenu">          
-            <i class="glyphicon glyphicon-chevron-left"></i>
-             Formulaire factures
+            Panier
         </a>
     </div>
     <div class="menuPanel">

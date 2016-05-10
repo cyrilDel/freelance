@@ -67,4 +67,7 @@ class CoreController extends Controller
     {
         return $this->render('RSCoreBundle:Core:mentionslegales.html.twig');
     }
+    
+    
+
 }

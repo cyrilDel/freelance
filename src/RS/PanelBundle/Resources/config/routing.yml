@@ -70,6 +70,11 @@ rs_panel_ajouter:
      requirements:
          id: \d+
          
+# Page supprimer = supprimer un article dans mon panier
+rs_panel_supprimer:
+     path:      /supprimer/{id}
+     defaults: { _controller: RSPanelBundle:Panier:supprimer }
+         
  # Page formulaire action travaux
 rs_panel_add:
      path:      /panel/add-travaux/{id}
@@ -91,4 +96,9 @@ rs_panel_validation:
 rs_panel_validationCommande:
      path:      /api/banque/{id}
      defaults: { _controller: RSPanelBundle:Commandes:validationCommande }
+     
+# Page validation de commande
+rs_panel_devisValidationCommande:
+     path:      /api/banque/{id}
+     defaults: { _controller: RSPanelBundle:Commandes:devisValidationCommande }
      

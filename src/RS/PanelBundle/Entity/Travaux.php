@@ -13,6 +13,22 @@ use Doctrine\ORM\Mapping as ORM;
 class Travaux
 {
     /**
+     * @var boolean
+     *
+     * @ORM\Column(name="packpremium", type="boolean")
+     */
+    private $packpremium = true;
+
+    
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="datedelivraison", type="datetime")
+     */
+    private $datedelivraison;
+
+
+    /**
      * @var integer
      *
      * @ORM\Column(name="nombresheures", type="smallint")
@@ -54,6 +70,12 @@ class Travaux
      * @ORM\Column(name="action", type="string", length=255)
      */
     private $action;
+    
+    public function __construct()
+    {
+        $this->datedelivraison = new \DateTime();
+    }
+
 
 
     /**
@@ -179,5 +201,51 @@ class Travaux
     public function getNombresheures()
     {
         return $this->nombresheures;
+    }
+
+    /**
+     * Set datedelivraison
+     *
+     * @param \DateTime $datedelivraison
+     * @return Travaux
+     */
+    public function setDatedelivraison($datedelivraison)
+    {
+        $this->datedelivraison = $datedelivraison;
+
+        return $this;
+    }
+
+    /**
+     * Get datedelivraison
+     *
+     * @return \DateTime 
+     */
+    public function getDatedelivraison()
+    {
+        return $this->datedelivraison;
+    }
+
+    /**
+     * Set packpremium
+     *
+     * @param boolean $packpremium
+     * @return Travaux
+     */
+    public function setPackpremium($packpremium)
+    {
+        $this->packpremium = $packpremium;
+
+        return $this;
+    }
+
+    /**
+     * Get packpremium
+     *
+     * @return boolean 
+     */
+    public function getPackpremium()
+    {
+        return $this->packpremium;
     }
 }

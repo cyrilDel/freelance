@@ -28,24 +28,17 @@
         <script src="{{ asset('script/modernizr.custom.js') }}"></script>
         <script src="{{ asset('js/jquery.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-        <title>Cyril Delage Développeur Web freelance</title>
+        <title>
+            {% block title %}
+            Cyril Delage Développeur Web freelance
+            {% endblock %}
+        </title>
         <meta property="og:image" content="{{ asset('img/arobas.jpg') }}" />
+        <link rel="shortcut icon" href="{{ asset('favicon.png') }}" />
     </head>
     <body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <div id="fb-root"></div>
-        <div id="fb-root"></div>
-        <script>
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4&appId=954214054600726";
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-            (document, 'script', 'facebook-jssdk'));
-        </script>
         <script>
           (function() {
             var script   = document.createElement('script');
@@ -82,17 +75,28 @@
                         </a>
                     </li>
                     <li class="dropdown">
-                        <a href="#services">
+                        <a href=""  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                              <span class="glyphicon glyphicon-wrench"></span>
                                 Mes services
                             <span class="caret"></span>
                         </a>
+                         <ul class="dropdown-menu">
+                             <li>
+                                <a href="#pack">
+                                    Votre site web clef en main
+                                </a>
+                             </li>
+                              <li>
+                                  <a href="#services">
+                                      Mes Services
+                                  </a>
+                             </li>
+                        </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#competences">
                              <span class="glyphicon glyphicon-star-empty"></span>
-                                Mes compétences
-                            <span class="caret"></span>
+                            Mes compétences
                         </a>
                     </li>
                     <li><a href="#realisations">
@@ -114,25 +118,25 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#contact">Demandez votre devis gratuit
-                                <i class="ion-loading-a" data-tags="mobile" data-pack="social"></i>
-                                </a></li>
-                           
-                            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                                <li style="text-align: left;padding-left: 20px;;padding-bottom: 4%;">
+                            <li><a href="#contact">
+                                Demandez votre devis gratuit
+                               </a>
+                            </li>
+                           {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                                <li class="li-menu-header">
                                     Bienvenue     {{ app.user.username }}
                                 </li>
                                 <a href="{{ path ('fos_user_security_logout') }}" >
-                                    <li style="text-align: left;padding-left: 20px;;padding-bottom: 4%;" class="dropdown">
+                                    <li class="li-menu-header">
                                         Déconnexion
                                     </li>
                                 </a>
                             {% else %}
                             <li>
-                                <a href="{{ path ('fos_user_security_login') }}" style="display: inline;padding: O%;">Se connecter</a>
+                                <a href="{{ path ('fos_user_security_login') }}" class="lien-log">Se connecter</a>
                             </li>
                             <li>
-                                <a href="{{ path ('fos_user_registration_register') }}" style="display: inline; padding: O%;">
+                                <a href="{{ path ('fos_user_registration_register') }}" class="lien-log">
                                     S'inscrire
                                 </a>
                             </li>
@@ -140,7 +144,7 @@
                             {#seul le ROLE_SUPER_ADMIN peut voir ce lien #}
                             {% if is_granted('ROLE_ADMIN') %}
                                 <a href="{{ path('rs_panel_homepage') }}">
-                                    <li style="text-align: left;padding-left: 20px;;padding-bottom: 4%;" class="dropdown">
+                                    <li class="li-menu-header">
                                         Panel d'administration
                                     </li>
                                 </a>
@@ -150,43 +154,45 @@
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
-    </nav>
+    </nav> 
     {% block body %}
+         
     {% endblock %}
-
-
     <footer class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                <a class="btn btn-primary" href="https://github.com/cyrilDel" style="background-color:#3D3D3D; border-color:#3D3D3D; ">
-                    <img class="transparent" src="{{ asset('img/github.png') }}" style="width: 19px; height: 19px"/ >
+                <a class="btn btn-primary icones-reseaux-sociaux" href="https://github.com/cyrilDel">
+                    {# ici on va utiliser un sprite maj 8-5-16 #}
+                    <img class="transparent img-icones-reseaux-sociaux" src="{{ asset('img/github.png') }}" />
                 </a>
-                <a class="btn btn-primary" href="https://twitter.com/THE_BUILDERWEB" style="background-color:#3D3D3D; border-color:#3D3D3D; ">
-                    <img class="transparent" src="{{ asset('img/twitter.png') }}" style="width: 19px; height: 19px"/ >
+                <a class="btn btn-primary icones-reseaux-sociaux" href="https://twitter.com/THE_BUILDERWEB">
+                    <img class="transparent img-icones-reseaux-sociaux" src="{{ asset('img/twitter.png') }}" />
                 </a>
-                <a class="btn btn-primary" href="https://www.facebook.com/Developpeur.Web.FullStack.Freelance/" style="background-color:#3D3D3D; border-color:#3D3D3D;">
-                    <img class="transparent" src="{{ asset('img/facebook.png') }}" style="width: 19px; height: 19px"/ >
+                <a class="btn btn-primary icones-reseaux-sociaux" href="https://www.facebook.com/Developpeur.Web.FullStack.Freelance/">
+                    <img class="transparent img-icones-reseaux-sociaux" src="{{ asset('img/facebook.png') }}" />
                 </a>
-                <a class="btn btn-primary" href="https://www.linkedin.com/in/cyrildelage" style="background-color:#3D3D3D; border-color:#3D3D3D;">
-                    <img class="transparent" src="{{ asset('img/linkedin.png') }}" style="width: 19px; height: 19px"/ >
+                <a class="btn btn-primary icones-reseaux-sociaux" href="https://www.linkedin.com/in/cyrildelage">
+                    <img class="transparent img-icones-reseaux-sociaux" src="{{ asset('img/linkedin.png') }}" />
                 </a>
-                <a class="btn btn-primary" href="http://www.viadeo.com/fr/profile/cyril.delage4" style="background-color:#3D3D3D; border-color:#3D3D3D;">
-                    <img class="transparent" src="{{ asset('img/viadeo.png') }}" style="width: 19px; height: 19px"  / >
+                <a class="btn btn-primary icones-reseaux-sociaux" href="http://www.viadeo.com/fr/profile/cyril.delage4">
+                    <img class="transparent img-icones-reseaux-sociaux" src="{{ asset('img/viadeo.png') }}" />
                 </a>
-                <a data-toggle="modal" href="#infos" class="btn btn-primary" style="background-color:#3D3D3D; border-color:#3D3D3D;">
-                    <i class="glyphicon glyphicon-phone " style="font-size: 1.7em; color:greenyellow;" ></i>
+                <a data-toggle="modal" href="#infos" class="btn btn-primary icones-reseaux-sociaux">
+                    <i class="glyphicon glyphicon-phone glyphicon-tel" ></i>
                 </a>
                 <div class="modal" id="infos">
                     <div class="modal-dialog modal-sm">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title" style="color:black; font-size: 16px; font-weight: bold;">Me joindre par téléphone :</h4>
+                                <h4 class="modal-title modal-h4">
+                                    Me joindre par téléphone :
+                                </h4>
                             </div>
-                            <div class="modal-body" style="color:black; font-size: 16px; font-weight: bold;">
+                            <div class="modal-body body-modal">
                                 06.38.33.11.15
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-primary" data-dismiss="modal" style="padding-left: 0px; width: 25%;">
+                                <button class="btn btn-primary btn-modal" data-dismiss="modal">
                                     Fermer
                                 </button>
                             </div>
@@ -196,19 +202,17 @@
             </div> <!-- end col-md-11-->
         </div>  <!-- end row-->
         <div class="row">
-            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 ">
-                <span style="color: white;">Localisation actuelle: </span>
-                <a href="localisation.php" class="lienFooter" style="color: yellow;">
+            <div class="col-xs-6">
+                <span>Localisation actuelle: </span>
+                <a href="localisation.php" class="lienFooter">
                     <abbr title="cliquer pour voir ma position">Paris</abbr>
                 </a>
             </div>  <!-- end col-lg-4-->
-
             <div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 col-xs-4 col-xs-offset-2">
-                <a href="{{ path('rs_core_mentionslegales') }}" class="lienFooter" style="color:yellow;">Mentions légales</a>
+                <a href="{{ path('rs_core_mentionslegales') }}" class="lienFooter">Mentions légales</a>
             </div>
         </div>  <!-- end div row-->
     </footer>
-
         {% block javascripts %}
             <script>
                 var oBlink = null;
@@ -223,6 +227,11 @@
                 }
                 var timer=setInterval( cligno, 800);
             </script>
+            <script>
+                $('address').on('click', function(){
+                         alert('Appelez moi au  06 38 33 11 15 ')
+                         });
+            </script>
 <script src="{{ asset('scripts/portfolio.js') }}"></script>
 <script src="{{ asset('scripts/jquery.nivo.slider.pack.js') }}"></script>
 <script src="{{ asset('scripts/jquery.bxslider.min.js') }}"></script>
@@ -231,8 +240,6 @@
 <script src="{{ asset('scripts/carousel.js') }}"></script>
 <script src="{{ asset('scripts/openWindows.js') }}"></script>
 <script src="{{ asset('scripts/photo.js') }}"></script>
-
-{# Ajoutez ces lignes JavaScript si vous comptez vous servir des fonctionnalités du bootstrap Twitter #}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         {% endblock %}

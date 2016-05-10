@@ -19,6 +19,8 @@ class TravauxType extends AbstractType
             ->add('tarifheure', 'integer', array('required' => false))
             ->add('tarifjournee', 'integer', array('required' => false))
             ->add('nombresheures', 'number', array('required' => false))
+            ->add('datedelivraison', 'date', array('required' => false))
+            ->add('packpremium', 'checkbox', array('required' => false))
         ;
     }
     

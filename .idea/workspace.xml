@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbb29ded-013f-4d9b-b85e-7a787c1a0a95" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Desktop\wamp\www\baseSymfony3\web\img\comp-wordpress.png" afterPath="" />
+      <change type="MOVED" beforePath="C:\Desktop\wamp\www\baseSymfony3\src\RS\FactureBundle\Services\getFacture.php" afterPath="$PROJECT_DIR$/src/RS/FactureBundle/Services/GetFacture.php" />
+      <change type="MOVED" beforePath="C:\Desktop\wamp\www\baseSymfony3\web\img\moncv.PNG" afterPath="$PROJECT_DIR$/web/img/moncv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/Capture.PNG" afterPath="$PROJECT_DIR$/web/img/Capture.PNG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/G1.PNG" afterPath="$PROJECT_DIR$/web/img/G1.PNG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/PanelBundle/Controller/CommandesController.php" afterPath="$PROJECT_DIR$/src/RS/PanelBundle/Controller/CommandesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/CoreBundle/Controller/CoreController.php" afterPath="$PROJECT_DIR$/src/RS/CoreBundle/Controller/CoreController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/FactureBundle/Controller/FactureController.php" afterPath="$PROJECT_DIR$/src/RS/FactureBundle/Controller/FactureController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/PanelBundle/Controller/PanierController.php" afterPath="$PROJECT_DIR$/src/RS/PanelBundle/Controller/PanierController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/PanelBundle/Entity/Travaux.php" afterPath="$PROJECT_DIR$/src/RS/PanelBundle/Entity/Travaux.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/PanelBundle/Form/TravauxType.php" afterPath="$PROJECT_DIR$/src/RS/PanelBundle/Form/TravauxType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/client.html.twig" afterPath="$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/client.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/formulaire/formulaireaction.html.twig" afterPath="$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/formulaire/formulaireaction.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/index.html.twig" afterPath="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/menu.html.twig" afterPath="$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/menu.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/panier/panier.html.twig" afterPath="$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/panier/panier.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/CoreBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/RS/CoreBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/FactureBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/RS/FactureBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/PanelBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/RS/PanelBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/rs.css" afterPath="$PROJECT_DIR$/web/css/rs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/validation.html.twig" afterPath="$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/validation.html.twig" />
     </list>
     <ignored path="baseSymfony3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,32 +72,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="factureform.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/factureform.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="devisform.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/devisform.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3813084">
-              <caret line="12" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="39" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding>
+                <marker date="1451916133378" expanded="true" signature="0:97" placeholder="rs_panel_homepage:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,8 +88,11 @@
         <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Controller/PanelController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-              <folding />
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding>
+                <marker date="1447733020014" expanded="true" signature="7244:7252" placeholder="{...}" />
+                <marker date="1447733020014" expanded="true" signature="7244:7254" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,26 +107,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inscriptionUserEmail.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/inscriptionUserEmail.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/Core/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="18" />
               <folding>
-                <marker date="1447072299920" expanded="true" signature="31958:31970" placeholder="..." />
-                <marker date="1447072299920" expanded="true" signature="31958:31976" placeholder="..." />
-                <marker date="1447072299920" expanded="true" signature="31958:31991" placeholder="..." />
-                <marker date="1447072299920" expanded="true" signature="31958:32002" placeholder="..." />
+                <marker date="1460574169818" expanded="true" signature="47281:47293" placeholder="..." />
+                <marker date="1460574169818" expanded="true" signature="47281:47299" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -131,10 +124,10 @@
         <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
               <folding>
-                <marker date="1447072522858" expanded="true" signature="1058:1090" placeholder="{% block stylesheets ...%}" />
-                <marker date="1447072522858" expanded="true" signature="13179:13287" placeholder="{% block javascripts ...%}" />
+                <marker date="1451733372998" expanded="true" signature="1058:1090" placeholder="{% block stylesheets ...%}" />
+                <marker date="1451733372998" expanded="true" signature="13917:14025" placeholder="{% block javascripts ...%}" />
               </folding>
             </state>
           </provider>
@@ -697,7 +690,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23141123" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11119516" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -706,6 +698,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1012,13 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/emailInscription.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1027,21 +1013,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/inscriptionUserEmail.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RS/CoreBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding>
-            <marker date="1447072522858" expanded="true" signature="1058:1090" placeholder="{% block stylesheets ...%}" />
-            <marker date="1447072522858" expanded="true" signature="13179:13287" placeholder="{% block javascripts ...%}" />
+            <marker date="1451733372998" expanded="true" signature="1058:1090" placeholder="{% block stylesheets ...%}" />
+            <marker date="1451733372998" expanded="true" signature="13917:14025" placeholder="{% block javascripts ...%}" />
           </folding>
         </state>
       </provider>
@@ -1074,43 +1052,30 @@
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="18" />
           <folding>
-            <marker date="1447072299920" expanded="true" signature="31958:31970" placeholder="..." />
-            <marker date="1447072299920" expanded="true" signature="31958:31976" placeholder="..." />
-            <marker date="1447072299920" expanded="true" signature="31958:31991" placeholder="..." />
-            <marker date="1447072299920" expanded="true" signature="31958:32002" placeholder="..." />
+            <marker date="1460574169818" expanded="true" signature="47281:47293" placeholder="..." />
+            <marker date="1460574169818" expanded="true" signature="47281:47299" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/factureform.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Resources/views/Panel/devisform.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Controller/PanelController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <marker date="1447733020014" expanded="true" signature="7244:7252" placeholder="{...}" />
+            <marker date="1447733020014" expanded="true" signature="7244:7254" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RS/PanelBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3813084">
-          <caret line="12" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="39" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <marker date="1451916133378" expanded="true" signature="0:97" placeholder="rs_panel_homepage:" />
+          </folding>
         </state>
       </provider>
     </entry>

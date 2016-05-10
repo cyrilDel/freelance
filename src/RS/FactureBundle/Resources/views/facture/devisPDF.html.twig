@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>DEVIS</title>
+        <link href="./css/facture.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Cyril Delage Développeur web Freelance</h1>
+        <br/>
+        
+        <table id="enTete">
+            <tr>
+                <td colspan="1"></td>
+                <td colspan="1"><h1>devis</h1></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td width="80">Page</td>
+                <td width="100">Date</td>
+                <td width="120">Ref</td>
+            </tr>
+            <tr>
+                <td class="color">[[page_nb]]</td>
+                <td class="color"> {{ devis.date|date('d-m-Y') }} </td>
+                <td class="color"> {{ devis.reference }} </td>
+            </tr>
+        </table>
+        
+        <ul id="coordonnes">
+               <img src="img/arobas.jpg" style="width:20%; margin-left: 55px"/>
+                  <li> {{ devis.commande.livraison.nom }} </li> 
+                 <li>{{ devis.commande.livraison.adresse}} </li> 
+                <li>{{ devis.commande.livraison.ville }} </li> 
+        </ul>
+        <table id="entity" class="table table-striped table-hover">
+            <tr>
+                <td width="380">Désignation</td>
+                <td width="120">Nombres d'heures</td>
+                <td width="120">Taux horaire</td>
+                <td width="125">Montant TTC</td>
+            </tr>
+                {% for travaux in devis.commande.travaux %}
+                <tr>
+                    <td class="color">{{ travaux.reference }}</td>
+                    <td class="color">{{ travaux.nombresheures }}</td>
+                    <td class="color">{{ travaux.tarifheure }}</td>
+                    <td class="color">{{ travaux.prixTTC * travaux.nombresheures }} € </td>
+      
+                </tr>
+                {% endfor %}
+        </table>
+        <table id="total">
+            <tr>
+                <td width="130">Somme à payer :</td>
+                <td width="130" class="color"> {{ devis.commande.prixTTC }}  €</td>
+            </tr>
+        </table>
+       <div>
+           {% for travaux in devis.commande.travaux %} 
+           <h4 style="text-align: right;">
+               date de livraison prévue le : <strong>{{ travaux.datedelivraison|date('d-m-Y') }}</strong> 
+           </h4>
+           {% endfor %}
+        </div>
+        <div id="footer">
+             <hr/>
+            <div style="text-align:center;line-height:25px;">
+             <span class="strong">Cyril Delage</span> 
+            <br/>
+              <span class="strong">Développeur Web</span> 
+            <br />
+              <span class="strong"> 06 . 38 . 33 11 . 15</span> 
+                <br/>
+               <span class="">  SIREN :	814 224 358</span>
+                <span class=""> SIRET :	814 224 358 00014</span>
+
+                <span class=""> Code APE / NAF 	6201Z / Programmation informatique</span>
+            <br/>
+            </div>
+             <br/>
+                  <span style="font-size: 10px;text-align: left;"><i>Loi 83-629 du 12/07/83, art8:"L'autorisation administrative ne confère aucun caractère officiel à l'entreprise ou aux personnes qui en bénéficient. Elle n'engage en aucune manière la responsabilité des pouvoirs publics."</i></span> 
+                <br/>
+                 <span  style="font-size: 10px;text-align: left;"><i>Pénalités de retard au taux de 10% annuel</i></span> 
+                <br/>
+                 <span  style="font-size: 10px;text-align: left;"><i>En cas de retard de paiement, seront exigibles, conformément à l'article L441-6 du code du commerce, une indémnité calculée sur la base de trois fois le taux de l'intérêt légal en vigueur ainsi qu'une indémnité forfaitaire pour frais de recouvrement de 40 euros.</i></span> 
+          
+        </div>
+    </body>
+</html>

@@ -36,7 +36,8 @@ class CommandesController extends Controller{
             $commande['travaux'][$travaux->getId()] = array('reference'     => $travaux->getAction(),
                                                             'tarifheure'    => $travaux->getTarifheure(),
                                                             'nombresheures' => $panier[$travaux->getId()],
-                                                            'prixTTC'       => round($travaux->getTarifheure())
+                                                            'prixTTC'       => round($travaux->getTarifheure()),
+                                                            'datedelivraison' => $travaux->getDatedelivraison()
                                                               );
             
         }  
@@ -104,5 +105,26 @@ class CommandesController extends Controller{
               
         $this->get('session')->getFlashBag()->add('success','Votre commande est validée avec succès');
         return $this->redirect($this->generateUrl('rs_facture_facture'));
+    }   
+    
+    public function devisValidationCommandeAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $commande = $em->getRepository('RSPanelBundle:Commandes')->find($id);
+        
+        if (!$commande || $commande->getValider() == 1)
+            throw $this->createNotFoundException('La commande n\'existe pas');
+        
+        $commande->setValider(1);
+        $commande->setReference(1);  //Service
+        $em->flush();   
+        
+        $session = $this->getRequest()->getSession();
+        $session->remove('adresse');
+        $session->remove('panier');
+        $session->remove('commande');
+              
+        $this->get('session')->getFlashBag()->add('success','Votre commande est validée avec succès');
+        return $this->redirect($this->generateUrl('rs_facture_devis'));
     }   
 }

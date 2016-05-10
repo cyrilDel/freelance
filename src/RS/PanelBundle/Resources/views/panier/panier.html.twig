@@ -29,15 +29,20 @@
                 <ul>
                     {% for travaux in toutlestravaux %}   
                     <a href="{{ path('rs_panel_ajouter', { 'id' : travaux.id }) }}">
-                        <li style="float: left;list-style-type:none;margin: 0.5%;">
+                        <li style="float: left;list-style-type:none;margin-top: 1.5%;margin-bottom: 1.5%;margin-right: 0.5%;margin-left: 0.5%;">
                             <div class="label label-warning" style="padding-bottom: 3%;
-padding-top: 3%;">
+padding-top: 3%; width: 500px;">
+                             
                                 {{ travaux.action }}
-                               
+                              {#   {% if travaux.action|length > 100 %}  #}  
+                                
+                             {#    {% endif %}#} 
                             </div>
                            
                         </li> 
+                       
                     </a>
+                  
                     {% endfor %}
                 </ul>
                 </div>
@@ -79,7 +84,7 @@ padding-top: 3%;">
                                   <td> {{ travaux.tarifheure }} € </td>
                                   <td> {{ travaux.tarifheure * panier[travaux.id] }} € </td> 
                                   <td> 
-                              {#      <a href="{{ path('rs_destock_supprimer', {'id' : travaux.id}) }}" > #}
+                                   <a href="{{ path('rs_panel_supprimer', {'id' : travaux.id}) }}" > 
                                       <i class="glyphicon glyphicon-trash" style="color: darkred;padding: 8%;"></i>
                                       </a>
                                   </td>

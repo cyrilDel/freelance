@@ -10,6 +10,10 @@ services:
 
     setNewFacture:
         class: RS\FactureBundle\Services\GetFacture
-        arguments: [@service_container]       
+        arguments: [@service_container]     
+        
+    setNewDevis:
+        class: RS\FactureBundle\Services\GetDevis
+        arguments: [@service_container]    
 
 

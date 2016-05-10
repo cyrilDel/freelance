@@ -2,74 +2,128 @@
 {% extends "RSCoreBundle::layout.html.twig" %}
 {%  block body  %}
 <div class="container-fluid">
-    <aside class="banniere" style="margin-top: 4%;">
+    <aside class="banniere">
         <marquee onMouseOver="this.stop();" onMouseOut="this.start();">
-          Développeur web freelance: Demandez dés à présent un devis gratuit!
+            <span class="span-banniere">
+                Nouveauté
+            </span>
+            : Site web clé en main: votre blog d'entreprise à partir de   
+            <span class="span-banniere">
+                500 euros
+            </span>
+            . Bientôt disponible: grille tarifaire avec  
+            <span class="span-banniere">
+                3 formules
+            </span> 
+            pour votre  
+            <span class="span-banniere">
+                site web clé en main
+            </span>
+            ! Demandez dés à présent un  
+            <span class="span-banniere">
+                devis gratuit!
+            </span>  
         </marquee>
     </aside>
  </div>
   <div class="col-sm-12">
       {% for message in app.session.flashbag.get('notice') %}
-      <div class="alert alert-success" style="margin-top:2%;">
-          <p style="text-align:center;">{{ message }}</p>
+      <div class="alert alert-success alert-mail">
+          <p class="p-alert-mail">
+              {{ message }}
+          </p>
       </div>
       {% endfor %}
 </div>
  <div class="container">
-    <hr style="box-shadow: 6px 6px 16px black;"/>
-    <section class="row well presentation" style="margin-top: 3%; padding-top: 4%;">
-        <div class="col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1">
-            <img src="{{ asset('img/logodev.png') }}" class="imgWeb" />
-        </div>
-        <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1" style=" font-family: Consolas, monospace;">
-            <h2>Vous cherchez un développeur web en freelance?</h2>
-            ça tombe bien ! Je suis passionné par le web, freelance depuis peu.
-            Si mon <a href="http://cyril-delage.fr">profil</a> vous intéresse, n'hésitez pas à me <a href="#contact">contacter</a> ou regarder mes <a href="#realisations">réalisations -></a>
-            <br/>
-            <div class="container">
-                <h1> Cyril Delage: Développeur Web
-                    <span>&nbsp;</span>
-                </h1>
-            </div> <!-- end container -->
-        </div>
-    </section>
- </div>
+     <div class="row">
+            <section class="col-md-10 col-md-offset-1 well presentation">
+                <div class="col-lg-3 col-md-3">
+                    <img src="{{ asset('img/logodev.png') }}" class="imgWeb" />
+                </div>
+                <div class="col-md-5 col-md-offset-2 maPresentation">
+                    <h2 class="h2-section">
+                        Vous cherchez un développeur web en freelance?
+                    </h2>
+                    ça tombe bien ! Je suis passionné par le web!
+                    Si mon 
+                    <a href="http://cyril-delage.fr">
+                        profil
+                    </a>
+                    vous intéresse, n'hésitez pas à me 
+                    <a href="#contact">
+                        contacter
+                    </a> ou regarder mes 
+                    <a href="#realisations">
+                        réalisations ->
+                    </a>
+                    <br/>
+                    <div class="contain">
+                        <h1> Cyril Delage: Développeur Web
+                            <span>&nbsp;</span>
+                        </h1>
+                    </div> <!-- end container --> 
+                </div>
+         </section>
+     </div>
+ </div> 
  <div class="container">
- <hr style="box-shadow: 6px 6px 16px black;" />
+ <hr class="hr" />
  </div>
  <div class="container-fluid">
     <div class="row" id="presentation">
         <div class="col-xs-10">
-            <article style="padding-left: 5%; padding-right: 5%;margin-right: 25%;">
+            <article class="article-presentation">
                 <h2> En savoir plus sur moi... </h2>
-                <hr style="margin-bottom: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
-                <hr style="margin-top: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
-                    <p>
+                <hr class="dble-hr-top" />
+                <hr class="dble-hr-bottom" />
+                <p>
                     Vous êtes un particulier, une entreprise, un artisan, une association, un commerçant...
                     <br/>
-                    Vous désirez créer un <strong>site web</strong> , (indispensable de nos jours en termes de communication) .
+                    Vous désirez créer un 
+                    <strong>site web</strong> 
+                    , (indispensable de nos jours en termes de communication) .
                     <br/>
-                    <strong>Programmeur</strong>  depuis 2009, et spécialisé dans le <strong>développement web</strong>  depuis un peu moin de 2 ans, je saurai répondre à vos attentes:
+                    <strong>Programmeur</strong>  
+                    depuis 2009, et spécialisé dans le 
+                    <strong>développement web</strong>  
+                    depuis plus de 2 ans, je saurai répondre à vos attentes:
                     (site marchand, boutique e-commerce, site vitrine , forum , blog perso, ou campagne de pub),
                     d'après un cahier des charges établi selon vos critères  et vos besoins .
                     <br/>
-                    Mes connaissances en <strong>référencement</strong>  et <strong>développement web</strong>  vous permettront de faire aboutir vos projets en termes de <strong>communication web</strong> .
-                        <br/>
-                        J'assure également  la maintenance les mises a jour, et les refontes de votre site.
-                        <br/> Demandez votre devis <strong> GRATUIT </strong> , en remplissant ce
-                        <a href="#contact">formulaire</a>.
+                    Mes connaissances en 
+                    <strong>référencement</strong>  
+                    et 
+                    <strong>développement web</strong>  
+                    vous permettront de faire aboutir vos projets en termes de 
+                    <strong>communication web</strong> .
+                    <br/>
+                    Expert en Symfony2, Wordpress & Drupal, je vous propose des sites clef en main, avec un accés administrateur facile d'accés.
+                    <br/>
+                    Si besoin, une formation adaptée pour gérer vous même votre site web .
+                    <br/>
+                    J'assure également  la maintenance les mises a jour, et les refontes de votre site.
+                    <br/> 
+                    Demandez votre devis 
+                    <strong> GRATUIT </strong> 
+                    , en remplissant ce
+                    <a href="#contact">
+                        formulaire
+                    </a>.
                     <br/>
                     <br/>
-                    </p>
+                </p>
             </article>
         </div>
         <div class="col-xs-2 " id="profil" >
-        <div class="imgProfil">
-                <abbr title=" Cliquez sur l'image pour agrandir" style="cursor:help;">
-                    <img src="{{ asset('img/ma_photo_de_profil2.jpg') }}" alt="ma photo de profil"  class="imgProfil thumbnail photo" style="cursor:pointer;" />
+            {#    
+            <div class="imgProfil">
+              <abbr title=" Cliquez sur l'image pour agrandir" style="cursor:help;">
+                    <img src="" alt=""  class="imgProfil thumbnail photo" style="cursor:pointer;" />
                 </abbr>
             </div>
-            <div>
+            #}
+            <div class="adresse">
                 <address>
                     <i class="glyphicon glyphicon-user"></i>
                     Cyril Delage,
@@ -87,24 +141,22 @@
                     cdelage.dev@gmail.com
                 </address>
             </div>
-            
-        </div> {# fin div imgProfil #}
-        
+         </div> {# fin div imgProfil #}
     </div> {# fin div row presentation #}
 </div> {# fin div container fluid #}
 <div class="container">
     <hr />
 </div>
 <div class="container-fluid">
-     <div id="services" class="row services" style="background: #F0F0F0 none repeat scroll 0% 0%;border-bottom: 40px solid #962C3D;">
-        <hr style="margin-left: 10%;margin-right: 10%;"/>
+     <div id="services" class="row services">
+        <hr class="separation" />
         <h2> Mes services </h2>
-        <hr style="margin-bottom: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
-        <hr style="margin-top: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
+        <hr class="hr-top" />
+        <hr class="hr-bottom" />
         <div class="col-md-3 text-center hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a" data-animation="flipInY">
             <span class="hi-icon hi-icon-screen"></span>
             <h4>Full stack</h4>
-            <p><i>Du simple site vitrine aux applications web.</i></p>
+            <p><i>Du simple site vitrine aux applications web, créations sur mesure.</i></p>
         </div>
                             
         <div class="col-md-3 text-center hi-icon-wrap hi-icon-effect-8 hi-icon-effect-1a" data-animation="flipInY">
@@ -124,20 +176,107 @@
             <h4>Maintenance</h4>
             <p><i>Suivi régulier, je m'adapte aux besoins du client.</i></p>
         </div>
-                            
+             
     </div> <!-- End Services  -->
-    <div class="row" id="competences" style="">
-        <hr style="margin-left: 10%;margin-right: 10%;"/>
+    
+    <div class="row">
+          <div class="col-md-12 background-img-code-source"></div>
+     </div>
+    <div class="row article-process">
+             <hr class="separation" />
+             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <h2 class="text-center"> 
+                        processus de création 
+                 </h2>
+                 <hr class="hr-top" />
+                 <hr class="hr-bottom" />
+                 <ul>
+                    <li class="col-xs-12 list-process"> 
+                         Prise de contact  &nbsp
+                     </li>
+                     <div class="col-xs-2 col-xs-offset-6 div-process">
+                         <img src="{{ asset('img/bubble.png') }}" class="img-bubble" title="bubble" alt="bubble" />
+                     </div>
+                      
+                     <li class="col-xs-12 list-process">
+                         Briefing projet   &nbsp
+                     </li>
+                     <div class="col-xs-2 col-xs-offset-6 div-process">
+                         <img src="{{ asset('img/bubble.png') }}" class="img-bubble" title="bubble" alt="bubble" />
+                     </div>
+                     
+                     <li class="col-xs-12 list-process">
+                         Élaboration de votre cahier des charges  &nbsp
+                     </li>
+                     <div class="col-xs-2 col-xs-offset-6 div-process">
+                         <img src="{{ asset('img/bubble.png') }}" class="img-bubble" title="bubble" alt="bubble" />
+                     </div>
+                 </ul>
+                 <ul>
+                     <li class="col-xs-12 list-process">
+                         Devis   &nbsp
+                     </li>
+                      <div class="col-xs-2 col-xs-offset-6 div-process">
+                         <img src="{{ asset('img/bubble.png') }}" class="img-bubble" title="bubble" alt="bubble" />
+                     </div>
+                     
+                     <li class="col-xs-12 list-process">
+                         Si devis accepté, acompte de 30 %   &nbsp
+                     </li>
+                     <div class="col-xs-2 col-xs-offset-6 div-process">
+                         <img src="{{ asset('img/bubble.png') }}" class="img-bubble" title="bubble" alt="bubble" />
+                     </div>
+                     
+                     <li class="col-xs-12 list-process"> 
+                         création, développement   &nbsp
+                     </li>
+                      <div class="col-xs-2 col-xs-offset-6 div-process">
+                         <img src="{{ asset('img/bubble.png') }}" class="img-bubble" title="bubble" alt="bubble" />
+                     </div>
+                     <li class="col-xs-12 list-process">
+                         Première ébauche   &nbsp
+                     </li>
+                      <div class="col-xs-2 col-xs-offset-6 div-process">
+                         <img src="{{ asset('img/bubble.png') }}" class="img-bubble" title="bubble" alt="bubble" />
+                     </div>
+                     <li class="col-xs-12 list-process">
+                         Modification et validation   &nbsp
+                     </li>
+                 </ul>
+                 <ul>
+                     <div class="col-xs-2 col-xs-offset-6 div-process">
+                         <img src="{{ asset('img/bubble.png') }}" class="img-bubble" title="bubble" alt="bubble" />
+                     </div>
+                     <li class="col-xs-12 list-process">
+                         Facturation  &nbsp
+                     </li>
+                     <div class="col-xs-2 col-xs-offset-6 div-process">
+                         <img src="{{ asset('img/bubble.png') }}" class="img-bubble" title="bubble" alt="bubble" />
+                     </div>
+                     <li class="col-xs-12 list-process">
+                         Paiement / Développement de votre projet (envoi de vos fichiers, mise en ligne ect) et livraison de votre projet
+                     </li>
+                 </ul>
+        </div>
+    </div>
+     <div class="row" id="competences">
+        <hr class="separation" />
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 class="text-center">Mes compétences</h2>
-            <hr style="margin-bottom: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
-            <hr style="margin-top: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
+            <h2 class="text-center">
+                Mes compétences
+            </h2>
+            <hr class="hr-top" />
+            <hr class="hr-bottom" />
             <h3 class="text-center">
-                <i>intégration HTML5 et CSS3, audits et maintenance, spécialisé dans le développement objet Symfony2.</i>
+                <i>
+                    intégration HTML5 et CSS3, audits et maintenance, spécialisé dans le développement objet Symfony2.
+                </i>
             </h3>
-            <section class="row well" style="margin-top: 4%;">
+            <section class="row well mes-competences">
                 <div class="col-md-2 front">
-                    <h4 class="text-center titreSection">Front-end</h4>
+                    <h4 class="text-center titreSection">
+                        Front-end
+                    </h4>
                     <div class="col-xs-3">
                         <img src="{{ asset('img/html.png') }}" class="imgComp" />
                     </div>
@@ -145,17 +284,15 @@
                         <img src="{{ asset('img/css.png') }}"  class="imgComp"/>
                     </div>
                     <div class="col-xs-3">
-                        <img src="{{ asset('img/boot.png') }}" class="imgComp" />
+                        <img src="{{ asset('img/boot.png') }}" class="imgComp img-boot" />
                     </div>
                     <div class="col-xs-3">
                         <img src="{{ asset('img/jquery64.png') }}" class="imgComp" />
-                       
                     </div>
-                    <div class="">
-                  <p style="margin-top: 60px;">Créations sur mesure et intégrations HTML/CSS. Gabarit à partir de maquettes et interfaces interactive en Javascript ... </p>
+                    <p class="txt-competences">
+                        Créations sur mesure et intégrations HTML/CSS. Gabarit à partir de maquettes et interfaces interactive en Javascript ... 
+                    </p>
                 </div>
-                </div>
-
                 <div class="col-md-2 col-md-offset-2 back">
                     <h4 class="text-center titreSection">Back-end</h4>
                     <div class="col-xs-3">
@@ -168,12 +305,11 @@
                         <img src="{{ asset('img/mysql.jpg') }}" class="imgComp" />
                     </div>
                     <div class="col-xs-3">
-                        <img src="{{ asset('img/doctrineorm.jpg') }}" class="imgComp" />
-                         
-                    </div>
-                     <div class="">
-                 <p style="margin-top: 60px;">Réalisations de tout types de sites web: boutique e-commerce, blog, catalogue de produits et services, applications web... </p>
-                </div>
+                        <img src="{{ asset('img/word.png') }}" class="imgComp" />
+                     </div>
+                    <p class="txt-competences">
+                        Réalisations de tout types de sites web: boutique e-commerce, site vitrine, catalogue de produits et services, applications web... 
+                    </p>
                 </div>
                 
 
@@ -190,103 +326,161 @@
                     </div>
                     <div class="col-xs-3">
                         <img src="{{ asset('img/jira.png') }}" class="imgComp" />
-                         
                     </div>
-                    <div class="">
-                        <p style="margin-top: 60px;">Conseils, maintenance, suivi régulier et référencement, je sais m'adapter aux besoins des clients pour mener a bien leurs projets </p>
-                    </div>
-                </div>
+                    <p class="txt-competences">
+                        Conseils, maintenance, suivi régulier et référencement, je sais m'adapter aux besoins des clients pour mener a bien leurs projets 
+                    </p>
+                 </div>
             </section>
         </div>
     </div>
 </div>
-<div class="container">
-    <hr/>
+<div class="row">
+          <div class="col-md-12 background-img-code-source"></div>
 </div>
  <div class="container" id="realisations">
-     <div class="row" style="">
-          <h2>Mon portfolio </h2>
-         <hr style="margin-bottom: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
-         <hr style="margin-top: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
-         <article class="col-xs-3 work" id="realisation-1-1">
-             <a href="http://speed-destock-41.com">
-                 <img class="portfolioImg" src="{{ asset('img/accueilsd.png') }}" alt="" style="width: 100%;height: auto:"/>
+     <div class="row">
+         <h2>
+             Mon portfolio 
+         </h2>
+         <hr class="hr-top"/>
+         <hr class="hr-bottom"/>
+         <div class="row">
+             <article class="col-xs-3 work" id="realisation-1-1">
+                 <a href="http://speed-destock-41.com">
+                     <img class="portfolioImg" src="{{ asset('img/lef4.png') }}" alt="louer en france" title="louer en france" />
+                 </a>
+                 <br/>
+                 <strong>
+                     Louer en France
+                 </strong>
+                 <em>
+                    Symfony
+                 </em>
+                 <div class="work_detail">
+                     <hr/>
+                     <div class="row">
+                         <div class="col-xs-8">
+                             <div class="work_slideshow stagger4">
+                                 <img src="{{ asset('img/lef1.png') }}" class="img-portfolio"  alt="louer en france" title="louer en france" />
+                                 <img src="{{ asset('img/lef2.png') }}" class="img-portfolio"  alt="louer en france" title="louer en france" />
+                                 <img src="{{ asset('img/lef3.png') }}" class="img-portfolio"  alt="louer en france" title="louer en france" />
+                             </div>
+                         </div> 
+                         <div class="col-xs-4">
+                             <h2 class="stagger1">
+                                 Louer en France
+                             </h2>
+                             <p class="stagger2">
+                                <em>Symfony</em>
+                             </p>
+                             <p class="stagger3" >
+                                 <i><a href="http://http://louer-en-france.com/">Louer en France</a> est une plateforme d'annonces de locations de vacances. Depuis 2004, Louer-en-France.com permet aux loueurs de maisons et d'appartement de vacances d’annoncer gratuitement, leurs locations.
+Cette plateforme accueille des dizaines de milliers d’annonces et permet de comparer la meilleure offre partout dans le monde.</i>
+                                 <br/>
+                                 <strong>Maintenance, mises à jour et suivi régulier</strong>
+                             </p>
+                         </div>
+                     </div>
+                     <hr/>
+                 </div>
+             </article>
+             <article class="col-xs-3 work" id="realisation-1-2">
+                 <img class="portfolioImg" src="{{ asset('img/accueilsd.png') }}" alt="Speed Destock 41" title="Speed Destock 41" />
+                 <br/>
+                 <strong>Speed Destock 41</strong>
+                 <em>Symfony</em>
+                 <div class="work_detail">
+                     <hr/>
+                     <div class="row">
+                         <div class="col-xs-8">
+                             <div class="work_slideshow stagger4">
+                                 <img src="{{ asset('img/speeddestock.png') }}" class="img-portfolio" alt="Speed Destock 41" title="Speed Destock 41" />
+                                 <img src="{{ asset('img/paniersd.png') }}" class="img-portfolio" alt="Speed Destock 41" title="Speed Destock 41" />
+                                 <img src="{{ asset('img/panelsd.png') }}" class="img-portfolio" alt="Speed Destock 41" title="Speed Destock 41" />
+                             </div>
+                         </div> 
+                         <div class="col-xs-4">
+                             <h2 class="stagger1">
+                                 Speed Destock 41
+                             </h2>
+                             <p class="stagger2">
+                                 <em>Symfony</em>
+                             </p>
+                             <p class="stagger3">
+                                 Boutique e-commerce développée en freelance pour l'entreprise 
+                                 <a href="http://speed-destock-41.com">Speed-Destock-41</a>.Entreprise de destockage. Site réalisé en "From Scratch", uniquement avec Symfony2.
+                             </p>
+                         </div>
+                     </div>
+                     <hr/>
+                 </div>
+             </article>
+             <article class="col-xs-3 work" id="realisation-1-3">
+             <a href="">
+                 <img class="portfolioImg" src="{{ asset('img/utile.png') }}" alt="E-utilitaire" title="E-utilitaire" />
              </a>
              <br/>
-             <strong>Speed Destock 41</strong>
+             <strong>E-utilitaire</strong>
                 <em>Symfony</em>
-           <div class="work_detail">
-               
-           <hr/>
-               <div class="row">
-                   <div class="col-xs-8">
-                       <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/speeddestock.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/paniersd.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/panelsd.png') }}" style="width: 100%; height: auto;" />
-                       </div>
-                   </div> 
-                   <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Speed Destock 41</h2>
-                     <p class="stagger2" ><em>Symfony</em></p>
-                     <p class="stagger3" >Boutique e-commerce développée en freelance pour l'entreprise <a href="http://speed-destock-41.com">Speed-Destock-41</a>.Entreprise de destockage. Site réalisé en "From Scratch", uniquement avec Symfony2.</p>
-                   </div>
-               </div>
-               <hr/>
-             </div>
-         </article>
-         <article class="col-xs-3 work" id="realisation-1-2">
-              <img class="portfolioImg"  src="{{ asset('img/advert.PNG') }}" alt="" style="width: 100%;height: auto:"/>
-             <br/>
-             <strong>Plateforme d'annonces</strong>
-                 <em>Symfony</em>
-             <div class="work_detail">
-                 <hr/>
-                 <div class="row">
-                      <div class="col-xs-8">
-                       <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/platform.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/platform2.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/platform3.png') }}" style="width: 100%; height: auto;" />
-                       </div>
-                   </div> 
-                   <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Plateforme d'annonce</h2>
-                     <p class="stagger2" ><em>Symfony</em></p>
-                     <p class="stagger3" >Application web: Plateforme d'annonces réalisé à partir du cours Symfony2 sur <a href="http://openclassrooms.com">Openclassrooms</a>. Cette application permet d'éditer des annonces en ligne.</p>
-                   </div>
-               </div>
-               <hr/>
-             </div>
-         </article>
-         <article class="col-xs-3 work" id="realisation-1-3">
-              <img class="portfolioImg"  src="{{ asset('img/RS.PNG') }}" alt="" style="width: 100%;height: auto:"/>
+                 <div class="work_detail">
+                     <hr/>
+                     <div class="row">
+                         <div class="col-xs-8">
+                             <div class="work_slideshow stagger4">
+                                 <img src="{{ asset('img/util4.png') }}" class="img-portfolio" alt="E-utilitaire" title="E-utilitaire" />
+                                 <img src="{{ asset('img/util2.png') }}"  class="img-portfolio" alt="E-utilitaire" title="E-utilitaire" />
+                                 <img src="{{ asset('img/util3.png') }}"  class="img-portfolio" alt="E-utilitaire" title="E-utilitaire" />
+                             </div>
+                         </div> 
+                         <div class="col-xs-4">
+                             <h2 class="stagger1">E-utilitaire</h2>
+                             <p class="stagger2" ><em>Symfony2</em></p>
+                             <p class="stagger3" >
+                                 <i><a href="">E-utilitaire</a> 
+                                     Locations de véhicules utilitaire en Ile-de-France.
+                                     <br/>
+                                     Site web de réservations de véhicules utilitaire. Propal pour une entreprise.
+                                 </i>
+                                 <br/>
+                                 <strong></strong>
+                             </p>
+                         </div>
+                     </div>
+                     <hr/>
+                 </div>
+             </article>
+             <article class="col-xs-3 work" id="realisation-1-4">
+                 <img class="portfolioImg"  src="{{ asset('img/RS.PNG') }}" class="img-portfolio" alt="Reseau social" title="Reseau social" />
              <br/>
              <strong>Reseau social</strong>
                  <em>Symfony</em>
                 <div class="work_detail">
                     <hr/>
                     <div class="row">
-                         <div class="col-xs-8">
-                       <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/reseausocial.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/reseausocial.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/reseausocial.png') }}" style="width: 100%; height: auto;" />
-                       </div>
-                   </div> 
-                   <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Reseau social</h2>
-                     <p class="stagger2" ><em>Symfony</em></p>
-                     <p class="stagger3" >Reseau social (toujours en cours de développement à l'heure actuelle(Octobre 2015), développé avec Symfony, "From Scratch".Projet personnel.</p>
-                   </div>
-               </div>
-               <hr/>
-             </div>
-         </article>
-        
-         <article class="col-xs-3 work" id="realisation-1-4">
-              <img class="portfolioImg"  src="{{ asset('img/Gblogperso.png') }}" alt="" style="width: 100%;height: auto:"/>
-             <br/>
+                        <div class="col-xs-8">
+                             <div class="work_slideshow stagger4">
+                             <img src="{{ asset('img/reseausocial.png') }}" class="img-portfolio" alt="Reseau social" title="Reseau social" />
+                             <img src="{{ asset('img/reseausocial.png') }}" class="img-portfolio" alt="Reseau social" title="Reseau social" />
+                             <img src="{{ asset('img/reseausocial.png') }}" class="img-portfolio" alt="Reseau social" title="Reseau social" />
+                             </div>
+                        </div> 
+                        <div class="col-xs-4">
+                       <h2 class="stagger1">Reseau social</h2>
+                        <p class="stagger2" ><em>Symfony</em></p>
+                       <p class="stagger3" >Réseau social (toujours en cours de développement à l'heure actuelle(Octobre 2015), développé avec Symfony, "From Scratch".Projet personnel.</p>
+                        </div>
+                    </div>
+                    <hr/>
+                 </div>
+             </article>
+         </div>
+         <div class="row row-detail">
+         </div> 
+         <div class="row">
+             <article class="col-xs-3 work" id="realisation-2-1">
+                 <img class="portfolioImg"  src="{{ asset('img/Gblogperso.png') }}" alt="Blog" title="Blog"/>
+                 <br/>
              <strong>Blog</strong>
              <em>Symfony</em>
              <div class="work_detail">
@@ -294,13 +488,13 @@
                  <div class="row">
                       <div class="col-xs-8">
                        <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/blogperso.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/carnet.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/carnet2.png') }}" style="width: 100%; height: auto;" />
+                 <img src="{{ asset('img/blogperso.png') }}" class="img-portfolio" alt="Blog" title="Blog" />
+                 <img src="{{ asset('img/carnet.png') }}" class="img-portfolio" alt="Blog" title="Blog" />
+                 <img src="{{ asset('img/carnet2.png') }}" class="img-portfolio" alt="Blog" title="Blog" />
                        </div>
                    </div> 
                    <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Blog</h2>
+                     <h2 class="stagger1">Blog</h2>
                      <p class="stagger2" ><em>projet perso</em></p>
                      <p class="stagger3" >Site développé avec Symfony2, (Mise en ligne prévue prochainement). Projet personnel. Cette plateforme est à la base une application "carnet d'adresse"J'ai ensuite décidé d'insérer cette application dans un projet plus ambitieux, puisqu'il s'agira d'un blog consacré a la programmation et tout particulièrement de Symfony2. Ce carnet d'adresse sera une application "exemple" pour un tutoriel.Cette plateforme contiendra également un forum de discution.</p>
                    </div>
@@ -308,64 +502,32 @@
                <hr/>
              </div>
          </article>
-     </div>
-     <div class="row row-detail">
-         
-
-     </div>
-  
-     <div class="row" style="">
-         <article class="col-xs-3 work" id="realisation-2-1">
-             <img class="portfolioImg"  src="{{ asset('img/smarthome.png') }}" alt="" style="width: 100%;height: auto:"/>
-             <br/>
-             <strong>Smarthome</strong>
-                <em>Application web</em>
-             <div class="work_detail">
-                 <hr/>
-                 <div class="row">
-                     <div class="col-xs-8">
-                       <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/smarthome2.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/Smarthome3.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/Smarthome3.png') }}" style="width: 100%; height: auto;" />
-                       </div>
-                   </div> 
-                   <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Smarthome</h2>
-                     <p class="stagger2" ><em>Application web</em></p>
-                     <p class="stagger3" >
-                         <a href="http://cyril-delage.fr/interface/smarthome.html">Smarthome</a> est une application web développée en php et mysql. Cette application (toujours en développement à l'heure actuelle), permet de controller le taux d'humidité dans un lieu habitable, et, les consommations d'eau et d'éléctricité.</p>
-                   </div>
-               </div>
-               <hr/>
-             </div>
-         </article>
          <article class="col-xs-3 work" id="realisation-2-2">
-              <img class="portfolioImg"  src="{{ asset('img/depan.PNG') }}" alt="" style="width: 100%;height: auto:"/>
+              <img class="portfolioImg"  src="{{ asset('img/depan.PNG') }}" alt="Site vitrine" title="Site vitrine" />
              <br/>
-             <strong>Dépannage Informatique</strong>
+             <strong>Site vitrine</strong>
              <em>Projet perso</em>
              <div class="work_detail">
                  <hr/>
                  <div class="row">
                       <div class="col-xs-8">
                        <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/depanpc.PNG') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/depanne.PNG') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/depanne.PNG') }}" style="width: 100%; height: auto;" />
+                 <img src="{{ asset('img/depanpc.PNG') }}" class="img-portfolio" alt="Site vitrine" title="Site vitrine" />
+                 <img src="{{ asset('img/depanne.PNG') }}" class="img-portfolio" alt="Site vitrine" title="Site vitrine"  />
+                 <img src="{{ asset('img/depanne.PNG') }}" class="img-portfolio" alt="Site vitrine" title="Site vitrine"  />
                        </div>
                    </div> 
                    <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Dépannage Informatique</h2>
-                     <p class="stagger2" ><em>Projet perso</em></p>
-                     <p class="stagger3" >Site web (mise en ligne non prévue pour le moment), proposant mes services en dépannage informatique.Site créé "From Scratch". Simple site vitrine pour un éventuel projet de création d'entreprise .API googleMap.</p>
+                     <h2 class="stagger1">Site vitrine</h2>
+                     <p class="stagger2"><em>Projet perso</em></p>
+                    <p class="stagger3">Site vitrine pour une entreprise .API googleMap.</p>
                    </div>
-               </div>
-               <hr/>
+                 </div>
+                 <hr/>
              </div>
-         </article>
-         <article class="col-xs-3 work" id="realisation-2-3">
-              <img class="portfolioImg"  src="{{ asset('img/casse brique.png') }}" alt="" style="width: 100%;height: auto:"/>
+             </article>
+             <article class="col-xs-3 work" id="realisation-2-3">
+                 <img class="portfolioImg"  src="{{ asset('img/casse brique.png') }}"  alt="Casse Brique" title="Casse Brique"/>
              <br/>
              <strong>Casse Brique</strong>
                  <em>JavaScript</em>
@@ -373,14 +535,14 @@
                  <hr/>
                  <div class="row">
                       <div class="col-xs-8">
-                       <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/cassebrique.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/casbrik.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/cassebrique.png') }}" style="width: 100%; height: auto;" />
-                       </div>
-                   </div> 
-                   <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Casse Brique</h2>
+                          <div class="work_slideshow stagger4">
+                             <img src="{{ asset('img/cassebrique.png') }}" class="img-portfolio" alt="Casse Brique" title="Casse Brique" />
+                             <img src="{{ asset('img/casbrik.png') }}" class="img-portfolio" alt="Casse Brique" title="Casse Brique"/>
+                             <img src="{{ asset('img/cassebrique.png') }}" class="img-portfolio" alt="Casse Brique" title="Casse Brique"/>
+                          </div>
+                     </div> 
+                     <div class="col-xs-4">
+                     <h2 class="stagger1">Casse Brique</h2>
                      <p class="stagger2" ><em>JavaScript</em></p>
                      <p class="stagger3" >Le célébre jeu "casse-brique", développé en JavaScript! N'hésitez pas à faire une partie, ce jeu est hébergé sur mon<a href="http://www.cyril-delage.fr/projets/casse_brique.php">C.V</a> en ligne. Good Game ;).</p>
                    </div>
@@ -389,7 +551,7 @@
              </div>
          </article>
           <article class="col-xs-3 work" id="realisation-2-4">
-              <img class="portfolioImg"  src="{{ asset('img/Capture.PNG') }}" alt="" style="width: 100%;height: auto:"/>
+              <img class="portfolioImg"  src="{{ asset('img/Capture.PNG') }}" alt="Caméra Cachée" title="Caméra Cachée" />
              <br/>
              <strong>Caméra Cachée</strong>
                  <em>Wordpress</em>
@@ -398,29 +560,26 @@
                  <div class="row">
                       <div class="col-xs-8">
                        <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/camera.PNG') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/cam.PNG') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/cam.PNG') }}" style="width: 100%; height: auto;" />
-                       </div>
-                   </div> 
-                   <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Caméra Cachée</h2>
-                     <p class="stagger2" ><em>Wordpress</em></p>
-                     <p class="stagger3" >Proposition de site pour un jeune vidéaste débutant en one-man show et en caméra cachée sur internet.Site développé avec le CMS : Wordpress.Vidéos hébergées, API des reseaux sociaux(twitter, facebook, google+), chat interactif (AngularJs), blog, système de news et commentaires.</p>
-                   </div>
-               </div>
-               <hr/>
-             </div>
-         </article>
-     </div>
-     
-      <div class="row row-detail">
-
-     </div>
-     
-     <div class="row" style="">
+                             <img src="{{ asset('img/camera.PNG') }}" class="img-portfolio" alt="Caméra Cachée" title="Caméra Cachée" />
+                             <img src="{{ asset('img/cam.PNG') }}" class="img-portfolio" alt="Caméra Cachée" title="Caméra Cachée" />
+                             <img src="{{ asset('img/cam.PNG') }}" class="img-portfolio" alt="Caméra Cachée" title="Caméra Cachée"/>
+                          </div>
+                     </div> 
+                     <div class="col-xs-4">
+                         <h2 class="stagger1">Site vitrine</h2>
+                         <p class="stagger2" ><em>Wordpress</em></p>
+                         <p class="stagger3" >Proposition de site pour entreprise.Site développé avec le CMS : Wordpress.Vidéos hébergées, API des reseaux sociaux(twitter, facebook, google+), chat interactif (AngularJs), blog, système de news et commentaires.</p>
+                     </div>
+                 </div>
+                 <hr/>
+              </div>
+             </article>
+         </div>
+         <div class="row row-detail">
+         </div> 
+     <div class="row">
          <article class="col-xs-3 work" id="realisation-3-1">
-             <img class="portfolioImg"  src="{{ asset('img/architecte2.PNG') }}" alt="" style="width: 100%;height: auto:"/>
+             <img class="portfolioImg"  src="{{ asset('img/architecte2.PNG') }}" alt="Projet Bootstrap" title="Projet Bootstrap"/>
              <br/>
              <strong>Projet Bootstrap</strong>
                 <em>Openclassrooms</em>
@@ -429,39 +588,38 @@
                  <div class="row">
                       <div class="col-xs-8">
                        <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/archi2.PNG') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/archi3.PNG') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/archi4.PNG') }}" style="width: 100%; height: auto;" />
+                             <img src="{{ asset('img/archi2.PNG') }}" class="img-portfolio" alt="Projet Bootstrap" title="Projet Bootstrap" />
+                             <img src="{{ asset('img/archi3.PNG') }}" class="img-portfolio" alt="Projet Bootstrap" title="Projet Bootstrap" />
+                             <img src="{{ asset('img/archi4.PNG') }}" class="img-portfolio" alt="Projet Bootstrap" title="Projet Bootstrap" />
                        </div>
                    </div> 
                    <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Projet Bootstrap</h2>
-                     <p class="stagger2" ><em>Openclassrooms</em></p>
-                     <p class="stagger3" ><a href="http://www.cyril-delage.fr/projets/index2.html">Site</a> développé a partir du cours Bootstrap sur <a href="">Openclassrooms</a>.
-                       
+                       <h2 class="stagger1">Projet Bootstrap</h2>
+                       <p class="stagger2" ><em>Openclassrooms</em></p>
+                       <p class="stagger3" ><a href="http://www.cyril-delage.fr/projets/index2.html">Site</a> développé a partir du cours Bootstrap sur <a href="">Openclassrooms</a>.
                        </p>
                    </div>
                </div>
                <hr/>
              </div>
-         </article>
+         </article>    
          <article class="col-xs-3 work" id="realisation-3-2">
-              <img class="portfolioImg"  src="{{ asset('img/builderweb.PNG') }}" alt="" style="width: 100%;height: auto:"/>
+              <img class="portfolioImg"  src="{{ asset('img/builderweb.PNG') }}" alt="Builderweb" title="Builderweb" />
              <br/>
              <strong>Builderweb</strong>
                  <em>Logiciel VBNet</em>
              <div class="work_detail">
                  <hr/>
                  <div class="row">
-                      <div class="col-xs-8">
-                       <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/builderweb6.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/builderweb7.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/builderweb8.png') }}" style="width: 100%; height: auto;" />
-                       </div>
+                     <div class="col-xs-8">
+                          <div class="work_slideshow stagger4">
+                             <img src="{{ asset('img/builderweb6.png') }}" class="img-portfolio" alt="Builderweb" title="Builderweb"  />
+                             <img src="{{ asset('img/builderweb7.png') }}" class="img-portfolio" alt="Builderweb" title="Builderweb"  />
+                             <img src="{{ asset('img/builderweb8.png') }}" class="img-portfolio" alt="Builderweb" title="Builderweb"  />
+                          </div>
                    </div> 
                    <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Builderweb</h2>
+                     <h2 class="stagger1">Builderweb</h2>
                      <p class="stagger2" ><em>Logiciel VBNet</em></p>
                      <p class="stagger3" >Avant d'être passionné par le développement web, j'étais programmeur en C++ et VBNet. Développer ce genre de programmes sous windows m'a apporté des notions non négligables notamment en terme de développement orienté objet. Ce
                          <a href="http://builderweb.fr/telecharger_builderweb.php">logiciel</a>
@@ -472,7 +630,7 @@
              </div>
          </article>
          <article class="col-xs-3 work" id="realisation-3-3">
-              <img class="portfolioImg"  src="{{ asset('img/creer-monsite.png') }}" alt="" style="width: 100%;height: auto:"/>
+              <img class="portfolioImg"  src="{{ asset('img/creer-monsite.png') }}" alt="Builderweb" title="Builderweb" />
              <br/>
              <strong>Builderweb</strong>
              <em>projet perso</em>
@@ -480,14 +638,14 @@
                  <hr/>
                  <div class="row">
                       <div class="col-xs-8">
-                       <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/builderweb3.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/builderweb4.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/builderweb5.png') }}" style="width: 100%; height: auto;" />
+                          <div class="work_slideshow stagger4">
+                             <img src="{{ asset('img/builderweb3.png') }}" class="img-portfolio" alt="Builderweb" title="Builderweb"/>
+                             <img src="{{ asset('img/builderweb4.png') }}" class="img-portfolio" alt="Builderweb" title="Builderweb" />
+                             <img src="{{ asset('img/builderweb5.png') }}" class="img-portfolio" alt="Builderweb" title="Builderweb" />
                        </div>
                    </div> 
                    <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Builderweb</h2>
+                     <h2 class="stagger1">Builderweb</h2>
                      <p class="stagger2" ><em>projet perso</em></p>
                      <p class="stagger3" >
                        <a href="http://creer-monsite.fr.php">Site</a> développé "from scratch", (bootstrap uniquement). Projet personnel. Cette plateforme à pour interêt de présenter et proposer en libre téléchargement un logiciel que j'ai développé en VbNet: BuilderWeb, éditeur de texte. La particularité de cette éditeur de texte: Builderweb est un éditeur de texte axé "web". Utile pour apprendre les bases de la programmation, car il contient plusieurs onglets "mémo" des différents langages web.(Ce site est actuellement en refonte).</p>
@@ -497,7 +655,7 @@
              </div>
          </article>
           <article class="col-xs-3 work" id="realisation-3-4">
-              <img class="portfolioImg"  src="{{ asset('img/G1.png') }}" alt="" style="width: 100%;height: auto:"/>
+              <img class="portfolioImg" src="{{ asset('img/moncv.png') }}" alt="Mon C.V en ligne" title="Mon C.V en ligne" />
              <br/>
              <strong>Mon C.V en ligne</strong>
                  <em>Bootstrap</em>
@@ -506,74 +664,219 @@
                  <div class="row">
                       <div class="col-xs-8">
                        <div class="work_slideshow stagger4">
-                 <img src="{{ asset('img/moncv2.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/moncv3.png') }}" style="width: 100%; height: auto;" />
-                 <img src="{{ asset('img/moncv4.png') }}" style="width: 100%; height: auto;" />
+                             <img src="{{ asset('img/moncv2.png') }}" class="img-portfolio" alt="Mon C.V en ligne" title="Mon C.V en ligne" />
+                             <img src="{{ asset('img/moncv3.png') }}" class="img-portfolio" alt="Mon C.V en ligne" title="Mon C.V en ligne" />
+                             <img src="{{ asset('img/moncv4.png') }}" class="img-portfolio" alt="Mon C.V en ligne" title="Mon C.V en ligne" />
+                       </div>
+                   </div> 
+                     <div class="col-xs-4">
+                         <h2 class="stagger1">Mon C.V en ligne</h2>
+                         <p class="stagger2" ><em>Bootstrap</em></p>
+                         <p class="stagger3" >Ce <a href="http://www.cyril-delage.fr/">site</a> vous en dira un peu plus sur ma personnalité et vous permettra de me connaître un peu plus. J'ai développé ce site avec Boostrap.Mon C.V au format PDF y est consultable et téléchargeable. Un formulaire en PHP est à votre disposition sur ce site si vous désirez me contacter par mail.</p>
+                     </div>
+                 </div>
+                 <hr/>
+              </div>
+         </article>
+         </div>    
+         <div class="row row-detail">
+         </div>
+       <div class="row">
+         <article class="col-xs-3 work" id="realisation-4-2">
+             <a href="">
+                 <img class="portfolioImg"  src="{{ asset('img/smarthome.png') }}" alt="Smarthome" title="Smarthome" />
+             </a>
+             <br/>
+             <strong>Smarthome</strong>
+                <em>Application web</em>
+             <div class="work_detail">
+                 <hr/>
+                 <div class="row">
+                     <div class="col-xs-8">
+                       <div class="work_slideshow stagger4">
+                             <img src="{{ asset('img/smarthome2.png') }}" class="img-portfolio" alt="Smarthome" title="Smarthome"  />
+                             <img src="{{ asset('img/Smarthome3.png') }}" class="img-portfolio" alt="Smarthome" title="Smarthome"  />
+                             <img src="{{ asset('img/Smarthome3.png') }}" class="img-portfolio" alt="Smarthome" title="Smarthome"  />
                        </div>
                    </div> 
                    <div class="col-xs-4">
-                     <h2 class="stagger1" style="margin-bottom: 0; margin-top: 0%;">Mon C.V en ligne</h2>
-                     <p class="stagger2" ><em>Bootstrap</em></p>
-                     <p class="stagger3" >Ce <a href="http://www.cyril-delage.fr/">site</a> vous en dira un peu plus sur ma personnalité et vous permettra de me connaître un peu plus. J'ai développé ce site avec Boostrap.Mon C.V au format PDF y est consultable et téléchargeable. Un formulaire en PHP est à votre disposition sur ce site si vous désirez me contacter par mail.</p>
+                     <h2 class="stagger1">Smarthome</h2>
+                     <p class="stagger2" ><em>Application web</em></p>
+                     <p class="stagger3" >
+                         <a href="http://cyril-delage.fr/interface/smarthome.html">Smarthome</a> est une application web développée en php et mysql. Cette application (toujours en développement à l'heure actuelle), permet de controller le taux d'humidité dans un lieu habitable, et, les consommations d'eau et d'éléctricité.</p>
                    </div>
                </div>
                <hr/>
              </div>
          </article>
-     </div>    
+         <article class="col-xs-3 work" id="realisation-4-1">
+             <a href="">
+                 <img class="portfolioImg"  src="{{ asset('img/eshop.png') }}" alt="E-shop" title="E-shop" />
+             </a>
+             <br/>
+             <strong>E-shop</strong>
+                <em>Site e-commerce</em>
+             <div class="work_detail">
+                 <hr/>
+                 <div class="row">
+                     <div class="col-xs-8">
+                       <div class="work_slideshow stagger4">
+                             <img src="{{ asset('img/eshop1.png') }}" class="img-portfolio" alt="E-shop" title="E-shop" />
+                             <img src="{{ asset('img/eshop2.png') }}" class="img-portfolio" alt="E-shop" title="E-shop" />
+                             <img src="{{ asset('img/eshop3.png') }}" class="img-portfolio" alt="E-shop" title="E-shop" />
+                         </div>
+                     </div> 
+                     <div class="col-xs-4">
+                         <h2 class="stagger1">Heigh-Tech Shop</h2>
+                         <p class="stagger2" ><em>Site e-commerce</em></p>
+                         <p class="stagger3" >
+                             <a href="">Heigh-Tech Shop</a> est un template pour site e-commerce, codé "from scratch", en PHP natif.
+                             <br/>
+                          </p>
+                     </div>
+                 </div>
+                 <hr/>
+             </div>
+           </article>
+            <article class="col-xs-3 work" id="realisation-4-3">
+             <a href="">
+                 <img class="portfolioImg"  src="{{ asset('img/brazil.png') }}" alt="BrazilMundo" title="BrazilMundo"/>
+             </a>
+             <br/>
+             <strong>BrazilMundo</strong>
+                <em>Site vitrine</em>
+             <div class="work_detail">
+                 <hr/>
+                 <div class="row">
+                     <div class="col-xs-8">
+                       <div class="work_slideshow stagger4">
+                             <img src="{{ asset('img/brazil1.png') }}" class="img-portfolio" alt="BrazilMundo" title="BrazilMundo" />
+                             <img src="{{ asset('img/brazil3.png') }}" class="img-portfolio" alt="BrazilMundo" title="BrazilMundo" />
+                             
+                         </div>
+                     </div> 
+                     <div class="col-xs-4">
+                         <h2 class="stagger1">BrazilMundo</h2>
+                         <p class="stagger2" ><em>Site vitrine</em></p>
+                         <p class="stagger3" >
+                             <a href="">BrazilMundo</a> est un template pour site vitrine.
+                             <br/>
+                          </p>
+                     </div>
+                 </div>
+                 <hr/>
+             </div>
+           </article>
+           <article class="col-xs-3 work" id="realisation-4-4">
+             <a href="">
+                 <img class="portfolioImg"  src="{{ asset('img/prestashop.png') }}" alt="Boutique Prestashop" title="Boutique Prestashop" />
+             </a>
+             <br/>
+             <strong>Boutique Prestashop</strong>
+                <em>E-commerce</em>
+             <div class="work_detail">
+                 <hr/>
+                 <div class="row">
+                     <div class="col-xs-8">
+                       <div class="work_slideshow stagger4">
+                             <img src="{{ asset('img/prestashop1.png') }}" class="img-portfolio" alt="Boutique Prestashop" title="Boutique Prestashop" />
+                             <img src="{{ asset('img/prestashop2.png') }}" class="img-portfolio" alt="Boutique Prestashop" title="Boutique Prestashop" />
+                              <img src="{{ asset('img/prestashop3.png') }}" class="img-portfolio" alt="Boutique Prestashop" title="Boutique Prestashop" />
+                         </div>
+                     </div> 
+                     <div class="col-xs-4">
+                         <h2 class="stagger1">Boutique Prestashop</h2>
+                         <p class="stagger2" ><em>E-commerce</em></p>
+                         <p class="stagger3" >
+                             <a href="">Boutique Prestashop</a>. Expert prestashop, pour vos boutique e-commerce ( Boutique 1er prix).
+                             <br/>
+                          </p>
+                     </div>
+                 </div>
+                 <hr/>
+             </div>
+           </article>
+     </div>
      <div class="row row-detail">
     
+     </div> 
+         <div class="row">              
+             <article class="col-xs-3 work" id="realisation-5-1">
+                 <img class="portfolioImg"  src="{{ asset('img/advert.PNG') }}" alt="Plateforme d'annonces" title="Plateforme d'annonces" />
+                 <br/>
+                 <strong>Plateforme d'annonces</strong>
+                 <em>Symfony</em>
+                 <div class="work_detail">
+                     <hr/>
+                     <div class="row">
+                         <div class="col-xs-8">
+                             <div class="work_slideshow stagger4">
+                                 <img src="{{ asset('img/platform.png') }}" class="img-portfolio" alt="Plateforme d'annonces" title="Plateforme d'annonces"/>
+                                 <img src="{{ asset('img/platform2.png') }}" class="img-portfolio" alt="Plateforme d'annonces" title="Plateforme d'annonces" />
+                                 <img src="{{ asset('img/platform3.png') }}" class="img-portfolio" alt="Plateforme d'annonces" title="Plateforme d'annonces" />
+                             </div>
+                         </div> 
+                         <div class="col-xs-4">
+                             <h2 class="stagger1">Plateforme d'annonce</h2>
+                             <p class="stagger2" ><em>Symfony</em></p>
+                             <p class="stagger3" >Application web: Plateforme d'annonces réalisé à partir du cours Symfony2 sur <a href="http://openclassrooms.com">Openclassrooms</a>. Cette application permet d'éditer des annonces en ligne.</p>
+                         </div>
+                     </div>
+                     <hr/>
+                 </div>
+             </article>
+         </div>
+         {# crea agence de comm les comptoirs  #}
+         <div class="row row-detail">
+        </div>        
      </div>
-     
-     <hr/>
-         
 </div>
+<hr>
 <div class="container-fluid">
-    <div class="row" style="">
-        <div class="col-md-12"  style="background: rgba(255, 255, 255, 0.5) url('http://creer-monsite.fr/web/img/code.jpg') no-repeat fixed center center / cover; height: 450px; border-bottom: 40px solid rgb(150, 44, 61);
-position: relative;">
-            
-        </div>
-        <div style="position: absolute;font-size: 17px;letter-spacing: 1px;line-height: 25px;margin-bottom: 30px;padding: 30px 40px 0px;word-spacing: 4px;font-style: italic;color: #FFF;width: 100%;">
-            <h4 style="color: #FFF;text-align:center;">Le code... Une passion avant tout!</h4>
+    <div class="row" id="pack">
+        <div class="row">
+          <div class="col-md-12 background-img-code-source"></div>
+     </div>
+    {#  <div style="position: absolute;font-size: 17px;letter-spacing: 1px;line-height: 25px;margin-bottom: 30px;padding: 30px 40px 0px;word-spacing: 4px;font-style: italic;color: #FFF;width: 100%;">
+          <h2 style="color: #FFF;text-align:center;">Votre site web clé en main !</h2>
             <hr style="margin-bottom: 2px;padding: 0px 40px;position: relative;left: 25%;margin-right: 50%;"/>
             <hr style="margin-top: 2px;padding: 0px 40px;position: relative;left: 25%;margin-right: 50%;"/>
-             <div class="col-xs-4">
-                 <span>
-                        pack LowCost
-                 </span>
-            </div>  
-            <div class="col-xs-4">
-                 <span>
-                        pack Classic
-                 </span>
-            </div>  
-             <div class="col-xs-4">
-                 <span>
-                        pack Optimal
-                 </span>
-            </div>  
-        </div>
+             <div style="text-align: center;"> Bientot disponible avec grille tarifaire.</div>
+             <div style="margin-top: 8%;">
+                 <div class="col-xs-5">
+                     <div class="btnPack" >
+                         pack LowCost 
+                     </div>
+                </div>  
+                <div class="col-xs-3">
+                     <div class="btnPack" style="text-align: center;">
+                         pack Optimisé
+                     </div>
+                </div>  
+                 <div class="col-xs-4">
+                     <div class="btnPack" style="float: right;">
+                         pack Optimal 
+                     </div>
+                </div> 
+            </div> 
+        </div>#}
     </div>
 </div>
-
 <div class="container-fluid">
-    <div class="row" style="">
-        <hr style="margin-left: 10%;margin-right: 10%;"/>
+    <div class="row">
+        <hr class="separation" />
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 class="text-center" id="retour">Les retours clients</h2>
-            <hr style="margin-bottom: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
-            <hr style="margin-top: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
+            <h2 class="text-center" id="retour">Des clients satisfaits!</h2>
+            <hr class="hr-top"/>
+            <hr class="hr-bottom"/>
                 <div class="col-md-4 col-md-offset-4  col-sm-10 col-sm-offset-1">
                     <article class="well retours">
                         <h3 class="text-center">Speed Destock 41</h3>
                         Mr Delage à su repondre à nos attentes, en mettant à profil ses compétences.
                         <br/>
-                        Speed Destock 41 ne devait être à la base qu'un simple site vitrine, et Mr Delage a su nous convaincre à travers son potentiel et nous proposer un site e-commerce, 100% Symfony2, facil d'utilisation, gràce à un panel administrateur optimal, un suivi et des mises a jour régulières, un accompagnement et une formation claire. Notre gestion des stock est entièrement gérée grace a notre base de donnée, et aussi une sécurité optimale gràce à Symfony2.
+                        Speed-Destock 41 recommande vivement les services et le potentiel de Mr Delage, Développeur web (<a href="http://creer-monsite.fr">creer-monsite.fr</a>)
                         <br/>
-                        Speed Destock 41 recommande vivement les services et le potentiel de Mr Delage, Développeur web (<a href="http://creer-monsite.fr">creer-monsite.fr</a>)
-                        <br/>
-                        L'équipe Speed Destock <a href="http://speed-destock-41.com">Speed Destock 41</a>
+                       <strong> L'équipe Speed Destock <a href="http://speed-destock-41.com">Speed Destock 41</a></strong>
                     </article>
                 </div>
             </div>
@@ -581,22 +884,20 @@ position: relative;">
     </div>
     <div class="container-fluid">
         <div class="row" >
-            <hr style="margin-left: 10%;margin-right: 10%; box-shadow: 6px 6px 16px black;"/>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="margin-bottom: 0px;border-bottom: 20px solid #962C3D;">
+            <hr class="separation separation-shadow" />
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mailer">
                 <article id="contact">
-                    <h2 class="text-center">Demandez votre devis gratuit !</h2>
-                    <hr style="margin-bottom: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
-                    <hr style="margin-top: 2px;border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;margin-left: 20%;margin-right: 20%;"/>
+                    <h2 class="text-center" >Demandez votre devis gratuit !</h2>
+                    <hr class="hr-top"/>
+                    <hr class="hr-bottom"/>
                     <h3 class="text-center"><i>Je suis également à votre écoute pour:</i></h3>
                     <ul>
-                        
-                        <li><i>Vos offres d'emplois de développeur web (missions freelance, télé-travail, CDI)</i></li>
+                         <li><i>Vos offres d'emplois de développeur web (missions freelance, télé-travail, CDI)</i></li>
                         <li><i>Une collaboration, un partenariat</i></li>
                     </ul>
                     <hr />
-                   
-                 {{ include('RSPanelBundle:Panel:formulaire.html.twig') }}
-                     <img src="{{ asset('img/arobas.jpg') }}" class="transparent imGarobas" style="width: 20%;margin: 2.5%;"/>
+                    {{ include('RSPanelBundle:Panel:formulaire.html.twig') }}
+                    <img src="{{ asset('img/arobas.jpg') }}" class="transparent imGarobas" />
                 </article>
             </div>
         </div>

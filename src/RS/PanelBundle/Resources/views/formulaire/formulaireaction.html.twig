@@ -7,6 +7,7 @@
     {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
     {# Les erreurs générales du formulaire. #}
     {{ form_errors(form) }}
+    
     {# Idem pour un autre champ. #}
     <div class="form-group">
         {{ form_label(form.action, "action", {'label_attr': {'class': 'class="col-sm-3   control-label required"'}}) }}
@@ -16,6 +17,7 @@
         </div>
     </div>
     <hr/>
+    
       <i>Indiquer le taux horaire(pour le agences) ou tarif à la journée(particulier)</i>
     {# Idem pour un autre champ. #}
     <div class="form-group">
@@ -26,6 +28,7 @@
         </div>
     </div>
     ou
+    
     {# Idem pour un autre champ. #}
     <div class="form-group">
         {{ form_label(form.tarifjournee, "tarif à la journée", {'label_attr': {'class': 'class="col-sm-3   control-label required"'}}) }}
@@ -47,6 +50,8 @@
             {% endif %}
         </div>
     </form>
+    
+    
     {{ form_end(form) }}
        
   

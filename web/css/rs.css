@@ -1,16 +1,187 @@
 body{
     font-family: "Sansation","Trebuchet MS",Helvetica,Verdana,sans-serif,serif;
+    background:url('http://creer-monsite.fr/web/img/base-content.jpg'); 
+    background-repeat: repeat;
+}
+
+.li-menu-header {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 4%; 
+}
+
+.icones-reseaux-sociaux {
+    background-color:#3D3D3D;
+    border-color:#3D3D3D;
+}
+
+.img-icones-reseaux-sociaux {
+    width: 19px; 
+    height: 19px;
+}
+
+.glyphicon-tel {
+    font-size: 1.7em; 
+    color:greenyellow;
+}
+
+.modal-h4 {
+    color:black; 
+    font-size: 16px; 
+    font-weight: bold; 
+}
+
+.body-modal {
+    color:black; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.btn-modal {
+    padding-left: 0px; 
+    width: 25%;
+}
+
+.lienFooter {
+    color: yellow;
+}
+
+.lien-log {
+    display: inline;
+    padding: O%;
+}
+
+.banniere {
+    margin-top: 4%;
+}
+
+.span-banniere {
+    color:darkred;
+}
+
+.alert-mail {
+    margin-top:2%;
+}
+
+.p-alert-mail {
+    text-align:center;
+}
+
+.hr {
+   box-shadow: 6px 6px 16px black; 
+}
+
+.article-presentation {
+    padding-left: 5%; 
+    padding-right: 5%;
+    margin-right: 25%;
+}
+
+.dble-hr-top {
+    margin-bottom: 2px;
+    border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.dble-hr-bottom {
+    margin-top: 2px;
+    border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.services {
+    background: #F0F0F0 none repeat scroll 0% 0%;
+}
+
+.separation {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.hr-top {
+    margin-bottom: 2px;
+    border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.hr-bottom {
+    margin-top: 2px;
+    border-color: rgb(203, 192, 192) -moz-use-text-color -moz-use-text-color;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.background-img-code-source {
+    background: rgba(255, 255, 255, 0.5) url('http://creer-monsite.fr/web/img/code.jpg') no-repeat fixed center center / cover; 
+    height: 120px;
+    border-bottom: 3px solid rgb(171, 60, 60); 
+    border-top: 3px solid rgb(171, 60, 60);
+}
+
+.article-process {
+    background: #F0F0F0 none repeat scroll 0% 0%;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    padding-bottom: 30px;
+}
+
+.list-process {
+    font-size: 10px;
+    list-style: outside none none;
+    text-align: center;
+}
+
+.mes-competences {
+    margin-top: 4%;
+    border-bottom: none;
+}
+
+.img-boot {
+    height: 40px;
+}
+
+.txt-competences {
+    margin-top: 60px;
+}
+
+.img-portfolio {
+    width: 100%; 
+    height: auto;
+}
+
+.separation-shadow {
+     box-shadow: 6px 6px 16px black;
+}
+
+.mailer {
+    margin-bottom: 0px;
+    border-bottom: 20px solid #962C3D;
+}
+
+.div-process {
+    padding-left: 0px;
+}
+
+.img-bubble {
+    width: 7px;
 }
 
 /*-- Titres  --*/
 .h2, h2 {
     color: #7E7E7E;
-font-size: 36px;
-text-transform: uppercase;
-text-align: center;
-margin-bottom: 6px;
-letter-spacing: 0.1em;
-font-weight: 300;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 6px;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+}
+
+.h2-section{
+    font-size: 26px;
 }
 
 .h3, h3 {
@@ -26,7 +197,7 @@ font-weight: 300;
     width: 60%;
     margin-left: -50%;
     position: relative;
-    top: 20px;
+    top: 220px;
 }
 img{
     width: 25px;
@@ -46,13 +217,19 @@ img{
 
 .imGarobas{
     height: 280px;
+    width: 20%;
+    margin: 2.5%;
 }
 
 .well{
-    border-bottom: 40px solid #962C3D;
+    border-bottom: 3px solid #363636;
 }
 
 /*--- sections, articles --*/
+#contact{
+    background-color: #FFF;
+}
+
 .retours{
     padding: 2%;
     border: 2px solid grey;
@@ -170,6 +347,8 @@ em{
 .portfolioImg{
     border: 1px solid rgb(197, 211, 230);
     border-radius: 7px;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -214,16 +393,20 @@ em{
 /*--- éléments --*/
 address {
     position: relative;
-    top: 10px;
+    top: 50px;
     right: 110px;
 }
 
 .presentation{
     margin-top: 3%;
     padding-top: 4%;
-    border-radius: 30px;
+    border-radius: 30px 30px 0px 0px;
     margin-bottom: 4%;
-    padding-bottom: 4%;
+    padding-bottom: 2%;
+}
+
+.maPresentation{
+    font-family: Consolas, monospace;
 }
 
 .msg{
@@ -267,6 +450,38 @@ h4, .h4{
     color: #962C3D;
 }
 
+.procesList2{
+    text-decoration: none;
+    list-style-type: none;
+   text-align: center;
+}
+.procesList{
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+   
+}
+.btnPack{
+    text-align: center;
+    border-radius: 50%;
+    max-height: 200px;
+    width: 120px;
+    height: 100px;
+    max-width: 200px;
+    font-size: 27px;
+    background-color: #337AB7;
+    border: 3px solid rgba(210, 193, 164, 0.29);
+    color: #FFF;
+    line-height: 1.3;
+    border-style: 30px;
+    border-color: #F1F1F6;
+}
+
+.btnPack:hover{
+    cursor: pointer;
+    background-color:#962C3D;
+}
+
 /*--- Formulaire --*/
 #rs_panelbundle_mailer_Envoyer{
     width: 50%;
@@ -281,7 +496,7 @@ h4, .h4{
 }
 
 .imgComp{
-    width: 30px;
+    width: 40px;
 }
 
 /*--media support--*/
@@ -313,6 +528,10 @@ h4, .h4{
 
 /* TABLETTES */
 @media (max-width: 964px) {
+    h1, .h1{
+        font-size: 15px;
+    }
+    
     .retours{
        font-size: 9px;
     }
@@ -391,8 +610,11 @@ h4, .h4{
     
     .stagger1{
         font-size: 15px;
+        margin-bottom: 0; 
+        margin-top: 0%;
     }
 }
+
 
 /*-- steps --*/
 .cover {
@@ -442,4 +664,3 @@ h1 {
     -moz-animation: typing 16s steps(20, end), /* # of steps = # of characters */
                         blink-caret 1s step-end infinite;
 }
-
